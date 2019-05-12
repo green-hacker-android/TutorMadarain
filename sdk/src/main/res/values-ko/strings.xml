@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sdk</string>
+    <string name="os_call_support_success">%1$s은%2$s에 성공적으로 전화했습니다.</string>
+    <string name="os_call_support_fail">%1$s방송은%2$s에 실패했다고했습니다.</string>
+</resources>

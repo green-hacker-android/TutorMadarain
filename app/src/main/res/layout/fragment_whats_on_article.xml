@@ -1,0 +1,16 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.WhatsOnArticleFragment">
+
+    <TextView
+        android:id="@+id/tv_whats_on_detail_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:padding="@dimen/very_large_margin"
+        android:textColorLink="#0000ff"
+        android:textColor="@color/text_color_black" />
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34404E">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:placeholderImage="@drawable/bg_drawer"
+        fresco:placeholderImageScaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e034404E"/>
+
+    <LinearLayout
+        android:id="@+id/ll_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/very_large_margin">
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_rectangle_white"
+            android:text="@string/su_sign_up"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_rectangle_white"
+            android:text="@string/su_sign_in"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/splash_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn to speak Chinese"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Large"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,504 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/srl_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tool_bar"
+                android:background="@color/layout_background_light_white">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.AppBarLayout
+                            android:id="@+id/main_appbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fitsSystemWindows="true"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_my_schedule"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop">
+
+                                <android.support.v4.view.ViewPager
+                                    android:id="@+id/vp_main_slider"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="190dp"/>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_trial_message"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#39000000"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/very_large_margin">
+
+                                    <com.facebook.drawee.view.SimpleDraweeView
+                                        android:id="@+id/imv_notification"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:contentDescription="@string/main_tutor"
+                                        android:visibility="gone"
+                                        fresco:placeholderImage="@drawable/ic_notification"/>
+
+                                    <ImageView
+                                        android:id="@+id/imv_demo_classroom"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:src="@mipmap/new_wb"
+                                        android:visibility="visible"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_trial_status"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="@string/main_trial_not_complete"/>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_schedule"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@id/vp_main_slider"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/btn_bg_main_schedule"
+                                    android:paddingBottom="7dp"
+                                    android:paddingLeft="30dp"
+                                    android:paddingRight="30dp"
+                                    android:paddingTop="4dp"
+                                    android:text="@string/main_schedule"
+                                    android:textAllCaps="false"
+                                    android:textAppearance="@android:style/TextAppearance.Large"/>
+                                <!--android:background="@drawable/btn_bg_main_schedule"-->
+                                <LinearLayout
+                                    android:id="@+id/ll_trial_video"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignBottom="@id/vp_main_slider"
+                                    android:layout_alignTop="@id/vp_main_slider"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="#60000000"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/imv_play_video"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:contentDescription="@string/main_tutor"
+                                        android:src="@drawable/ic_video_start"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_video_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="7dp"
+                                        android:text="@string/main_explore_now"
+                                        android:textSize="@dimen/title_text_size"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </android.support.design.widget.AppBarLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_main_daily_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/ll_study_materials"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:background="#D3825A"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="20dp">
+                                <!--android:background="@drawable/dashboard_gradient"-->
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="@dimen/icon_large_size"
+                                    android:layout_height="@dimen/icon_large_size"
+                                    android:contentDescription="@string/main_tutor"
+                                    fresco:placeholderImage="@drawable/ic_study_material"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_study_materials"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_daily_content"
+                                        android:textAllCaps="true"
+                                        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_daily_content_article"
+                                        android:textColor="@color/text_color_light_white"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/shadow_bottom"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_package"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#E45F56">
+                            <!--android:background="@drawable/dashboard_gradient"-->
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:includeFontPadding="false"
+                                    android:paddingStart="2dp"
+                                    android:text="@string/main_up_to"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_discount_amount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-5dp"
+                                        android:includeFontPadding="false"
+                                        android:textSize="32sp"
+                                        android:textStyle="bold"/>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="-4dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="-2dp"
+                                            android:includeFontPadding="false"
+                                            android:text="%"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:includeFontPadding="false"
+                                            android:text="@string/main_off"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_main_package"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_toStartOf="@id/ll_discount"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="20dp">
+
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="@dimen/icon_large_size"
+                                    android:layout_height="@dimen/icon_large_size"
+                                    android:contentDescription="@string/main_tutor"
+                                    fresco:placeholderImage="@drawable/ic_package"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_package"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_package"
+                                        android:textAllCaps="true"
+                                        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_package_explanation"
+                                        android:textColor="@color/text_color_light_white"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/shadow_bottom"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_main_course"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/ll_course_topic"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+
+                                android:background="#95CFCB"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="20dp"><!--android:background="@drawable/dashboard_gradient"-->
+
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="@dimen/icon_large_size"
+                                    android:layout_height="@dimen/icon_large_size"
+                                    android:contentDescription="@string/main_tutor"
+                                    fresco:placeholderImage="@drawable/ic_course"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_course"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_course"
+                                        android:textAllCaps="true"
+                                        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_course_explanation"
+                                        android:textColor="@color/text_color_light_white"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/shadow_bottom"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_main_tutor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/ll_tutor_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:background="#F2C666"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="20dp">
+                                <!--android:background="@drawable/dashboard_gradient"
+                                -->
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="@dimen/icon_large_size"
+                                    android:layout_height="@dimen/icon_large_size"
+                                    android:contentDescription="@string/main_tutor"
+                                    fresco:placeholderImage="@drawable/ic_tutor_white"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_tutor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_tutor"
+                                        android:textAllCaps="true"
+                                        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_tutor_explanation"
+                                        android:textColor="@color/text_color_light_white"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/shadow_bottom"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_main_online_support"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/ll_online_support"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:background="#852E24"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="20dp"><!--android:background="@drawable/dashboard_gradient"-->
+
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="@dimen/icon_large_size"
+                                    android:layout_height="@dimen/icon_large_size"
+                                    android:contentDescription="@string/main_tutor"
+                                    fresco:placeholderImage="@drawable/ic_online_support"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_online_support"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_online_support"
+                                        android:textAllCaps="true"
+                                        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_online_support_explanation"
+                                        android:textColor="@color/text_color_light_white"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/shadow_bottom"/>
+
+                        </RelativeLayout>
+
+                        <!--<android.support.design.widget.TabLayout
+                            android:id="@+id/dashboard_tab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/dashboard_taylayout_background"/>-->
+                    </LinearLayout>
+                </ScrollView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/tool_bar"
+                android:background="@drawable/shadow_bottom"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/left_menu_drawer"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
+    </android.support.v4.widget.DrawerLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_white_board"
+        android:visibility="gone"
+        app:fab_colorNormal="#3c82f4"
+        app:fab_colorPressed="#FF3372D7"
+        app:layout_anchor="@id/main_appbar"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <ImageView
+        android:id="@+id/free_trial"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:elevation="@dimen/dimen_15dp"
+        android:src="@mipmap/free_ticket"
+        android:visibility="gone"
+        app:layout_anchor="@id/main_appbar"
+        app:layout_anchorGravity="bottom|end|right"/><!--
+        android:background="@drawable/free_trial_fab_background"-->
+</android.support.design.widget.CoordinatorLayout>

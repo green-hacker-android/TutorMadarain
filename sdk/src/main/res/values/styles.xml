@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <!--<item name="android:colorAccent">@color/primary</item>-->
+        <item name="android:windowTitleStyle">@style/dialogTitleStyle</item>
+        <item name="android:textColor">#8A000000</item>
+        <item name="android:textColorPrimary">#8A000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="dialogTitleStyle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textColor">#DD000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

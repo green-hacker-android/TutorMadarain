@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tool="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tool:context=".ui.activity.AccountInterestInActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/very_large_margin"
+        android:layout_marginRight="@dimen/very_large_margin"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingTop="@dimen/very_large_margin"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_interest_learning_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_black"
+            />
+
+
+        <ImageView
+            android:id="@+id/imv_interest_learning_check"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_unchecked"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        />
+</RelativeLayout>

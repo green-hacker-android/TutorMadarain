@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="inc.osbay.android.tutormandarin.ui.fragment.PromoCodeIEnterFragment">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_promo_i_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_enter_code_header"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ph_i_entered_code_lbl"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_widthPercent="20%"
+            />
+
+        <TextView
+            android:id="@+id/tv_enter_code_type_header"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_enter_code_header"
+            android:gravity="center"
+            android:text="@string/ph_i_entered_type_lbl"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_widthPercent="22%"
+            />
+
+        <TextView
+            android:id="@+id/tv_enter_date_header"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_enter_code_type_header"
+            android:gravity="center"
+            android:text="@string/ph_i_entered_date_lbl"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_widthPercent="33%"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_enter_date_header"
+            android:gravity="center"
+            android:text="@string/ph_i_entered_reward_lbl"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_widthPercent="25%"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prl_promo_i_enter">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_promo_i_enter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_i_entered_no_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_color_gray"
+            app:layout_marginTopPercent ="33%"
+            android:visibility="gone"
+            />
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

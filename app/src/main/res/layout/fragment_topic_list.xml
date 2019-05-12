@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_light_white"
+    tools:context=".ui.fragment.TopicListFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_select_topic_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/very_large_margin">
+
+        <TextView
+            android:id="@+id/tv_topic_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/to_level"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color_black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/tv_topic_level"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_black_dropdown_arrow"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vw_level_category"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_select_topic_level"
+        android:background="@color/light_gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_topic_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vw_level_category"
+        android:padding="@dimen/normal_margin" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_level_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vw_level_category"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_background_light_white"
+                tools:context=".ui.fragment.StorePackageFragment">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_new_package_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/very_large_margin">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_new_package_detail_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/sdv_cover_photo"
+                            android:layout_width="84dp"
+                            android:layout_height="120dp"
+                            android:layout_marginBottom="@dimen/very_large_margin"
+                            android:layout_marginTop="@dimen/very_large_margin"
+                            fresco:actualImageScaleType="centerCrop"
+                            fresco:placeholderImage="@drawable/img_pre_package"
+                            fresco:placeholderImageScaleType="centerCrop"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/sdv_cover_photo"
+                            android:paddingStart="@dimen/very_large_margin"
+                            android:paddingTop="@dimen/very_large_margin">
+
+                            <TextView
+                                android:id="@+id/tv_new_package_detail_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Beginner 1 Package"
+                                android:textAppearance="@android:style/TextAppearance.Medium"
+                                android:textColor="@color/text_color_black"/>
+
+                            <LinearLayout
+                                android:id="@+id/ll_new_package_detail_lesson"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_new_package_detail_title"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/normal_margin">
+
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    fresco:actualImageScaleType="centerCrop"
+                                    fresco:placeholderImage="@drawable/ic_lesson_black"
+                                    fresco:placeholderImageScaleType="centerCrop"/>
+
+                                <TextView
+                                    android:id="@+id/tv_new_package_lesson"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/very_large_margin"
+                                    android:textColor="@color/text_color_black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_new_package_detail_supplement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ll_new_package_detail_lesson"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/normal_margin">
+
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    fresco:actualImageScaleType="centerCrop"
+                                    fresco:placeholderImage="@drawable/ic_supplement"
+                                    fresco:placeholderImageScaleType="centerCrop"/>
+
+                                <TextView
+                                    android:id="@+id/tv_new_package_supplements"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/very_large_margin"
+                                    android:textColor="@color/text_color_black"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txt_buy_new_package"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/ll_new_package_detail_supplement"
+                                android:layout_marginTop="@dimen/very_large_margin"
+                                android:background="@drawable/btn_bg_stoke_cyan"
+                                android:gravity="center"
+                                android:padding="@dimen/very_large_text_padding"
+                                android:textAllCaps="false"
+                                android:textColor="@color/primary_color"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <WebView
+                        android:id="@+id/wv_new_package_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_new_package_detail_info"
+                        android:layout_marginTop="@dimen/very_large_margin"
+                        android:background="@android:color/transparent"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_new_package_info"
+                android:layout_marginTop="@dimen/very_large_margin">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/very_large_margin">
+
+                    <LinearLayout
+                        android:id="@+id/ll_curriculum_plan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_my_plan_package"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sp_course_structure"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/text_color_black"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sp_course_structure_explain"
+                            android:textColor="@color/text_color_gray"/>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_curriculum_plan"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_line_height"
+                        android:layout_below="@+id/ll_curriculum_plan"
+                        android:layout_marginTop="@dimen/very_large_margin"
+                        android:background="@color/gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vw_curriculum_plan"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_section_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

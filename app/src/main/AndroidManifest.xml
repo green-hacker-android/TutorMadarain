@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="inc.osbay.android.tutormandarin">
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions"/>
+
+    <application
+        android:name=".TMApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.activity.TutorInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.PayPalPaymentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ClassRoomActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <!--android:launchMode="singleInstance"-->
+        <activity
+            android:name=".ui.activity.TutorTimeSelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.CreateFCDeckActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AddToCustomFCDeckActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.FragmentHolderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.CallSupportActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.VideoInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountEmailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountPhoneActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountLocationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountResetPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountInterestInActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountLearningPurposeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.CameraActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.TutorFeedbackActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AutoRepeatActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.EditRepeatActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ShareActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.PackageTutorialActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.WelcomeTutorialActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <activity
+            android:name=".ui.activity.FlashcardTutorialActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SignUpContinueActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.TrialSubmitActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.LessonPdfActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name=".ui.activity.TutorTimeSearchAllActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".service.MessengerService"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1439689359690020"
+            android:exported="true"/>
+
+        <!-- Twitter -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="@string/fabric_api_key"/>
+
+        <activity
+            android:name=".ui.activity.SignUpActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent"/>
+        <activity
+            android:name=".ui.activity.SignInActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity
+            android:name=".ui.activity.AccountGenderActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".util.MyCustomCampaignReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.activity.AccountSpeakingLanguageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.StudentLevelFilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+
+        <!-- Provider for package installer in Splash Screen -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="inc.osbay.android.tutormandarin.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path_provider"/>
+        </provider>
+
+        <activity
+            android:name=".ui.activity.ClassroomAssistantActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

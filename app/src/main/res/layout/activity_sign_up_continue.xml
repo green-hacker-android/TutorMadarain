@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="inc.osbay.android.tutormandarin.ui.activity.SignUpContinueActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_su_promo_code_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_su_promo_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_bar_height"
+            android:layout_below="@id/tool_bar">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shadow_downwards"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shadow_downwards"/>
+
+            <ImageView
+                android:id="@+id/imv_profile_info"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_info"/>
+
+            <TextView
+                android:id="@+id/tv_profile_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:text="@string/su_continue_step"
+                android:textColor="@color/text_color_gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_bar_height"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shadow_upwards"/>
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_arrow_left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/su_continue_back"
+                    android:textColor="@color/text_color_black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/su_continue_next"
+                    android:textColor="@color/text_color_black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_arrow_head_right_grey"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_i_have_promo_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/ll_back"
+                android:layout_toStartOf="@id/ll_next"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/su_i_have_promo_code"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_bottom_bar"
+            android:layout_below="@id/rl_top_bar"/>
+    </RelativeLayout>
+</RelativeLayout>

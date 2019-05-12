@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/normal_margin"
+    android:layout_marginBottom="30dp"
+    card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_topic_cover_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:overlayImage="@drawable/grey_layer"
+            fresco:placeholderImage="@drawable/img_pre_course"
+            fresco:placeholderImageScaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_topic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:text="@string/to_tab_title"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/tv_topic_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:text="2 Topics" />
+        </LinearLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_topic_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            fresco:actualImageScaleType="fitCenter" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

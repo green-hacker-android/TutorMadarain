@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/pc_share_title"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_facebook"
+            android:contentDescription="@string/pc_facebook_icon_miss"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/pc_facebook"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_twitter"
+            android:contentDescription="@string/pc_twitter_icon_miss"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/pc_twitter"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_google_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_google_plus"
+            android:contentDescription="@string/pc_google_plus_icon_miss"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/pc_google_plus"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_email"
+            android:contentDescription="@string/pc_email_icon_miss"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/pc_email"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+</LinearLayout>

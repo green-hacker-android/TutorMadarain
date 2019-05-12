@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f2f2">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_package"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar">
+
+        <LinearLayout
+            android:id="@+id/ll_buy_new_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/extremely_large_margin"
+            android:background="@drawable/btn_bg_buy_new_package"
+            android:gravity="center"
+            android:padding="@dimen/normal_margin">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_plus_red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pk_lst_buy_new_package"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/light_red"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <inc.osbay.android.tutormandarin.ui.view.PagerContainer
+            android:id="@+id/pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_buy_new_package"
+            android:gravity="center_horizontal">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vw_package"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"/>
+        </inc.osbay.android.tutormandarin.ui.view.PagerContainer>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vw_my_package_list"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tool_bar"
+        android:background="@drawable/shadow_bottom"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_pk_list_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_triangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/triangle"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/rl_triangle"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rectangle"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_my_pk_what_is_package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ll_my_pk_booking_rule"
+                android:layout_alignStart="@+id/ll_my_pk_booking_rule"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ic_whats_package"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_my_what_is_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/pk_lst_what_is_package_lbl"
+                    android:textColor="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_pk_booking_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_my_pk_what_is_package"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ic_booking_rule"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_booking_rule_lbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/pk_lst_booking_rules"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_alignEnd="@id/tv_booking_rule_lbl"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/light_gray"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

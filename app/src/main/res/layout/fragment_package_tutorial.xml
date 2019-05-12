@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.PackageTutorialFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imv_package_tutorial_close"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:id="@+id/imv_tutorial_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tv_booking_rules_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_tutorial_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="@dimen/extremely_large_margin"
+            android:textAllCaps="true"
+            android:textColor="@color/light_red"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_booking_rules_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_start_trial"
+            android:layout_below="@id/tv_booking_rules_title"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_start_trial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg_package_tutorial"
+            android:paddingBottom="5dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="3dp"
+            android:text="@string/pk_start_now"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_learn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/pk_learn_more"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/light_red"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_package_tutorial_close"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/toolbar_top_padding"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@drawable/ic_menu_cancel" />
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App's Base Colors -->
+    <color name="primary_color">#00AA9F</color>
+    <color name="text_color_white">#f5f5f5</color>
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_gray">#888888</color>
+    <color name="text_color_light_white">#aaffffff</color>
+
+    <!-- Basic Colors -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="pale_red">#fdafaa</color>
+    <color name="light_red">#E45F56</color>
+    <color name="red">#ff0000</color>
+
+    <!-- Others -->
+    <color name="gray">#7e7e7e</color>
+    <color name="light_gray">#557e7e7e</color>
+    <color name="view_light_gray">#c3c3c3</color>
+    <color name="more_light_gray">#e6e6e6</color>
+    <color name="txt_flash_card_count">#FBB03B</color>
+    <color name="yellow">#FBB03B</color>
+
+
+    <!-- Button Backgrounds -->
+    <color name="btn_bg_rounded_yellow_normal">#F9AA33</color>
+    <color name="btn_bg_rounded_yellow_press">#F59955</color>
+    <color name="btn_bg_rounded_green_normal">#00ABA0</color>
+    <color name="btn_bg_rounded_green_press">#FF00867D</color>
+    <color name="btn_bg_rounded_tran_normal">#50ffffff</color>
+    <color name="btn_bg_rounded_tran_press">#ddcccccc</color>
+
+    <!-- Tutor -->
+    <color name="light_white">#eeeeee</color>
+    <color name="layout_background_light_white">#EFEFF4</color>
+
+    <!-- Schedule -->
+    <color name="white_tran">#66ffffff</color>
+
+    <!-- Resume -->
+    <color name="title_background_light_black">#34404E</color>
+
+    <!-- Course Tab Background -->
+    <color name="course_tab_background">#95CFCB</color>
+
+    <!-- FlashCard Tab Background -->
+    <color name="flashcard_tab_background">#d87e5f</color>
+
+    <!-- Welcome background -->
+    <color name="bg_welcome_1">#DE615B</color>
+    <color name="bg_welcome_2">#95CFCB</color>
+    <color name="bg_welcome_3">#F2C666</color>
+    <color name="bg_welcome_4">#D3825A</color>
+    <color name="bg_welcome_5">#DE615B</color>
+
+    <color name="vocab_definition">#54000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="msg_unread">#60c1daf8</color>
+
+    <color name="flashcard_background_color">#E77B52</color>
+
+    <!-- activity_lesson_pdf_view -->
+    <color name="light_black">#cc000000</color>
+
+    <!-- promo code -->
+    <color name="promo_based_color">#00AA9F</color>
+    <color name="colorNoti">#00AA9F</color>
+
+    <color name="gray_transparent">#be414141</color>
+
+    <color name="dashboard_taylayout_background">#dddde0</color>
+    <color name="end_color">#d95e6e</color>
+    <color name="start_color">#f38367</color>
+    <color name="center_color">#e57b6f</color>
+    <color name="blue_default">#FF5BAAF4</color>
+    <color name="blue_pressed">#FF4186C8</color>
+</resources>

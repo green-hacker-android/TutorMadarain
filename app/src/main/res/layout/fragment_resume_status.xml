@@ -1,0 +1,235 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sc_tab_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragment.ResumeStatusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_large_margin">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_resume_profile_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/img_pre_user"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true"
+                    fresco:roundingBorderColor="@color/white"
+                    fresco:roundingBorderWidth="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/very_large_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_resume_student_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_black" />
+
+                    <TextView
+                        android:id="@+id/tv_resume_update_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_resume_learning_goal"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_resume_learning_goal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/very_large_margin"
+                android:paddingRight="@dimen/very_large_margin"
+                android:paddingTop="@dimen/very_large_margin"
+                android:text="@string/re_resume_overall"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_resume_level"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_resume_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_resume_progress"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_resume_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_resume_pronunciation"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_resume_pronunciation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:textColor="@color/text_color_black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_resume_speaking"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_resume_speaking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:textColor="@color/text_color_black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_resume_listening"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_resume_listening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:textColor="@color/text_color_black"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

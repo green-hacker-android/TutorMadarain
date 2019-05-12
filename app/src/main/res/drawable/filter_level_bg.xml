@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  inactive -->
+    <item android:drawable="@drawable/filter_level_unselected" android:state_pressed="false"/>
+
+    <!--  active -->
+    <item android:drawable="@drawable/filter_level_selected"
+          android:state_pressed="true"/>
+</selector>

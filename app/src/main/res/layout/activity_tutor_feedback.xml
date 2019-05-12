@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rl_main_tutor_feedback"
+                android:background="@color/title_background_light_black"
+                tools:context=".ui.activity.TutorFeedbackActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_tutor_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vw_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:background="@color/title_background_light_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/vw_feedback"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_pager_counts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_pager_indicator"
+            android:background="@color/layout_background_light_white"
+            android:padding="@dimen/very_large_margin">
+
+            <RatingBar
+                android:id="@+id/rb_other_feedback_rating"
+                style="@style/feedbackRatingBar50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:numStars="5"
+                android:progressDrawable="@drawable/rating_bar_bg_yellow_50"
+                android:stepSize="1"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_rating_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rb_other_feedback_rating"
+                android:layout_marginStart="@dimen/very_large_margin"
+                android:layout_marginTop="@dimen/very_large_margin"
+                android:text="@string/tu_star_3_5"
+                android:textColor="@color/text_color_black"/>
+
+            <EditText
+                android:id="@+id/et_student_msg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/tv_rating_feedback"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_stoke_black"
+                android:gravity="top"
+                android:hint="@string/tu_enter_comment_here"
+                android:padding="@dimen/normal_margin"/>
+
+            <TextView
+                android:id="@+id/tv_feedback_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_student_msg"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginTop="30dp"
+                android:text="@string/tu_rating_notice"
+                android:textColor="@color/text_color_gray"/>
+
+            <Button
+                android:id="@+id/btn_feedback_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/very_large_margin"
+                android:background="@drawable/btn_bg_rect_red"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/tu_btn_rating_submit"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tutor_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tutor_feedback_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:padding="@dimen/very_large_margin"
+            android:text="@string/tu_feedback_title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutor_feedback_title"
+            android:layout_margin="@dimen/very_large_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/layout_background_light_white"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/tv_tutor_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tu_tutor_feedback"
+                    android:textColor="@color/text_color_black"/>
+
+                <RatingBar
+                    android:id="@+id/rb_tutor_rating"
+                    style="@style/feedbackRatingBar50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tutor_feedback"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimen_30dp"
+                    android:layout_marginTop="50dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/rating_bar_bg_yellow_50"
+                    android:stepSize="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rb_tutor_rating"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:padding="@dimen/very_large_margin"
+                    android:text="@string/tu_rating_drag_and_press"
+                    android:textColor="@color/text_color_gray"/>
+
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_tutor_feedback"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@drawable/img_pre_tutor"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/white"
+                fresco:roundingBorderWidth="2dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

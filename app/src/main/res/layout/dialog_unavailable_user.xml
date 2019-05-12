@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/very_large_margin"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+    <TextView
+        android:id="@+id/tv_unavailable_user_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tu_unavailable_user_title"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_unavailable_user_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_unavailable_user_title"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_unavailable_user_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_unavailable_user_txt"
+        android:text="@string/tu_unavailable_user_ok"
+        android:padding="5dp"
+        android:textColor="@color/primary_color"
+        android:textSize="15sp"
+        />
+</RelativeLayout>

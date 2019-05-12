@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:fresco="http://schemas.android.com/apk/res-aut"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_margin="3dp"--><!--fresco:cardElevation="0dp">-->
+
+<com.mtechidea.android.cardfoldanimation.FoldableCardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/folding_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    app:foldDuration="400"
+    app:unfoldDuration="400"
+    app:backColor="#e2e2e2">
+
+    <LinearLayout
+        android:id="@id/ll_unfold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:visibility="gone">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_booking_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/sd_package_booking" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin">
+
+                <RelativeLayout
+                    android:id="@+id/rl_start_end_time1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_book_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/large_margin"
+                        android:textColor="@color/text_color_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_start_end_time1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_start_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/large_margin"
+                        android:text="00:00"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/large_margin"
+                        android:text="00:00"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/tv_start_time1"
+                        android:layout_toStartOf="@id/tv_end_time1"
+                        android:src="@drawable/ic_black_right_arrow" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_width"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/large_margin">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_tutor_photo1"
+                    android:layout_width="@dimen/dimens_circle_width_height"
+                    android:layout_height="@dimen/dimens_circle_width_height"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/img_pre_tutor"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true"
+                    android:layout_centerVertical="true"
+                    fresco:roundingBorderColor="@color/white"
+                    fresco:roundingBorderWidth="2dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_schedule_list_tutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/sdv_tutor_photo1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/normal_margin">
+
+                    <TextView
+                        android:id="@+id/tv_tutor_name"
+                        android:layout_width="224dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_tutor_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/ic_rate_star_black"
+                        android:gravity="center_vertical"
+                        android:paddingTop="@dimen/normal_margin"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_width"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/large_margin"
+                android:paddingEnd="@dimen/large_margin">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_lesson_photo1"
+                    android:layout_width="@dimen/dimens_circle_width_height"
+                    android:layout_height="@dimen/dimens_circle_width_height"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/img_pre_lesson"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    fresco:roundAsCircle="true"
+                    fresco:roundingBorderColor="@color/white"
+                    fresco:roundingBorderWidth="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_schedule_list_lessons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/sdv_lesson_photo1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/normal_margin"
+                    android:paddingStart="@dimen/normal_margin">
+
+                    <TextView
+                        android:id="@+id/tv_lesson_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_black" />
+
+                    <TextView
+                        android:id="@+id/tv_lesson_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/normal_margin"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_schedule_list_lessons"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sd_user_level"
+                            android:textColor="@color/gray" />
+
+                        <TextView
+                            android:id="@+id/tv_lesson_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_width"
+                android:background="@color/light_gray" />
+
+            <Button
+                android:id="@+id/btn_start_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/btn_padding"
+                android:paddingRight="@dimen/btn_padding"
+                android:text="@string/sd_btn_start_class" />
+
+            <TextView
+                android:id="@+id/tv_change_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/rl_fold"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_booking_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/yellow">-->
+
+        <View
+            android:id="@+id/v_color_bar"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/v_color_bar"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_booking_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imv_finished"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_correct_green" />
+
+                <TextView
+                    android:id="@+id/tv_booking_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/extremely_large_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_tutor_lesson"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_booking_status">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_tutor_photo"
+                        android:layout_width="@dimen/dimens_circle_width_height"
+                        android:layout_height="@dimen/dimens_circle_width_height"
+                        android:layout_alignParentLeft="true"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:placeholderImage="@drawable/img_pre_tutor"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true"
+                        fresco:roundingBorderColor="@color/white"
+                        fresco:roundingBorderWidth="2dp" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_lesson_photo"
+                        android:layout_width="@dimen/dimens_circle_width_height"
+                        android:layout_height="@dimen/dimens_circle_width_height"
+                        android:layout_alignParentEnd="true"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:placeholderImage="@drawable/img_pre_lesson"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true"
+                        fresco:roundingBorderColor="@color/white"
+                        fresco:roundingBorderWidth="2dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginRight="@dimen/normal_margin">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_start_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sd_start_time"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_book_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/text_color_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_start_end_time"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="00:00"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/tv_start_time"
+                            android:layout_toStartOf="@id/tv_end_time"
+                            android:src="@drawable/ic_black_right_arrow" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+</com.mtechidea.android.cardfoldanimation.FoldableCardLayout>
+
+    <!--</android.support.v7.widget.CardView>-->

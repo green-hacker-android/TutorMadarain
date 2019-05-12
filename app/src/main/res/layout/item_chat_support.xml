@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imv_support_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_chat_support"/>
+
+        <TextView
+            android:id="@+id/tv_receive_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_support_chat_consultant"
+            android:text="Hello"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_support_chat_user"
+            android:text="Hello"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trial_request_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical"
+        android:padding="@dimen/very_large_margin"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/trial_head"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/very_large_margin"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tutor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/very_large_margin"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/schedult_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/very_large_margin"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/schedult_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/very_large_margin"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_tutor_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@drawable/img_pre_tutor"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/white"
+                fresco:roundingBorderWidth="2dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/confirm_trial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/very_large_margin"
+            android:layout_marginTop="@dimen/very_large_margin"
+            android:background="@drawable/trial_class_book_btn_bg"
+            android:paddingBottom="@dimen/very_large_text_padding"
+            android:paddingLeft="@dimen/marign_left_30dp"
+            android:paddingRight="@dimen/marign_left_30dp"
+            android:paddingTop="@dimen/very_large_text_padding"
+            android:text="@string/send_request"
+            android:textColor="@color/light_red"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

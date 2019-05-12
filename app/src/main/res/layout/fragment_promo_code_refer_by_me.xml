@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="inc.osbay.android.tutormandarin.ui.fragment.PromoCodeReferByMeFragment">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_promo_refer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pc_refer_name_header"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ph_refer_name_lbl"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_widthPercent="35%"
+            />
+
+        <TextView
+            android:id="@+id/tv_refer_date_header"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_pc_refer_name_header"
+            android:gravity="center"
+            android:text="@string/ph_refer_date_lbl"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_widthPercent="40%"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_refer_date_header"
+            android:gravity="center"
+            android:text="@string/ph_refer_reward_lbl"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_widthPercent="25%"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/prl_promo_refer"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pc_refers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_refer_by_me_no_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_color_gray"
+            android:visibility="visible"
+            app:layout_marginTopPercent ="33%"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>

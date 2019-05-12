@@ -1,0 +1,59 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+    <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_background_light_white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_resume_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_background_light_black"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white_tran" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vw_resume_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tl_resume_tabs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tl_resume_tabs"
+            android:background="@drawable/shadow_bottom" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

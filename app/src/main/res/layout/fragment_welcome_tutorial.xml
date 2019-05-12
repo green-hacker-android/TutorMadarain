@@ -1,0 +1,92 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.WelcomeTutorialFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/toolbar_top_padding">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_welcome_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/imv_welcome_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                app:layout_marginLeftPercent="4.5%"
+                app:layout_marginRightPercent="4.5%"
+                app:layout_marginTopPercent="32%"/>
+
+            <ImageView
+                android:id="@+id/imv_welcome_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imv_welcome_title"
+                android:contentDescription="@null"
+                app:layout_marginLeftPercent="4.5%"
+                app:layout_marginRightPercent="4.5%"
+                app:layout_marginTopPercent="1%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+
+    <com.felipecsl.gifimageview.library.GifImageView
+        android:id="@+id/giv_gif_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60111111"
+        android:orientation="horizontal"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_tutorial_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tutorial_logo_image"
+            app:layout_marginTopPercent = "15%"
+            />
+
+        <TextView
+            android:id="@+id/tv_welcome_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent = "50%"
+            app:layout_marginStartPercent = "3%"
+            app:layout_marginEndPercent = "3%"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp"
+            />
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

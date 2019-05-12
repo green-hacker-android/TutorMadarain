@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/toolbar_top_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/fv_title"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#88bbbbbb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imv_favourite_edit"
+                android:layout_width="@dimen/icon_normal_size"
+                android:layout_height="@dimen/icon_normal_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/very_large_margin"
+                android:src="@drawable/ic_pencil" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/fv_course"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#88bbbbbb" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/narrow_stroke"
+            android:background="#88bbbbbb" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_favorite_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Tutor Part -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/fv_tutor"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#88bbbbbb" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/narrow_stroke"
+            android:background="#88bbbbbb" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_favorite_tutors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- WhatsOn Part -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/fv_topic"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#88bbbbbb" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/narrow_stroke"
+            android:background="#88bbbbbb" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_favorite_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- WhatsOn Part -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/fv_whats_on"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#88bbbbbb" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/narrow_stroke"
+            android:background="#88bbbbbb" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_favorite_whats_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

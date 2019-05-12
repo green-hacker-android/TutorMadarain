@@ -1,0 +1,87 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.WhatsOnFragment">
+
+    <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+    <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_cover_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@drawable/ic_whats_on_loading"
+                fresco:placeholderImageScaleType="centerInside" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2E000000" />
+
+            <TextView
+                android:id="@+id/tv_whats_on_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:paddingTop="@dimen/toolbar_top_padding"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_whats_on_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_background_light_white"
+            app:tabIndicatorColor="#00ABA0"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/text_color_black" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_whats_on_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tl_whats_on_tabs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tl_whats_on_tabs"
+            android:background="@drawable/shadow_bottom" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fab="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="inc.osbay.android.tutormandarin.ui.fragment.VerifyNumberFragment">
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>-->
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_red"
+        android:padding="@dimen/narrow_margin">
+
+        <ImageView
+            android:id="@+id/imv_ic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_cross_white"/>
+
+        <TextView
+            android:id="@+id/trial_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/apply_free_trial"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/rl_header"
+        android:background="@drawable/grey_gradient"/>
+
+    <LinearLayout
+        android:id="@+id/trial_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:padding="@dimen/very_large_margin"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/select_time_tv"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/large_margin"
+            android:layout_weight="1"
+            android:text="@string/select_time"
+            android:textColor="@color/text_color_gray"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/large_margin"
+            android:src="@drawable/ic_arrow_head_right_grey"/>
+
+        <TextView
+            android:id="@+id/verify_phone_tv"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/large_margin"
+            android:layout_weight="1"
+            android:text="@string/veryfy_phone"
+            android:textColor="@color/text_color_gray"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/large_margin"
+            android:src="@drawable/ic_arrow_head_right_grey"/>
+
+        <TextView
+            android:id="@+id/finish_tv"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/finish"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/trial_header"
+        android:background="@drawable/grey_gradient"/>
+
+    <TextView
+        android:id="@+id/tv_verify_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Thank you to submit the Free Trial lesson. We will send you one time SMS messages."
+        android:textColor="@color/text_color_black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_number_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_rounded_light_gray"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_number_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/bg_rounded_light_gray"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_number_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/bg_rounded_light_gray"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_number_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/bg_rounded_light_gray"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="@color/transparent"
+        android:textIsSelectable="false">
+
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_resend_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Resend code"
+        android:textColor="@color/text_color_black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.felipecsl.gifimageview.library.GifImageView
+            android:id="@+id/giv_loading_sms"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_verify_success"
+            android:layout_width="@dimen/fab_size_normal"
+            android:layout_height="@dimen/fab_size_normal"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sign_correct_white"
+            android:visibility="gone"
+            fab:fab_colorNormal="@color/light_red"
+            fab:fab_colorPressed="#a1433d"/><!--
+            fab:fab_colorNormal="#00ABA0"
+            fab:fab_colorPressed="#006861"-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_verify_fail"
+            android:layout_width="@dimen/fab_size_normal"
+            android:layout_height="@dimen/fab_size_normal"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sign_cross_white"
+            android:visibility="gone"
+            fab:fab_colorNormal="#E45F56"
+            fab:fab_colorPressed="#a1433d"/>
+    </RelativeLayout>
+</LinearLayout>

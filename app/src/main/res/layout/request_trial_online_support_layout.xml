@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="@dimen/very_large_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/trial_head"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/very_large_margin"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tutor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/very_large_margin"
+                android:text="@string/free_trial_today"
+                android:textColor="@color/gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/schedult_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/very_large_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:text="Sunday, Oct 10, 2018"
+                android:textColor="@color/gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/schedult_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/very_large_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:text="17:00 - 17:50 (GMT+6:30)"
+                android:textColor="@color/gray"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_tutor_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/img_pre_tutor"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundingBorderWidth="2dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/send_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/very_large_margin"
+        android:layout_marginTop="@dimen/very_large_margin"
+        android:background="@drawable/trial_class_book_btn_bg"
+        android:paddingBottom="@dimen/very_large_text_padding"
+        android:paddingLeft="@dimen/marign_left_30dp"
+        android:paddingRight="@dimen/marign_left_30dp"
+        android:paddingTop="@dimen/very_large_text_padding"
+        android:text="@string/send_request"
+        android:textColor="@color/light_red"
+        android:textStyle="bold"/>
+</LinearLayout>

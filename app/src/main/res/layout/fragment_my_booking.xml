@@ -1,0 +1,382 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_light_white">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_confirm_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="#00ABA0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon_normal_size"
+            android:layout_height="@dimen/icon_normal_size"
+            android:src="@drawable/ic_correct" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/bo_btn_confirm_reservation"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:background="@color/white"
+        android:padding="@dimen/large_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bo_my_credits"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_color_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/fab_add_credit"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/very_large_margin">
+
+            <TextView
+                android:id="@+id/tv_my_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/primary_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bo_credit"
+                android:textColor="@color/primary_color" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_credit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_plus_white"
+            android:clickable="true"
+            app:elevation="@dimen/fab_shadow"
+            app:pressedTranslationZ="@dimen/fab_pressed_shadow"
+            app:backgroundTint="@color/primary_color" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/rl_my_credit"
+        android:background="@drawable/shadow_bottom" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_confirm_reserve"
+        android:layout_below="@id/rl_my_credit"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_my_booking"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_select_tutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_tutor_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/ic_tutor_grey"
+                    fresco:roundAsCircle="true"
+                    fresco:actualImageScaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_select_tutor_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/sdv_tutor_photo"
+                    android:text="@string/bo_select_a_tutor"
+                    android:textColor="@color/gray"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_tutor_time_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_toEndOf="@id/sdv_tutor_photo">
+
+                    <LinearLayout
+                        android:id="@+id/ll_tutor_credit_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_tutor_credit_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/primary_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bo_credit_lbl"
+                            android:textColor="@color/primary_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/ll_tutor_credit_weight"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bo_start_time"
+                                android:textColor="@color/text_color_gray" />
+
+                            <TextView
+                                android:id="@+id/tv_start_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="21sp"
+                                android:text="12:00"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/ic_right_arrow_grey" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_book_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_gray"
+                                android:text="12 June"/>
+
+                            <TextView
+                                android:id="@+id/tv_end_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_lesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_lesson_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/ic_lesson_grey"
+                    fresco:roundAsCircle="true"
+                    fresco:actualImageScaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_select_lesson_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/sdv_lesson_photo"
+                    android:text="@string/bo_select_lesson_supplement"
+                    android:visibility="visible"
+                    android:textColor="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_lesson_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/sdv_lesson_photo"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_course_booking_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_class_credit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bo_credit_lbl"
+                            android:textColor="@color/primary_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@id/ll_course_booking_credit"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_lesson_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_lesson_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:scrollbars="horizontal"
+                            android:textColor="@color/text_color_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_lesson_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LEVEL : BEGINNER 1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/light_gray" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_total_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/extremely_large_margin"
+                        android:text="@string/bo_total"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_color_gray" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/ic_tutor_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/text_color_gray" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/ic_lesson_grey" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_total_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Total   2 x 1.0 = 2.0 Credits"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:visibility="gone"
+                    android:textColor="@color/primary_color" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

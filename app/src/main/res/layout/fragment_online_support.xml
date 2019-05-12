@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#de615b"
+            android:text="@string/os_send"/>
+
+        <EditText
+            android:id="@+id/edt_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_chat_support"
+            android:layout_marginEnd="5dp"
+            android:singleLine="true"
+            android:padding="7dp"
+            android:layout_toStartOf="@id/tv_send_button"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_chat_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:layout_above="@id/rl_chat_input" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_above="@id/rl_chat_input"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_bottom"
+        android:layout_below="@id/tool_bar"/>
+
+</RelativeLayout>

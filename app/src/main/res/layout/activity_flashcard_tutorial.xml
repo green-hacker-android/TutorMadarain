@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_red"
+    tools:context=".ui.activity.FlashcardTutorialActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_flashcard_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_vp_flashcard_tutorial_dots_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/extremely_large_margin"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

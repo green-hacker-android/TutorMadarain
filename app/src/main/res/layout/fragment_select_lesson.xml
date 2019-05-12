@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_light_white"
+    tools:context=".ui.fragment.SelectLessonFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_course_select_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_course_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="@string/ls_select_level"
+            android:textColor="@color/text_color_black" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_select_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/ls_select_course"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/text_color_black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_expand_arrow_black" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_lesson_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_course_select" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_bottom"
+        android:layout_below="@id/rl_header" />
+
+</RelativeLayout>

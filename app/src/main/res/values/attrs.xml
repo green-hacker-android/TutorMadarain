@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+        <attr name="fill_color" format="color" />
+        <attr name="fill_color_press" format="color" />
+        <attr name="online_status" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="radius" format="dimension" />
+        <attr name="top_left_radius" format="dimension" />
+        <attr name="top_right_radius" format="dimension" />
+        <attr name="bottom_left_radius" format="dimension" />
+        <attr name="bottom_right_radius" format="dimension" />
+    </declare-styleable>
+
+</resources>

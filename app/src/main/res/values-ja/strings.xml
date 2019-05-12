@@ -1,0 +1,1264 @@
+<resources>
+    <string name="app_name">TutorMandarin</string>
+
+    <!-- Keys -->
+    <string name="server_client_id">118678332637-63kmuc5nuc4l17tv3e0a3j5jn77915a9.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1439689359690020</string>
+    <string name="fabric_api_key">xQdgo3nwPtBLbuYh7gtwBnbW8</string>
+
+    <string name="drawer_open">ドロアーを開く</string>
+    <string name="drawer_close">ドロアーを閉める</string>
+
+
+    <!-- LeftDrawerMenu Part (lmd) -->
+    <string name="lmd_sign_up_sign_in">登録する/サインイン</string>
+    <string name="lmd_notifications">通知</string>
+    <string name="lmd_upcoming_lesson">近日予定のレッスン</string>
+    <string name="lmd_my_resume">履歴</string>
+    <string name="lmd_my_level">自分のレベル</string>
+    <string name="lmd_my_badges">マイバッチ</string>
+    <string name="lmd_my_notes">マイノート</string>
+    <string name="lmd_walkthrough">通り過ぎる</string>
+    <string name="lmd_understand_free_trial">無料実力判断テストを理解する</string>
+    <string name="lmd_credit">クレジット</string>
+    <string name="lmd_sign_out">サインアウト</string>
+    <string name="lmd_share_app">TutorMandarinをシェアする</string>
+    <string name="lmd_no_upcoming">近日予定ではないレッスン</string>
+    <string name="lmd_refer_a_friend">友達に通知する</string>
+    <string name="lmd_share_extra_title">&#160;あなたをTutorMandarinに招待します</string>
+    <string name="lmd_share_extra_content">
+<![CDATA[TutorMandarinの新しいアプリを使って中国語を勉強する方は、クリックしてください。<u><a href="http://tutormandarin.net">here</a></u> to check it out! <br/>https://www.tutormandarin.net/ja/]]>
+</string>
+    <string name="lmd_sign_out_msg">本当にサインアウトしますか。</string>
+    <string name="lmd_sign_out_cancel">キャンセル</string>
+    <string name="lmd_btn_sign_out">サインアウト</string>
+    <string name="lmd_whats_price">価格</string>
+
+    <!-- SignIn Part (si) -->
+    <string name="si_email_hint">example@name.com</string>
+    <string name="si_invalid_email">Eメール形式が正しくありません</string>
+    <string name="si_mobile_phone">電話</string>
+    <string name="si_rb_mobile_phone">電話</string>
+    <string name="si_invalid_phone">電話の形式が正しくありません</string>
+    <string name="si_email">Eメール</string>
+    <string name="si_password">パスワード</string>
+    <string name="si_invalid_password">パスワードの形式が正しくありません</string>
+    <string name="si_forgot_password">パスワードを忘れた</string>
+    <string name="si_btn_sign_in">サインイン</string>
+    <string name="si_sign_in">サインイン</string>
+    <string name="si_sign_up_link">アカウントをお持ちでないですか？登録してください</string>
+    <string name="si_have_account">アカウントをお持ちでないですか</string>
+    <string name="si_sign_up">登録する</string>
+    <string name="si_dialog_ok">OK</string>
+    <string name="si_signing_in">サインイン&#8230;</string>
+    <string name="si_sign_in_error">エラー</string>
+    <string name="si_dialog_email_error_lbl">Eメールが正しくないようです。再度ご確認お願い致します。</string>
+    <string name="si_dialog_forget_pwd_email">Eメール</string>
+    <string name="si_dialog_forget_pwd_lbl">新しいパスワードを送りました。</string>
+    <string name="si_dialog_forget_pwd_ok">OK</string>
+    <string name="si_dialog_forget_pwd_cancel">キャンセル</string>
+    <string name="si_dialog_forget_loading">ローディング&#8230;</string>
+    <string name="si_dialog_email_error_loading">ローディング&#8230;</string>
+    <string name="si_dialog_reset_time_limit">パスワードの変更はいつでも可能です。</string>
+    <string name="si_dialog_reset_time_limit_ok">OK</string>
+    <string name="si_dialog_send_succeed">メール送信成功</string>
+    <string name="si_dialog_send_succeed_txt">メールを送信しました。30分以内にパスワードを変更してください。</string>
+    <string name="si_dialog_send_succeed_ok">OK</string>
+    <string name="si_google_sign_in_error">サインインできない</string>
+    <string name="si_google_result_error">エラー</string>
+    <string name="si_connection_error">コネクションエラー</string>
+    <string name="si_sign_in_with">サインイン</string>
+
+    <!-- Sign Up Part (su) -->
+    <string name="su_sign_up_trailer">無料実力判断テストに登録する</string>
+    <string name="su_invalid_name">名前の形式が違います</string>
+    <string name="su_email">Eメール</string>
+    <string name="su_invalid_email">Eメールの形式が違います</string>
+    <string name="su_phone">電話</string>
+    <string name="su_invalid_phone">電話の形式が違います</string>
+    <string name="su_password">パスワードが違います</string>
+    <string name="su_invalid_password">パスワードの形式が違います</string>
+    <string name="su_sign_up_create_account">アカウントを作る</string>
+    <string name="su_first_name">姓</string>
+    <string name="su_last_name">名</string>
+    <string name="su_eg_email">123@example.com</string>
+    <string name="su_mobile_phone">電話</string>
+    <string name="su_password_hint">6–10 の特徴</string>
+    <string name="su_dialog_ok">OK</string>
+    <string name="su_congratulation">おめでとうございます!</string>
+    <string name="su_congratulation_msg">50分無料実力判断テストに登録が完了しました。担当者の連絡をお待ちください。</string>
+    <string name="su_dialog_congratulation_ok">OK</string>
+    <string name="su_sign_up_error">エラー</string>
+    <string name="su_signing_up">サインアップ&#8230;</string>
+    <string name="su_term_and_agreement_1">TutorMandarinに同意する\'s&#160;</string>
+    <string name="su_term_and_agreement_2">Service期間</string>
+    <string name="su_term_and_agreement_3">&#160;and&#160;</string>
+    <string name="su_term_and_agreement_4">プライバシーポリシー</string>
+    <string name="su_have_account">アカウントを作成しましたか</string>
+    <string name="su_sign_in">サインイン</string>
+    <string name="su_step_of_three">ステップ %d / 3</string>
+    <string name="su_google_sign_in_error">サインインできない</string>
+    <string name="su_google_result_error">エラー</string>
+    <string name="su_connection_error">コネクションエラー</string>
+    <string name="su_tutormandarin_account">TutorMandarinアカウント</string>
+    <string name="su_chinese_level_title">中国語レベル</string>
+    <string name="su_chinese_level_msg">1人1人のレベルに沿って適切なコースや教材を選択させていただきますので、
+    ご希望の、またはご自身でどのレベルにいるのか考え教えてください。</string>
+    <string name="su_chinese_level_ok">OK</string>
+    <string name="su_your_goals_title">目標</string>
+    <string name="su_your_goals_msg">ゴールが変更になった場合はいつでも自信のプロフィールからアップデートが可能です。</string>
+    <string name="su_your_goals_ok">OK</string>
+    <string name="su_your_interests_title">興味</string>
+    <string name="su_your_interests_msg">興味があるトピックから学ぶ事により学習スピードは増します。
+    関心事、興味はいつでもプロフィールから変更が可能です。</string>
+    <string name="su_your_interests_ok">OK</string>
+    <string name="su_choose_request_notice">Notice</string>
+    <string name="su_choose_request_msg">少なくとも1つは選択してください</string>
+    <string name="su_choose_request_ok">OK</string>
+    <string name="su_updating">アップデートしています&#8230;</string>
+    <string name="su_sign_in_with">サインイン</string>
+    <string-array name="su_goals">
+        <item>旅行</item>
+        <item>ビジネス</item>
+        <item>レベルチェックテスト</item>
+        <item>教育</item>
+        <item>日常会話</item>
+    </string-array>
+    <string-array name="su_interests">
+        <item>フレーズ</item>
+        <item>言語学習</item>
+        <item>サバイバルスキル</item>
+        <item>ニュース</item>
+        <item>中国について</item>
+        <item>面白話</item>
+        <item>会話</item>
+        <item>ミュージック</item>
+    </string-array>
+    <string name="su_beginner_1">初心者1</string>
+    <string name="su_beginner_1_desc">中国語が全く話せないor簡単な中国語なら可能。</string>
+    <string name="su_beginner_2">初心者2</string>
+    <string name="su_beginner_2_desc">基本的な会話そして簡単な質問なら可能。</string>
+    <string name="su_intermediate_1">中級者1</string>
+    <string name="su_intermediate_1_desc">自身の趣味や精通しているトピックに関しては中国語で会話ができる。</string>
+    <string name="su_intermediate_2">中級者2</string>
+    <string name="su_intermediate_2_desc">自身の興味に沿って自信を持って中国語で会話ができる。</string>
+    <string name="su_advanced_1">上級者1</string>
+    <string name="su_advanced_1_desc">少しのミスはあったとしてもネイティブスピーカーと日々会話することができる。</string>
+    <string name="su_advanced_2">上級者2</string>
+    <string name="su_advanced_2_desc">ネイティブスピーカーそつなく会話をすることができる。</string>
+    <string name="su_continue_step">ステップ 1/3</string>
+    <string name="su_continue_back">戻る</string>
+    <string name="su_continue_next">進む</string>
+    <string name="su_accomplish_chinese">中国語学習における目標は？</string>
+    <string name="su_what_interest_in">あなたの趣味はなんですか？</string>
+    <string name="su_verify_number_desc"><![CDATA[4桁の認証番号を送りました。 <b>%1$s %2$s</b>. Please enter it below.]]></string>
+    <string name="su_sign_up">登録する</string>
+
+    <!-- Main Fragment (main) -->
+    <string name="main_trial_not_complete">まだ完了していません</string>
+    <string name="main_schedule">スケジュール</string>
+    <string name="main_explore_now">探す</string>
+    <string name="main_sign_up">登録する</string>
+    <string name="main_up_to">アップ</string>
+    <string name="main_off">オフ</string>
+    <string name="main_package">パッケージ</string>
+    <string name="main_package_explanation">パッケージプランで学ぶ</string>
+    <string name="main_course">コース</string>
+    <string name="main_course_explanation">コースを選ぶ</string>
+    <string name="main_tutor">講師</string>
+    <string name="main_tutor_explanation">専門的な講師を選ぶ</string>
+    <string name="main_daily_content">デイリーコメント</string>
+    <string name="main_daily_content_article">中国語の記事、動画、フラッシュカード</string>
+    <string name="main_online_support">オンラインサポート</string>
+    <string name="main_online_support_explanation">担当者に連絡する</string>
+    <string name="main_unavailable">利用できません</string>
+    <string name="main_unavailable_msg">申し訳ございません。このコンテンツは登録者以外は利用できません。あなたは別の購入をするために試練を終える必要があります。</string>
+    <string name="main_unavailable_ok">私は周りを見回します。</string>
+    <string name="main_alert_notice">Notice</string>
+    <string name="main_alert_notice_ok">OK</string>
+    <string name="main_awaiting_trial">フリートライアル</string>
+    <string name="main_sign_up_trial">フリートライアルへのサインアップ</string>
+    <string name="main_submit_information">資料申請</string>
+    <string name="main_pk_loading">ローディング</string>
+
+    <!-- Study Material Part (sm) -->
+    <string name="sm_title">学習教材</string>
+    <string name="sm_whats_on">WHAT\'S ON</string>
+    <string name="sm_whats_on_msg">中国語フレーズ、ニュースなどなど</string>
+    <string name="sm_videos">ビデオ</string>
+    <string name="sm_videos_msg">中国語ビデオ</string>
+    <string name="sm_flash_cards">フラッシュカード</string>
+    <string name="sm_flash_cards_msg">中国語フラッシュカード</string>
+
+    <!-- Whats On Part (wo) -->
+    <string name="wo_list_all">全て</string>
+    <string name="wo_select_topic">トピックを選ぶ</string>
+    <string name="wo_title">WHAT\'S ON</string>
+    <string name="wo_dialog_loading">ローディング</string>
+    <string name="wo_connection_error">接続エラー</string>
+    <string name="wo_search">サーチ&#8230;</string>
+    <string name="wo_add_to_favourite">お気に入りに追加する</string>
+    <string name="wo_share">シェアする</string>
+    <string name="wo_already_added">追加が完了しました</string>
+    <string name="wo_article">記事</string>
+    <string name="wo_vocab">ボキャブラリー</string>
+    <string name="wo_grammar"></string>文法
+    <string name="wo_successfully_added">お気に入りに追加が完了しました</string>
+    <string name="wo_no_vocab">ボキャブラリーがございません</string>
+    <string name="wo_no_grammar">文法がございません</string>
+    <string name="wo_posted">提出された</string>
+    <string name="wo_fav_feature_unavailable">利用できません</string>
+    <string name="wo_fav_feature_msg">ウイッシュリストへ追加</string>
+    <string name="wo_fav_feature_sign_in">サインイン</string>
+    <string name="wo_fav_feature_cancel">キャンセル</string>
+
+    <!-- Video Part (vi) -->
+    <string name="vi_title">動画</string>
+    <string name="vi_select_topic">セレクトトピック</string>
+    <string name="vi_list_all">オール</string>
+    <string name="vi_dialog_loading">ローディング</string>
+    <string name="vi_connection_error">コネクションエラー</string>
+    <string name="vi_search">サーチ&#8230;</string>
+    <string name="vi_description">描写</string>
+    <string name="vi_vocab">単語</string>
+    <string name="vi_viewed_count">閲覧 : %1$s</string>
+    <string name="vi_author_name">著者名</string>
+
+    <!-- Flashcard part (fc) -->
+    <string name="fc_title">フラッシュカード</string>
+    <string name="fc_common">共通</string>
+    <string name="fc_custom">カスタマー</string>
+    <string name="fc_rename_pack">新しい名前をつける</string>
+    <string name="fc_btn_rename">新しい名前をつける</string>
+    <string name="fc_btn_rename_cancel">キャンセル</string>
+    <string name="fc_delete_title">確認する</string>
+    <string name="fc_delete_msg">このリストを削除しますか</string>
+    <string name="fc_btn_delete">削除する</string>
+    <string name="fc_btn_delete_cancel">キャンセル</string>
+    <string name="fc_notice_title">教える</string>
+    <string name="fc_notice_msg">カスタムリストは空です。このリストに単語を追加することができます。</string>
+    <string name="fc_btn_notice_ok">OK</string>
+    <string name="fc_dialog_loading">ローディング</string>
+    <string name="fc_error">エラー</string>
+    <string name="fc_custom_cards">カード</string>
+    <string name="fc_common_cards">カード</string>
+    <string name="fc_common_title">ボキャブラリー、文法、イディオム</string>
+    <string name="fc_download_loading">ローディング&#8230;</string>
+    <string name="fc_download_error">エラー</string>
+    <string name="fc_download_ok">OK</string>
+    <string name="fc_add_to_custom_list">カスタマーリストに追加する</string>
+    <string name="fc_share">シェアする</string>
+    <string name="fc_cancel">キャンセルする</string>
+    <string name="fc_save">保存する</string>
+    <string name="fc_download_image_loading">ローディング&#8230;</string>
+    <string name="fc_audio_download_unsuccessful">オーディオファイルをダウンロードすることができません</string>
+    <string name="fc_package_title">パッケージタイトル</string>
+    <string name="fc_extra_share_item">フラッシュカード</string>
+    <string name="fc_explain_1">レッスン購入後、フラッシュカード自動的にリストに追加されます。</string>
+    <string name="fc_explain_2">フラッシュカードはカスタムリストに追加することができます</string>
+    <string name="fc_explain_3">カスタマーリストはいつでも編集することができます</string>
+    <string name="fc_lessons_complete">%1$s/%2$s レッスンコンプリート</string>
+    <string name="fc_add_new_list">新しいリストを追加する</string>
+    <string name="fc_new_custom_list">新しいカスタムリスト</string>
+    <string name="fc_list_title">リストタイトル</string>
+    <string name="fc_create_error">エラー</string>
+    <string name="fc_create_msg">この名前でフラッシュカードを作ることができません</string>
+    <string name="fc_create_ok">OK</string>
+    <string name="fc_dialog_cancel">キャンセル</string>
+
+
+    <!-- Resume part (re) -->
+    <string name="re_title">履歴</string>
+    <string name="re_note_error">エラー</string>
+    <string name="re_badges_error">エラー</string>
+    <string name="re_status_tab_title">ステータス</string>
+    <string name="re_note_tab_title">ノート</string>
+    <string name="re_badges_tab_title">バッジ</string>
+    <string name="re_resume_learning_goal">学習目標</string>
+    <string name="re_resume_overall">全体</string>
+    <string name="re_resume_level">レベル</string>
+    <string name="re_resume_progress">進捗状況</string>
+    <string name="re_resume_pronunciation">発音</string>
+    <string name="re_resume_speaking">スピーキング</string>
+    <string name="re_resume_listening">リスニング</string>
+    <string name="re_note_empty">講師ノートがありません</string>
+    <string name="re_class_finished_date">フィニッシュ : %1$s</string>
+    <string name="re_note_class_summary">クラス概要</string>
+    <string name="re_note_vocab">ボキャブラリー</string>
+    <string name="re_note_grammar">文法</string>
+    <string name="re_note_pronunciation">発音</string>
+    <string name="re_note_speaking">スピーキング</string>
+    <string name="re_note_listening">リスニング</string>
+    <string name="re_time_based">時間ベース</string>
+    <string name="re_course_based">コースベース</string>
+    <string name="re_social_based">社会ベース</string>
+    <string name="re_rating_and_reviews">評価と改善</string>
+    <string name="re_update_date">アップデート : %1$s</string>
+    <string name="re_credits">クレジット</string>
+    <string name="re_badges_complete">% コンプリート</string>
+    <string name="re_lessons_complete">%1$s/%2$s レッスン終了</string>
+
+    <!-- Package (pk) -->
+    <string name="pk_booking_rule_title">パッケージ予約ルール</string>
+    <string name="pk_course_structure_title">コース構成</string>
+    <string name="pk_ticket_design_title">チケット</string>
+    <string name="pk_auto_repeat_title">AUTOFILL</string>
+    <string name="pk_auto_repeat">自動入力はお客様が事前に登録した可能な時間を元に、講師の空いている時間と照らし合わせ、自動予約を行うというシステムです。例えば月曜日の19時と木曜日の19時に設定した場合、毎週月曜日と木曜日の19時の授業は自動で選択されます。一週間に一度受講しなければならないことを忘れないでください。</string>
+    <string name="pk_booking_rule">パッケージシステムとは、まるまる一つのコースをご購入いただくことであり、お得な値段で販売しております。</string>
+    <string name="pk_course_structure">コースはHSKのレベルに沿って構成されており、レッスンとサプリメントに分かれています。
+レッスンは基礎的なコンセプトを学ぶ50分と、レビューを行い理解を深める50分から成り立っています。</string>
+    <string name="pk_ticket_design">各レッスンは講師、レッスンそして時間とともにチケットを表示しています。
+    チケットはレッスンが始まる24時間前の場合はいつでも替える事ができますが、24時間以内にレッスン内容を
+    変更したりキャンセルする場合は、そのチケットは没収され、自動的にレッスン内容が調整されます。
+</string>
+    <string name="pk_start_now">始める</string>
+    <string name="pk_learn_more">もっと知る</string>
+    <string name="pk_title">パッケージ</string>
+    <string name="pk_what_title">パッケージ</string>
+    <string name="pk_lesson_count">レッスン:&#160;</string>
+    <string name="pk_supplement_count">サプロメント:&#160;</string>
+    <string name="pk_completed_lesson">終了したレッスン</string>
+    <string name="pk_btn_my_booking">予約</string>
+    <string name="pk_my_booking_course_structure_title">コース構成</string>
+    <string name="pk_my_booking_course_structure_msg">コースはHSKのレベルに沿って構成されており、レッスンとサプリメントに分かれています。
+    レッスンは基礎的なコンセプトを学ぶ50分と、レビューを行い理解を深める50分から成り立っています。</string>
+    <string name="pk_booking_expired_date">期日: %1$s</string>
+    <string name="pk_section_title">セクション%1$s</string>
+    <string name="pk_lesson_number">レッスン</string>
+    <string name="pk_supplement_number">サプリメント</string>
+    <string name="pk_lesson_name">%1$s %2$s</string>
+    <string name="pk_my_lst_title">パッケージ</string>
+    <string name="pk_my_lst_loading">ローディング&#8230;</string>
+    <string name="pk_lst_booking_expired_date">期日: %1$s</string>
+    <string name="pk_user_unavailable_title">利用できない</string>
+    <string name="pk_user_unavailable_msg">申し訳ございません。このコンテンツは登録者以外は利用できません。あなたは別の購入をするために試練を終える必要があります。</string>
+    <string name="pk_user_unavailable_ok">私は周りを見回します。</string>
+    <string name="pk_package_title">パッケージタイトル</string>
+    <string name="pk_lst_completed_lessons">終了したレッスン</string>
+    <string name="pk_lst_buy_new_package">新しいパッケージを買う</string>
+    <string name="pk_lst_what_is_package">パッケージとは何か</string>
+    <string name="pk_lst_what_is_package_lbl">パッケージとは何ですか</string>
+    <string name="pk_lst_booking_rules">パッケージ購入ルール</string>
+    <string name="pk_lst_no_package">パッケージがありません</string>
+    <string name="pk_lst_purchase_package">クリックしてパッケージを購入してください</string>
+    <string name="pk_lst_btn_purchase">購入する</string>
+    <string name="pk_store_title">パッケージストア</string>
+    <string name="pk_store_dialog_loading">ローディング&#8230;</string>
+    <string name="pk_store_recommended">オススメの</string>
+    <string name="pk_store_all">オール</string>
+    <string name="pk_download_packages_error">エラー</string>
+    <string name="pk_new_package_credit">%1$s クレジット</string>
+    <string name="pk_lesson_mins">%1$s Mins</string>
+    <string name="pk_store_recommended_title">推薦された</string>
+    <string name="pk_store_all_title">オール</string>
+    <string name="pk_my_credits">マイクレジット</string>
+    <string name="pk_credits">クレジット</string>
+
+    <!-- Tutor (tu) -->
+    <string name="tu_search">サーチ&#8230;</string>
+    <string name="tu_lst_title">講師</string>
+    <string name="tu_lst_loading">ローディング&#8230;</string>
+    <string name="tu_lst_refresh_failed">専任講師のリスト更新失敗しました。</string>
+    <string name="tu_lst_media_loading">ローディング&#8230;</string>
+    <string name="tu_lst_cant_download_video">ビデオをダウンロードできません</string>
+    <string name="tu_lst_credit_weight">Credit量</string>
+    <string name="tu_lst_teaching_exp">指導経験</string>
+    <string name="tu_lst_location">場所</string>
+    <string name="tu_select_class_type">クラスを選ぶ</string>
+    <string name="tu_select_course">コース - 50分間の</string>
+    <string name="tu_select_topic">トピック - 25分間のクラス</string>
+    <string name="tu_rate">Rate x</string>
+    <string name="tu_exp_spec">講師の経験と専門性</string>
+    <string name="tu_book_on_schedule">スケジュールの予約</string>
+    <string name="tu_special_topic">専門的なトピック: %1$s</string>
+    <string name="tu_exp">講師経験: %1$s</string>
+    <string name="tu_add_to_favorite">お気に入りに追加する</string>
+    <string name="tu_share">シェアする</string>
+    <string name="tu_already_added">すでに講師を追加しました</string>
+    <string name="tu_successfully_added">お気に入りに追加しました</string>
+    <string name="tu_extra_share_item">講師</string>
+    <string name="tu_unavailable_user_title">利用できません</string>
+    <string name="tu_unavailable_user_msg">申し訳ございません。このコンテンツは登録者以外は利用できません。あなたは別の購入をするために試練を終える必要があります。</string>
+    <string name="tu_unavailable_user_ok">私は周りを見回します。</string>
+    <string name="tu_audio_file_download">ローディング&#8230;</string>
+    <string name="tu_video_file_download_error">ビデオファイルをダウンロードできません</string>
+    <string name="tu_available_tutor">可能な講師</string>
+    <string name="tu_not_available">不可能</string>
+    <string name="tu_btn_select_confirm">確認する</string>
+    <string name="tu_dialog_download_loading">ローディング&#8230;</string>
+    <string name="tu_dialog_download_error">エラー</string>
+    <string name="tu_dialog_download_ok">OK</string>
+    <string name="tu_dialog_reload_loading">ローディング&#8230;</string>
+    <string name="tu_dialog_no_schedule_error">エラー</string>
+    <string name="tu_dialog_no_schedule_ok">OK</string>
+    <string name="tu_dialog_schedule_error">エラー</string>
+    <string name="tu_dialog_schedule_ok">OK</string>
+    <string name="tu_dialog_parse_error">エラー</string>
+    <string name="tu_dialog_parse_ok">エラー</string>
+    <string name="tu_no_tutor_schedule">空いてるクラスがありません</string>
+    <string name="tu_select_tutor_first">まずは講師を選びます</string>
+    <string name="tu_dialog_select_tutor_time_loading">ローディング&#8230;</string>
+    <string name="tu_dialog_already_booked">予約済</string>
+    <string name="tu_dialog_already_booked_msg">この時間帯はすでに予約済です</string>
+    <string name="tu_dialog_already_booked_ok">OK</string>
+    <string name="tu_dialog_booking_check_time_error">エラー</string>
+    <string name="tu_dialog_booking_check_time_ok">OK</string>
+    <string name="tu_package_title">パッケージタイトル</string>
+    <string name="tu_enter_comment_here">ここにコメントを入力してください&#8230;</string>
+    <string name="tu_star_3_5">ありがとうございます！他に提案がございましたら私たちにご連絡ください。</string>
+    <string name="tu_rating_notice">お知らせ: 評価やコメントをください</string>
+    <string name="tu_btn_rating_submit">提出する</string>
+    <string name="tu_feedback_title">講師のフィードバック</string>
+    <string name="tu_tutor_feedback">今日担当した講師はいかがでしたか？</string>
+    <string name="tu_rating_drag_and_press">評価するために押す</string>
+    <string name="tu_star_1_2">恐れ入ります。もっと詳しく教えていただけませんか？</string>
+    <string name="tu_call_quality">通話中の通信状況はいかがでしたか？</string>
+    <string name="tu_feedback_content">レッスンの内容はいかがでしたか</string>
+    <string name="tu_feedback_others">他に何かありましたらなんでもお伝えください。</string>
+    <string name="tu_fav_unavailable">利用できません</string>
+    <string name="tu_fav_msg">ウィッシュリストに追加</string>
+    <string name="tu_fav_sign_in">サインイン</string>
+    <string name="tu_fav_sign_in_cancel">キャンセル</string>
+    <string name="tu_sign_up_free_trail">本コンテンツはプリトライアルではご利用できません。フリートライアルへサインアップしてください。&#160;</string>
+    <string name="tu_sign_up_now">now</string>
+    <string name="tu_sign_in_book_unavailable">利用できません</string>
+    <string name="tu_sign_in_book_msg">サインインして講師を予約してください。</string>
+    <string name="tu_sign_in_book">サインイン</string>
+    <string name="tu_sign_in_book_cancel">キャンセル</string>
+    <string name="tu_rate_text">x %1$s</string>
+    <string name="tu_search_all_lbl">すべて検索</string>
+    <string name="tu_search_all_loading">ローディング</string>
+    <string name="tu_search_all_sun">日</string>
+    <string name="tu_search_all_mon">月</string>
+    <string name="tu_search_all_tue">火</string>
+    <string name="tu_search_all_wed">水</string>
+    <string name="tu_search_all_thu">木</string>
+    <string name="tu_search_all_fri">金</string>
+    <string name="tu_search_all_sat">土</string>
+    <string name="tu_search_all_today">今日</string>
+    <string name="tu_search_all_expired">有効期限は選択できません</string>
+    <string name="tu_search_all_expired_ok">OK</string>
+
+    <string-array name="tutor_feedback_type">
+        <item>講師によるフィードバック</item>
+        <item>通話品質</item>
+        <item>内容</item>
+        <item>その他のコメント</item>
+    </string-array>
+
+    <string name="tu_dialog_submit_loading">ローディング&#8230;</string>
+
+    <string name="credit_multiply">X </string>
+
+    <!-- Online Support (os) -->
+    <string name="os_dialog_connect_failure_error">エラー</string>
+    <string name="os_dialog_connect_failure_msg">授業に参加できません</string>
+    <string name="os_dialog_connect_failure_ok">OK</string>
+    <string name="os_request_permission_msg">カメラとスピーカーを「設定」にて使えるようにしてください。</string>
+    <string name="os_online_support_lbl">オンラインサポート</string>
+    <string name="os_calling">電話&#8230;</string>
+    <string name="os_speaker">スピーカー</string>
+    <string name="os_mute">ミュート</string>
+    <string name="os_hide">隠す</string>
+    <string name="os_end_call">電話を終わらせる</string>
+    <string name="os_send">送る</string>
+    <string name="os_title">オンラインサポート</string>
+    <string name="os_msg_body">こんにちは、TutorMandarinのオンラインサポートサービスです。私に手伝ってもらいたいことはありますか。</string>
+    <string name="os_dialog_msg_loading">ローディング&#8230;</string>
+    <string name="os_call_ready">通話の準備はできましたでしょうか。</string>
+    <string name="os_call_ready_msg">まもなく担当者に電話をかける時間になります。</string>
+    <string name="os_call_ready_confirm">確認</string>
+    <string name="os_call_ready_cancel">キャンセル</string>
+    <string name="os_working_period">申し訳ございません、TutorMandarinオンラインサポートは中国現地時間のam9時〜pm6時までとなります。この時間帯にもう一度ご連絡いただけると幸いです。宜しくお願いします。</string>
+    <string name="os_no_online_support_title">Sorry</string>
+    <string name="os_no_online_support_msg">TutorMandarin オンラインサポートは現在対応することができません。</string>
+    <string name="os_no_online_support_ok">OK</string>
+    <string name="os_server_error">エラー</string>
+    <string name="os_server_error_ok">OK</string>
+    <string name="os_twilio_access_error">エラー</string>
+    <string name="os_twilio_access_error_ok">OK</string>
+    <string name="os_not_available_title">申し訳ございません</string>
+    <string name="os_not_available_msg">TutorMandarinオンラインサポートは現在ご利用いただけません。</string>
+    <string name="os_not_available_ok">OK</string>
+    <string name="os_no_operator_error">エラー</string>
+    <string name="os_no_operator_error_ok">OK</string>
+    <string name="os_no_consultants">申し訳ございません。TutorMandarinの担当者はただいま電話に出ることができません。メッセージを残してください。早急にご連絡いたします。</string>
+    <string name="os_call_ended">通話が終了しました</string>
+    <string name="os_call_support_success">You had called %1$s successfully at %2$s</string>
+    <string name="os_call_support_fail">You had called %1$s failed at %2$s</string>
+
+    <!-- Account (ac) -->
+    <string name="ac_setting_title">設定</string>
+    <string name="ac_email_title">Eメール</string>
+    <string name="ac_email_save">保存</string>
+    <string name="ac_add_mail">Eメールを追加する</string>
+    <string name="ac_walkthrough">リハーサル</string>
+    <string name="ac_rate">レート</string>
+    <string name="ac_website">ウェブサイト</string>
+    <string name="ac_faq">FAQ</string>
+    <string name="ac_terms_of_service">サービス期間</string>
+    <string name="ac_privacy_policy">プライバシーポリシー</string>
+    <string name="ac_acknowledgement">通知</string>
+    <string name="ac_about_us">About us</string>
+    <string name="ac_company_name">GTA Ltd.</string>
+    <string name="ac_version">バージョン</string>
+    <string name="ac_interest_title">趣味</string>
+    <string name="ac_learning_purpose_title">学習目標</string>
+    <string name="ac_setting_save">保存</string>
+    <string name="ac_dialog_location_loading">ローディング&#8230;</string>
+    <string name="ac_location_title">場所</string>
+    <string name="ac_location_save">保存</string>
+    <string name="ac_search_location">地域を探す</string>
+    <string name="ac_choose_location">地方をお選びください</string>
+    <string name="ac_no_search_location">あなたが検索した場所にはございません</string>
+    <string name="ac_name_title">名前</string>
+    <string name="ac_name_save">保存</string>
+    <string name="ac_first_name_lbl">姓</string>
+    <string name="ac_first_name_hint">名字を加える</string>
+    <string name="ac_last_name_lbl">名</string>
+    <string name="ac_last_name_hint">名前を加える</string>
+    <string name="ac_name_empty">姓名を加える</string>
+    <string name="ac_phone_title">電話</string>
+    <string name="ac_phone_save">保存</string>
+    <string name="ac_mobile_phone">電話</string>
+    <string name="ac_reset_password_title">パスワードをリセットする</string>
+    <string name="ac_current_password_hint">現在のパスワード</string>
+    <string name="ac_forgot_password">パスワードを忘れましたか</string>
+    <string name="ac_new_password_hint">新しいパスワード</string>
+    <string name="ac_confirm_password_hint">新しいパスワードを入力する</string>
+    <string name="ac_btn_password_submit">提出</string>
+    <string name="ac_old_password_empty">古いパスワードを入力してください</string>
+    <string name="ac_new_password_empty">新しいパスワードを入力してください</string>
+    <string name="ac_confirm_password_empty">新しいパスワード（確認）を入力してください。</string>
+    <string name="ac_no_match_password">新しいパスワードが確認と違います。</string>
+    <string name="ac_old_password_error">古いパスワードが一致しません</string>
+    <string name="ac_invalid_password">パスワードの形式が正しくありません</string>
+    <string name="ac_info_choose">選ぶ</string>
+    <string name="ac_choose_from_photos">カメラロール</string>
+    <string name="ac_take_photo">写真を撮る</string>
+    <string name="ac_no_photo_url">写真を読み込むことができません</string>
+    <string name="ac_info_name">名前</string>
+    <string name="ac_info_gender">性別</string>
+    <string name="ac_info_location">地域</string>
+    <string name="ac_speaking_language">話す言語</string>
+    <string name="ac_speaking_language_title">話す言語</string>
+    <string name="ac_info_reset_password">パスワードをリセットする</string>
+    <string name="ac_info_chinese_level">中国語レベル</string>
+    <string name="ac_info_interest_in">趣味</string>
+    <string name="ac_info_interest_in_save">保存</string>
+    <string name="ac_info_email">Eメール</string>
+    <string name="ac_info_learning_purpose">学習目標</string>
+    <string name="ac_info_learning_purpose_save">保存</string>
+    <string name="ac_dialog_location_title">時間を変更する必要がある？</string>
+    <string name="ac_dialog_location_msg">新しく設定した時間帯は適用されませんでした。</string>
+    <string name="ac_dialog_location_ok">OK</string>
+    <string name="ac_dialog_chinese_level_title">中国語のレベル</string>
+    <string name="ac_dialog_chinese_level_msg">初回のレッスンで講師と実力判断テストの結果をもとに話し合い、受講するコースのレベルを決めます。一度受講するレベルを決定したら、手動で変更することができません。わからないことがございましたら、オンラインサポートサービスをご利用ください。</string>
+    <string name="ac_dialog_chinese_level_ok">OK</string>
+    <string name="ac_invalid_email">Eメールのフォーマットが正しくありません。</string>
+    <string-array name="ic_interest_in_list">
+        <item>フレーズ</item>
+        <item>言語学習</item>
+        <item>役立つスキル</item>
+        <item>ニュース</item>
+        <item>中国に対する理解</item>
+        <item>おかしい</item>
+        <item>会話</item>
+        <item>音楽</item>
+    </string-array>
+    <string-array name="ic_learning_purpose_list">
+        <item>ビジネス</item>
+        <item>教育</item>
+        <item>海外旅行</item>
+        <item>デイリーコミュニケーション</item>
+        <item>中国語熟達テスト</item>
+    </string-array>
+    <string name="ac_gender_title">性別</string>
+    <string name="ac_gender_save">保存</string>
+    <string name="ac_gender_male">男性</string>
+    <string name="ac_gender_female">女性</string>
+    <string name="ac_speaking_save">保存</string>
+    <string name="ac_speaking_thai">タイ</string>
+    <string name="ac_speaking_korea">韓国</string>
+    <string name="ac_speaking_japan">日本</string>
+    <string name="ac_speaking_english">英語</string>
+    <string name="ac_speaking_german">ドイツ人</string>
+    <string name="ac_speaking_french">フランス</string>
+    <string name="ac_speaking_other">その他</string>
+
+    <!-- Course (co) -->
+    <string name="co_title">コース</string>
+    <string name="co_lst_lesson_count">&#160;レッスン +&#160;</string>
+    <string name="co_lst_supplement_count">&#160;補足</string>
+    <string name="co_download_error">コネクションエラー</string>
+    <string name="co_tab_title">コース</string>
+    <string name="co_vocab_lbl">ボキャブラリー</string>
+    <string name="co_grammar_lbl">文法</string>
+    <string name="co_total_time_lbl">総時間</string>
+    <string name="co_credits">クレジット</string>
+    <string name="co_content">内容:&#160;</string>
+    <string name="co_lesson_count">&#160;レッスン&#160;</string>
+    <string name="co_supplement_count">&#160;補足</string>
+    <string name="co_dialog_lesson_loading">ローディング&#8230;</string>
+    <string name="co_available_soon_title">コースをご利用できます</string>
+    <string name="co_available_soon_msg">このコースを現在ご利用することができません。</string>
+    <string name="co_available_soon_ok">OK</string>
+    <string name="co_tab_all">All</string>
+    <string name="co_tab_lessons">レッスン</string>
+    <string name="co_tab_supplements">補足</string>
+    <string name="co_fav_unavailable">ご利用できません</string>
+    <string name="co_fav_msg">ウィッシュリストに追加</string>
+    <string name="co_fav_sign_in">サインイン</string>
+    <string name="co_fav_cancel">キャンセル</string>
+    <string name="co_dialog_new_package">ローディング&#8230;</string>
+
+    <!-- Topic (to) -->
+    <string name="to_title_all">All</string>
+    <string name="to_download_error">接続エラー</string>
+    <string name="to_tab_title">トピック</string>
+    <string name="to_class_count">%1$s トピック</string>
+    <string name="to_class_counts">%1$s トピック</string>
+    <string name="to_level">レベル</string>
+    <string name="to_class_title">トピックセレクト</string>
+    <string name="to_class_credits">クレジット</string>
+    <string name="to_class_select_level">レベルを選ぶ</string>
+    <string name="to_cb_class_select_level">セレクトレベル</string>
+    <string name="to_select_topic">トピックを選ぶ</string>
+    <string name="to_cb_select_topic">トピックを選ぶ</string>
+    <string name="to_unavailable_title">利用できません</string>
+    <string name="to_unavailable_msg">申し訳ございません。このコンテンツは登録者以外は利用できません。あなたは別の購入をするために試練を終える必要があります。</string>
+    <string name="to_unavailable_ok">私は周りを見回します。</string>
+    <string name="to_class_dialog_loading">ローディング&#8230;</string>
+    <string name="to_class_dialog_download_error">エラー</string>
+    <string name="to_class_dialog_download_ok">OK</string>
+    <string name="to_class_vocab_count">&#160;ボキャブラリー</string>
+    <string name="to_class_high_level">申し訳ございません</string>
+    <string name="to_class_high_level_msg">このクラスはお客様のレベルではご受講いただけません。自分のレベルに合ったクラスをお選びください。</string>
+    <string name="to_class_high_level_ok">OK</string>
+    <string name="to_class_loading">ローディング&#8230;</string>
+    <string name="to_unavailable_user">利用不可能な</string>
+    <string name="to_unavailable_user_msg">申し訳ございません。このコンテンツは登録者以外は利用できません。あなたは別の購入をするために試練を終える必要があります。</string>
+    <string name="to_unavailable_user_ok">私は周りを見回します。</string>
+    <string name="to_class_vocab">&#160;ボキャブラリー</string>
+    <string name="to_above_level">申し訳ございません</string>
+    <string name="to_above_level_msg">このクラスはお客様のレベルでは受講いただけません。自分のレベルに合ったクラスをお選びください。</string>
+    <string name="to_above_level_ok">OK</string>
+    <string name="to_sign_in_unavailable">ご利用できません</string>
+    <string name="to_sign_in_msg">サインインしトピックをご覧ください。</string>
+    <string name="to_btn_sign_in">サインイン</string>
+    <string name="to_btn_sign_in_cancel">きゃキャンセル</string>
+
+    <!-- Class (cl) -->
+    <string name="cl_add_to_favourite">お気に入りに追加する</string>
+    <string name="cl_share">シェアする</string>
+    <string name="cl_already_added">すでにトピックが追加されています</string>
+    <string name="cl_successfully_added">お気に入りの追加が完了しました</string>
+    <string name="cl_check_booking">ローディング&#8230;</string>
+    <string name="cl_already_booked">予約が完了しました</string>
+    <string name="cl_already_booked_msg">すでにこのクラスは予約済みです。他のクラスを選択してください。</string>
+    <string name="cl_already_booked_ok">OK</string>
+    <string name="cl_topic_already_booked">予約が完了しました</string>
+    <string name="cl_topic_already_booked_msg">すでにこのクラスは予約済みです。他のクラスを選択してください。</string>
+    <string name="cl_topic_already_booked_ok">OK</string>
+    <string name="cl_topic_level_high">申し訳ございません</string>
+    <string name="cl_topic_level_high_msg">このクラスはお客様のレベルでは受講いただけません。自分のレベルに合ったクラスをお選びください。</string>
+    <string name="cl_topic_level_high_ok">OK</string>
+    <string name="cl_server_error">エラー</string>
+    <string name="cl_server_error_ok">OK</string>
+    <string name="cl_btn_book">予約</string>
+
+    <!-- Lesson (ls) -->
+    <string name="ls_credits">クレジット</string>
+    <string name="ls_unavailable_title">利用できない</string>
+    <string name="ls_unavailable_msg">このクラスはお客様のレベルでは受講いただけません。自分のレベルに合ったクラスをお選びください。</string>
+    <string name="ls_unavailable_ok">OK</string>
+    <string name="ls_check_lesson_loading">ローディング&#8230;</string>
+    <string name="ls_lesson_no">レッスン&#160;</string>
+    <string name="ls_vocab_count">&#160;ボキャブラリー</string>
+    <string name="ls_paid_user_title">申し訳ございません</string>
+    <string name="ls_paid_user_msg">申し訳ございません。このレッスンは支払い済の方のみ利用可能です。</string>
+    <string name="ls_paid_user_ok">OK</string>
+    <string name="ls_chinese_level_lower">あなたのレベルに合ったトピックしか選ぶことができません。「履歴」より自分のレベルを確認することができます。</string>
+    <string name="ls_btn_book">予約</string>
+    <string name="ls_add_to_favourite">お気に入りに追加する</string>
+    <string name="ls_share">シェアする</string>
+    <string name="ls_already_added_msg">すでにレッスンは追加されました。</string>
+    <string name="ls_successfully_added">お気に入りに追加しました</string>
+    <string name="ls_extra_share_item">レッスン</string>
+    <string name="ls_lesson_count">レッスン&#160;</string>
+    <string name="ls_select_level">レベルを選ぶ</string>
+    <string name="ls_select_course">コースを選ぶ</string>
+    <string name="ls_select_course_title">コースを選ぶ</string>
+    <string name="ls_lst_download_loading">ローディング&#8230;</string>
+    <string name="ls_lst_download_error">エラー</string>
+    <string name="ls_lst_download_ok">OK</string>
+    <string name="ls_select_supplement_count">補足&#160;</string>
+    <string name="ls_select_vocab_count">&#160;ボキャブラリー&#160;</string>
+    <string name="ls_select_grammar_count">&#160;文法</string>
+    <string name="ls_select_lesson_count">レッスン&#160;</string>
+    <string name="ls_booked_in_package_error">エラー</string>
+    <string name="ls_booked_in_package_msg">このレッスンはすでにご購入されたパッケージの中に含まれいます。 </string>
+    <string name="ls_booked_in_package_ok">OK</string>
+    <string name="ls_higher_level_error">申し訳ございません</string>
+    <string name="ls_higher_level_msg">このクラスはお客様のレベルでは受講いただけません。自分のレベルに合ったクラスをお選びください。</string>
+    <string name="ls_higher_level_ok">OK</string>
+    <string name="ls_already_booked_error">予約済</string>
+    <string name="ls_already_booked_msg">このレッスンはすでにご購入されたパッケージの中に含まれています。</string>
+    <string name="ls_already_booked_ok">OK</string>
+    <string name="ls_chinese_level_lower_error">エラー</string>
+    <string name="ls_chinese_level_lower_ok">OK</string>
+    <string name="ls_server_error">エラー</string>
+    <string name="ls_server_error_ok">OK</string>
+    <string name="ls_fav_unavailable">ご利用できません</string>
+    <string name="ls_fav_unavailable_msg">Please sign in to use favorite feature.</string>
+    <string name="ls_fav_sign_in">サインイン</string>
+    <string name="ls_fav_cancel">キャンセル</string>
+    <string name="ls_book_unavailable">ご利用できません</string>
+    <string name="ls_book_unavailable_msg">ブックレッスンへサインインしてください。</string>
+    <string name="ls_book_sign_in">サインイン</string>
+    <string name="ls_book_cancel">キャンセル</string>
+    <string name="ls_lesson">レッスン</string>
+    <string name="ls_warm_up">1. ウォーミングアップ</string>
+    <string name="ls_conversation">2. 会話</string>
+    <string name="ls_discuss">3. ディスカッション</string>
+    <string name="ls_vocabulary">4. 単語</string>
+    <string name="ls_exercises">5. 練習</string>
+    <string name="ls_grammar">6. 文法</string>
+    <string name="ls_practice">7. 練習</string>
+    <string name="ls_unlock_content">書籍を押してコンテンツのロックを解除する</string>
+    <string name="ls_no_file">ファイルはありません。</string>
+    <string name="ls_file_incorrect">ファイルが正しくありません。</string>
+    <string name="ls_no_internet">イインターネット接続なし</string>
+
+    <!-- Schedule (sd) -->
+    <string name="sd_schedule_title">スケジュール</string>
+    <string name="sd_schedule_loading">ローディング&#8230;</string>
+    <string name="sd_today">今日</string>
+    <string name="sd_coming_up">注目</string>
+    <string name="sd_finished">完了</string>
+    <string name="sd_canceled">キャンセル</string>
+    <string name="sd_missed">ミス</string>
+    <string name="sd_package_booking">パッケージ予約</string>
+    <string name="sd_credit_booking">クレジット予約</string>
+    <string name="sd_lesson_name">お試し</string>
+    <string name="sd_lesson_level">お試し</string>
+    <string name="sd_topic_name">トピック</string>
+    <string name="sd_supplement_no">補足&#160;</string>
+    <string name="sd_lesson_no">レッスン&#160;</string>
+    <string name="sd_unavailable_title">利用不可能な</string>
+    <string name="sd_unavailable_msg">申し訳ございません。このコンテンツは登録者以外は利用できません。あなたは別の購入をするために試練を終える必要があります。</string>
+    <string name="sd_unavailable_ok">私は周りを見回します。</string>
+    <string name="sd_change_booking_cancel">キャンセル</string>
+    <string name="sd_change_booking_sure">確信する</string>
+    <string name="sd_class_change_cancel_title">本当にいいですか？</string>
+    <string name="sd_class_change_cancel_msg">1日前にキャンセルもしくはクラスの変更があった場合、料金は返金されません。</string>
+    <string name="sd_change_time_cancel_title">警告</string>
+    <string name="sd_change_time_cancel_msg">本当にいいですか？指定された講師の授業をキャンセルします。</string>
+    <string name="sd_change_booking_time_msg">時間を変更してください。<u>here</u>.</string>
+    <string name="sd_sunday">日</string>
+    <string name="sd_monday">月</string>
+    <string name="sd_tuesday">火</string>
+    <string name="sd_wednesday">水</string>
+    <string name="sd_thursday">木</string>
+    <string name="sd_friday">金</string>
+    <string name="sd_saturday">土</string>
+    <string name="sd_no_booking">予約していません</string>
+    <string name="sd_user_level">レベル :</string>
+    <string name="sd_btn_start_class">クラスを始める</string>
+    <string name="sd_start_time">始める</string>
+    <string name="sd_network_notice">Notice</string>
+    <string name="sd_network_msg">ご利用のデバイスのメモリ容量とネットワークに接続されていることをご確認ください。</string>
+    <string name="sd_network_continue">続ける</string>
+    <string name="sd_network_cancel">キャンセル</string>
+
+    <!-- booking (bo) -->
+    <string name="bo_booking_title">予約リスト</string>
+    <string name="bo_total_cost">トータル %1$s クレジット</string>
+    <string name="bo_select_lesson_supplement">レッスンまたはサプリメントをお選びください</string>
+    <string name="bo_select_topic">トピックをお選びください</string>
+    <string name="bo_select_tutor">講師と時間をお選びください。</string>
+    <string name="bo_topic_level">レベル: %1$s</string>
+    <string name="bo_supplement">補足</string>
+    <string name="bo_lesson">レッスン</string>
+    <string name="bo_level">レベル :</string>
+    <string name="bo_not_booking_title">警告</string>
+    <string name="bo_not_booking_msg">本当にいいですか？選択された講師と時間を失います。</string>
+    <string name="bo_not_booking_cancel">キャンセル</string>
+    <string name="bo_not_booking_sure">確信</string>
+    <string name="bo_dialog_booking">予約&#8230;</string>
+    <string name="bo_dialog_lesson_error">エラー</string>
+    <string name="bo_dialog_lesson_ok">OK</string>
+    <string name="bo_dialog_class_error">エラー</string>
+    <string name="bo_dialog_class_ok">OK</string>
+    <string name="bo_parse_exception">エラー</string>
+    <string name="bo_check_cost_error">警告</string>
+    <string name="bo_check_cost_msg">クレジットが足りません。ストアでご購入してください。</string>
+    <string name="bo_check_cost_cancel">キャンセル</string>
+    <string name="bo_check_cost_ok">OK</string>
+    <string name="bo_booking_confirmed">予約完了しました</string>
+    <string name="bo_view_my_schedule">マイスケジュール</string>
+    <string name="bo_book_another_lesson">他のレッスンを予約する</string>
+    <string name="bo_view_other_tutors">他の講師を見る</string>
+    <string name="bo_back_main_menu">メインメニューに戻る</string>
+    <string name="bo_btn_confirm_reservation">予約リストを確認する</string>
+    <string name="bo_my_credits">マイクレジット</string>
+    <string name="bo_credit">クレジット</string>
+    <string name="bo_select_a_tutor">講師をお選びください</string>
+    <string name="bo_credit_lbl">クレジット</string>
+    <string name="bo_start_time">開始時間</string>
+    <string name="bo_total">合計</string>
+    <string name="bo_cg_title">予約を変更する</string>
+    <string name="bo_total_credit_cost">合計 %1$s クレジット</string>
+    <string name="bo_canceling">チャレンジ&#8230;</string>
+    <string name="bo_cancel_error">エラー</string>
+    <string name="bo_cancel_ok">OK</string>
+    <string name="bo_cg_loading">チェンジ&#8230;</string>
+    <string name="bo_cg_success">クラスを変更しました</string>
+    <string name="bo_cg_success_msg">クラスチケットを変更しました.</string>
+    <string name="bo_cg_success_ok">OK</string>
+    <string name="bo_cg_error">エラー</string>
+    <string name="bo_cg_ok">OK</string>
+    <string name="bo_utc_parse_error">Cannot parse to UTC date.</string>
+    <string name="bo_cg_select_lesson">レッスンを選択してください.</string>
+    <string name="bo_cg_select_topic">トピックを選択してください</string>
+    <string name="bo_cg_select_tutor">講師と時間を選択してください</string>
+    <string name="bo_low_credit_error">警告</string>
+    <string name="bo_low_credit_msg">クレジットが足りません。ストアでご購入してください。</string>
+    <string name="bo_low_credit_cancel">キャンセル</string>
+    <string name="bo_low_credit_ok">OK</string>
+    <string name="bo_cb_confirm_change">変更を確認する</string>
+    <string name="bo_cb_cancel_booking">予約を変更する</string>
+    <string name="bo_cb_my_credits">マイクレジット</string>
+    <string name="bo_cb_tutor_time">時間もしくは講師を変更する</string>
+    <string name="bo_cb_start_time">開始時間</string>
+    <string name="bo_cb_total">合計</string>
+    <string name="bo_cb_cancelled">予約がキャンセルされました</string>
+    <string name="bo_cb_cancel_success">あなたのクラスがキャンセルされました</string>
+    <string name="bo_cb_another_time">他の時間を予約する</string>
+    <string name="bo_cb_back_to_schedule">スケジュールに戻る</string>
+    <string name="bo_bp_title">パッケージ予約</string>
+    <string name="bo_lesson_count_loading">ローディング&#8230;</string>
+    <string name="bo_remaining_lesson_error">エラー</string>
+    <string name="bo_remaining_lesson_ok">OK</string>
+    <string name="bo_sd_same_time_error">エラー</string>
+    <string name="bo_sd_same_time_msg">同じ時間に二つ以上のクラスの予定が組まれています。予約を確定する前に、重複を直してください。</string>
+    <string name="bo_sd_same_time_ok">OK</string>
+    <string name="bo_sd_empty_error">通知</string>
+    <string name="bo_sd_empty_msg">スケジュールを行ってください</string>
+    <string name="bo_sd_empty_ok">OK</string>
+    <string name="bo_no_lesson_error">エラー</string>
+    <string name="bo_no_lesson_msg">空きがありません</string>
+    <string name="bo_no_lesson_ok">OK</string>
+    <string name="bo_course_loading">予約&#8230;</string>
+    <string name="bo_class_total">合計</string>
+    <string name="bo_class_succeed">クラスの予約が完了しました</string>
+    <string name="bo_course_error">エラー</string>
+    <string name="bo_course_ok">OK</string>
+    <string name="bo_auto_repeat_on">オン</string>
+    <string name="bo_auto_repeat_off">オフ</string>
+    <string name="bo_pg_cancel_error">通知</string>
+    <string name="bo_pg_cancel_msg">本当にいいですか？選択された講師と時間を失います。</string>
+    <string name="bo_pg_negative_btn">キャンセル</string>
+    <string name="bo_pg_cancel_sure">確認</string>
+    <string name="bo_limited_lesson">エラー</string>
+    <string name="bo_limited_lesson_msg">あなたは最低でも一週間に一回レッスンを受けなければなりません。</string>
+    <string name="bo_limited_lesson_ok">OK</string>
+    <string name="bo_pg_start_time">開始時間</string>
+    <string name="bo_pg_select_tutor">時間と講師を選択してください</string>
+    <string name="bo_pg_booking_succeed">パッケージの予約が完了しました</string>
+    <string name="bo_pg_view_my_schedule">自分のスケジュールを見る</string>
+    <string name="bo_back_to_main_menu">メインメニューに戻る</string>
+    <string name="bo_bp_confirm">予約を確認する</string>
+    <string name="bo_autofill">自動入力</string>
+    <string name="bo_off">オフ</string>
+    <string name="bo_monthly_plan">月プラン</string>
+    <string name="bo_week_1">一週目</string>
+    <string name="bo_week_2">二週目</string>
+    <string name="bo_week_3">三週目</string>
+    <string name="bo_week_4">四週目</string>
+    <string name="bo_auto_repeat_message">オートフィル機能を使用することで容易にスケジュールの管理ができるようになります。
+    例えば月曜21:00を選択すると次回からシステム上で自動で同じ時間を予約してくれます。</string>
+
+    <!-- StorePackage (sp) -->
+    <string name="sp_lessons">レッスン : %1$s</string>
+    <string name="sp_supplements">補足 : %1$s</string>
+    <string name="sp_my_order">マイオーダー : %1$s</string>
+    <string name="sp_section_title">セクション%1$s</string>
+    <string name="sp_lesson_name">%1$s %2$s</string>
+    <string name="sp_supplement">補足</string>
+    <string name="sp_lesson">レッスン</string>
+    <string name="sp_lesson_mins">%1$s 分</string>
+    <string name="sp_purchase_confirm">購入しました</string>
+    <string name="sp_start_booking_now">予約をする</string>
+    <string name="sp_back_to_main_menu">メインメニューに戻る</string>
+    <string name="sp_course_structure">コースの構造</string>
+    <string name="sp_course_structure_explain">コースはHSKのレベルに沿って構成されており、レッスンとサプリメントに分かれています。
+    レッスンは基礎的なコンセプトを学ぶ50分と、レビューを行い理解を深める50分から成り立っています。
+</string>
+    <string name="sp_credits">クレジット</string>
+    <string name="sp_course_coming_soon">コースをまもなく使用することができます</string>
+    <string name="sp_course_coming_soon_msg">このコースは現在利用できませんが、まもなく使用することができます。</string>
+    <string name="sp_course_coming_soon_ok">OK</string>
+    <string name="sp_buy_package_loading">ローディング&#8230;</string>
+    <string name="sp_insufficient_title">警告</string>
+    <string name="sp_insufficient_msg">十分なクレジットがございません。ストアにてご購入ください。</string>
+    <string name="sp_insufficient_cancel">キャンセル</string>
+    <string name="sp_insufficient_ok">OK</string>
+    <string name="sp_level_lower_title">利用できません</string>
+    <string name="sp_level_lower_msg">あなたの現在の中国語レベルはまだあまり高くありません。コースについて疑問がある方は、講師に連絡してください。</string>
+    <string name="sp_level_lower_ok">OK</string>
+    <string name="sp_server_error">エラー</string>
+    <string name="sp_server_error_ok">OK</string>
+    <string name="sp_package_buy">購入</string>
+
+    <!-- Credit Store (cs) -->
+    <string name="cs_my_credits">マイクレジット</string>
+    <string name="cs_credits">クレジット</string>
+    <string name="cs_purchase">購入</string>
+    <string name="cs_order">注文</string>
+    <string name="cs_order_credit">4 クレジット</string>
+    <string name="cs_total">合計</string>
+    <string name="cs_credit_price">40ドル</string>
+    <string name="cs_btn_buy">購入</string>
+    <string name="cs_discount_promotion">初回購入の割引やその他割引について聞きたい方</string>
+    <string name="cs_btn_contact_now">今すぐ連絡する</string>
+    <string name="cs_whats_price">What\'s Pricing</string>
+    <string name="cs_total_price">USD $</string>
+    <string name="cs_title">ストア</string>
+    <string name="cs_refresh_loading">ローディング&#8230;</string>
+    <string name="cs_minimum_credit_loading">ローディング&#8230;</string>
+
+    <!-- Current Plan (cp) -->
+    <string name="cp_title">現在のプラン</string>
+    <string name="cp_loading">ローディング&#8230;</string>
+    <string name="cp_error">エラー</string>
+    <string name="cp_error_ok">OK</string>
+    <string name="cp_start_time">開始時間</string>
+    <string name="cp_select_tutor_time">日時と講師を選択してください</string>
+
+    <!-- Welcome Tutorial (wt) -->
+    <string name="wt_btn_start_trial">実力判断テストを受ける</string>
+    <string name="wt_btn_skip">スキップ</string>
+    <string name="wt_professional_tutor_title">専門的な講師</string>
+    <string name="wt_professional_tutor">500時間以上の教師経験がある専門的な講師による１対１の授業を提供しております。</string>
+    <string name="wt_best_in_class_mobile_title">best-in-class mobile</string>
+    <string name="wt_best_in_class_mobile">私たちが開発した革新的なアプリを通じて授業を行います。ビデオ通話、メッセージ機能など機能があります。</string>
+    <string name="wt_systematic_education_title">計画性のある教育システム</string>
+    <string name="wt_systematic_education">HSKをもとにした教育システムを採用しております。</string>
+    <string name="wt_personalized_learning_title">個人レッスン</string>
+    <string name="wt_personalized_learning">お客様は50分の無料体験授業を受けることができます。</string>
+    <string name="wt_skip">スキップ</string>
+    <string name="wt_next">次へ</string>
+
+    <!-- WebView (wv) -->
+    <string name="wv_loading">ローディング&#8230;</string>
+
+    <!-- Splash Screen (ss) -->
+    <string name="ss_error">サーバに接続することができません</string>
+
+    <!-- Auto Repeat (ar) -->
+    <string name="ar_message">自動入力はお客様が事前に登録した可能な時間を元に、講師の空いている時間と照らし合わせ、自動予約を行うというシステムです。例えば月曜日の19時と木曜日の19時に設定した場合、毎週月曜日と木曜日の19時の授業は自動で選択されます。</string>
+    <string name="ar_autofill">自動入力</string>
+    <string name="ar_add_new_date">新しい日時を追加する&#8230;</string>
+    <string name="ar_off">オフ</string>
+    <string name="ar_notice">Notice: The Autofill must keep the minimum amount per week.</string>
+    <string name="ar_btn_cancel">キャンセル</string>
+    <string name="ar_btn_apply">申し込む</string>
+    <string name="ar_download_tutor_loading">ローディング&#8230;</string>
+    <string name="ar_unavailable_tutor_title">利用することができません</string>
+    <string name="ar_unavailable_tutor_msg">選択された時間は講師の空き時間ではございません。</string>
+    <string name="ar_unavailable_tutor_ok">OK</string>
+    <string name="ar_server_error">エラー</string>
+    <string name="ar_server_error_ok">OK</string>
+    <string name="ar_sd_fill_title">エラー</string>
+    <string name="ar_sd_fill_msg">都合のいい時間を選択してください</string>
+    <string name="ar_sd_fill_ok">OK</string>
+    <string name="ar_select_date">日時を選択してください</string>
+    <string name="ar_book_class_error">エラー</string>
+    <string name="ar_book_class_msg">一週間に最低一回レッスンを受ける必要があります。</string>
+    <string name="ar_book_class_ok">OK</string>
+    <string name="ar_start_date">開始する</string>
+    <string name="ar_edit_repeat_title">EDIT REPEAT</string>
+    <string name="ar_edit_repeat_cancel">キャンセル</string>
+    <string name="ar_btn_save">保存する</string>
+
+    <!-- Class Room (cr) -->
+    <string name="cr_title">クラスルーム</string>
+    <string name="cr_leave">離れる</string>
+    <string name="cr_join_class_room">クラスルームに参加する&#8230;</string>
+    <string name="cr_send">送る</string>
+    <string name="cr_camera_permission">カメラとマイク機能を許可してください。アプリの設定で行うことができます。</string>
+    <string name="cr_leave_room">クラスルームから抜けますか</string>
+    <string name="cr_leave_room_msg">通話を終了しクラスルームから抜けます。</string>
+    <string name="cr_leave_room_leave">離れる</string>
+    <string name="cr_leave_room_cancel">キャンセル</string>
+    <string name="cr_server_error">エラー</string>
+    <string name="cr_server_error_ok">OK</string>
+    <string name="cr_tutor_soon">講師がまもなくオンラインの状態になります</string>
+    <string name="cr_join_error">エラー</string>
+    <string name="cr_join_msg">授業に参加できません.</string>
+    <string name="cr_join_ok">OK</string>
+    <string name="cr_select_date">日時を選択する</string>
+    <string name="cr_select_start_time">開始時間を選択する</string>
+    <string name="cr_btn_save">保存する</string>
+
+    <!-- Share part (sh) -->
+    <string name="sh_downloading">Downloading&#8230;</string>
+    <string name="sh_email_not_install">There are no email clients installed.</string>
+    <string name="sh_sd_card_permission">アプリの設定にてSDカード機能を許可してください</string>
+    <string name="sh_lesson_template">I\'m studying “%s” with TutorMandarin. Care to join me at link?</string>
+    <string name="sh_flashcard_template">I learned “%s” with TutorMandarin. Care to join me at link?</string>
+    <string name="sh_tutor_template">I studied with “%s” from TutorMandarin. You should too!</string>
+    <string name="sh_facebook">Facebook</string>
+    <string name="sh_twitter">Twitter</string>
+    <string name="sh_pinterest">Pinterest</string>
+    <string name="sh_mail">Mail</string>
+    <string name="sh_title">シェア</string>
+
+    <!-- Favorite (fv) -->
+    <string name="fv_title">お気に入り</string>
+    <string name="fv_course">コース</string>
+    <string name="fv_tutor">講師</string>
+    <string name="fv_topic">トピック</string>
+    <string name="fv_whats_on">WhatsOn</string>
+
+    <!-- Notification (nt) -->
+    <string name="nt_title">お知らせ</string>
+    <string name="nt_notice">TutorMandarinのお知らせ</string>
+    <string name="nt_start_class">授業を始める</string>
+    <string name="nt_no_notification">新しい通知はありません</string>
+    <string name="nt_today">今日</string>
+    <string name="nt_yesterday">機能</string>
+
+    <!-- Welcome Tutorial (wt) -->
+    <string name="wt_sign_in">サインイン</string>
+    <string name="wt_sign_up">サインアップ</string>
+    <string name="wt_welcome_1_txt">
+    <![CDATA[
+            <b>
+                -$20フリークラス<br/>
+                -2アンロックコース<br/>
+                -語言レベル診断<br/>
+                -デイリー無料体験
+            </b>
+        ]]>
+    </string>
+    <string name="wt_welcome_2_title">$20フリークラス</string>
+    <string name="wt_welcome_2_txt">
+    <![CDATA[
+        全ての生徒は専任の教師による1vs1のクラスを受講することができます。<br/><br/>
+お手持ちのスマートフォンまたはPCからPDFレッスンを受けられます。
+        ]]>
+    </string>
+    <string name="wt_welcome_3_title">2 アンロックコース</string>
+    <string name="wt_welcome_3_txt">
+    <![CDATA[
+            中国語を勉強しませんか？
+<br/><br/><b>ピン音</b>と<b>初心者1</b> コースは全てのユーザー用にアンブロックされています。中級者用、上級者用は1つのレッスンのみアンブロックされています。
+        ]]>
+    </string>
+    <string name="wt_welcome_4_title">デイリー無料体験</string>
+    <string name="wt_welcome_4_txt">使えるフレーズ、面白ニュース等の無料体験コースは日々アップデートされています。</string>
+    <string name="wt_welcome_5_title">“ワンストップショップ”</string>
+    <string name="wt_welcome_5_txt">"このappがあれば私はスマートフォンを使って専任講師とレッスンをしたり、
+    地下鉄に乗りながらフラッシュカードを使って勉強することができます。"</string>
+    <string name="wt_welcome_5_author">~ブライアン - アイルランド</string>
+
+    <!-- Edit Number (et) -->
+    <string name="et_free_trial_class">フリー中国語レッスン</string>
+    <string name="et_valid_phone_notice">Notice</string>
+    <string name="et_valid_phone_msg">認証可能な電話番号をご入力ください。</string>
+    <string name="et_valid_phone_ok">OK</string>
+    <string name="et_dialog_sending_sms">SMSを送信しています&#8230;</string>
+    <string name="et_verification_code_error">エラー</string>
+    <string name="et_verification_code_ok">OK</string>
+    <!--<string name="et_confirm_number">フリートライアルクラスにサインアップしていただきありがとうございます。
+    電話番号をご確認ください。</string>-->
+    <string name="et_your_phone_no_hint">電話番号</string>
+    <string name="et_invalid_code_error_title">エラー</string>
+    <string name="et_invalid_code_error_msg">これは有効な確認コードではありません。</string>
+
+    <!-- Trail Class (ts) -->
+    <string name="ts_title">トライアルクラス</string>
+    <string name="ts_notice">Notice</string>
+    <string name="ts_select_time_msg">ご都合の良い時間を教えてください</string>
+    <string name="ts_select_time_ok">OK</string>
+
+    <!-- Others (ot) -->
+    <string name="ot_capture">Capture</string>
+    <string name="pp_loading">ローディング&#8230;</string>
+    <string name="youtube_error">Youtube initialize error</string>
+    <string name="free_trail_title">Free Trial Process</string>
+    <string name="start_trial_now">無料実力判断テストを受ける</string>
+    <string name="list_dialog_cancel">キャンセル</string>
+
+    <!-- Promo Code Fragment (pc) -->
+    <string name="pc_my_promo_code_lbl">私のプロモーションコード</string>
+    <string name="pc_my_promo_code_hint">プロモーションコード</string>
+    <string name="pc_refer_a_friend">友達に紹介する</string>
+    <string name="pc_have_promo_code">プロモーションコードをお持ちですか？</string>
+    <string name="pc_promo_code_icon_miss">プロモーションコードアイコン</string>
+    <string name="pc_promo_code_title">プロモーションコード</string>
+    <string name="pc_get_promo_code_loading">読み込み中</string>
+    <string name="pc_promo_code_explanation">お友達に無料体験レッスンを紹介すれば、1万円相当するレッスンをプレゼント致します！&#160;</string>
+    <string name="pc_promo_code_details">詳細。.</string>
+    <string name="pc_share_title">ソーシャルメディアへシェア</string>
+    <string name="pc_facebook">Facebook</string>
+    <string name="pc_twitter">Twitter</string>
+    <string name="pc_google_plus">Google Plus</string>
+    <string name="pc_email">Eメール</string>
+    <string name="pc_facebook_icon_miss">Facebook</string>
+    <string name="pc_twitter_icon_miss">Twitter</string>
+    <string name="pc_google_plus_icon_miss">Google Plus</string>
+    <string name="pc_email_icon_miss">Eメール</string>
+    <string name="pc_promo_code_empty">プロモーションコードを入力する必要があります</string>
+    <string name="pc_dialog_confirming">確認</string>
+    <string name="pc_dialog_succeed">成功する</string>
+    <string name="pc_dialog_back">バック</string>
+    <string name="pc_dialog_friend_code">友人やコンサルタントからのコード</string>
+    <string name="pc_dialog_credit">クレジット</string>
+    <string name="pc_dialog_increase_credit_note">次回購入時に給付クレジットが加算されます</string>
+    <string name="pc_dialog_invalid_promo_code_err">無効なプロモーションコード</string>
+    <string name="pc_dialog_friend_one_time_err">フレンドプロモーションコードは1回だけ使用します。</string>
+    <string name="pc_dialog_use_my_promo_code_err">プロモーションコードを使用する</string>
+    <string name="pc_share_promo_code">以下のプロモコードを使ってマンツーマン中国語レッスンTutorMandarinをお楽しみください： %1$s　大人用と子供用のコースがあります。話すための中国語学習を始めましょう！</string>
+    <string name="pc_no_promotion_history">プロモーションコードの履歴はありません</string>
+
+    <!-- PromoCode History (ph) -->
+    <string name="ph_i_entered_title">入った</string>
+    <string name="ph_refer_by_me_title">参照してください</string>
+    <string name="ph_list_title">プロモーションコードリスト</string>
+    <string name="ph_i_entered_code_lbl">コード</string>
+    <string name="ph_i_entered_type_lbl">タイプ</string>
+    <string name="ph_i_entered_date_lbl">日付</string>
+    <string name="ph_i_entered_reward_lbl">報酬</string>
+    <string name="ph_i_entered_loading">読み込み中</string>
+    <string name="ph_i_entered_waiting">待機中</string>
+    <string name="ph_refer_name_lbl">名前</string>
+    <string name="ph_refer_date_lbl">日付</string>
+    <string name="ph_refer_reward_lbl">報酬</string>
+    <string name="ph_refer_loading">読み込み中</string>
+    <string name="ph_refer_waiting">待機中</string>
+
+    <string name="su_i_have_promo_code">私はプロモーションコードを持っています</string>
+
+    <!-- Added Language -->
+    <string name="wo_all">オール</string>
+    <string name="wo_phrases">フレーズ</string>
+    <string name="wo_language_learning">語学学習</string>
+    <string name="wo_conversation">会話</string>
+    <string name="wo_survival_skills">サバイバルスキル</string>
+    <string name="wo_understanding_china">理解中国語</string>
+    <string name="wo_funny">面白い</string>
+    <string name="wo_readable_chinese">簡単な中国語</string>
+
+    <string name="vi_all">オール</string>
+    <string name="vi_understanding_china">中国理解</string>
+    <string name="vi_language_learning">語学学習</string>
+    <string name="vi_music">音楽</string>
+    <string name="vi_funny">面白い</string>
+    <string name="vi_news">ニュース</string>
+
+    <string name="to_locale_food">フード</string>
+    <string name="to_locale_entertainment">エンターテインメント</string>
+    <string name="to_locale_relationships">関係</string>
+    <string name="to_locale_hobbies">趣味</string>
+    <string name="to_locale_travel">旅行</string>
+    <string name="to_locale_culture">文化</string>
+    <string name="to_locale_social">ソーシャル</string>
+    <string name="to_locale_exercise">運動</string>
+
+    <string name="co_locale_all">オール</string>
+    <string name="co_locale_pinyin_1">ピンイン</string>
+    <string name="co_locale_beginner_1">初心者1</string>
+    <string name="co_locale_beginner_2">初心者2</string>
+    <string name="co_locale_intermediate_1">中級者1</string>
+    <string name="co_locale_intermediate_2">中級者2</string>
+    <string name="co_locale_advanced_1">上級者1</string>
+    <string name="co_locale_advanced_2">上級者2</string>
+
+    <string name="co_locale_pinyin_desc">\r\n\u003cp\u003e\r\n中国語はピンインで始まります。北京語の正しい発音の基礎を学ぶ。\r\n\u003c/p\u003e\r\n</string>
+    <string name="co_locale_beginner_1_desc">\u003cp\u003e\r\n実践的な会話や聞き取りに重点を置いて、中国語の基礎力を固める。\r\n\u003c/p\u003e</string>
+    <string name="co_locale_beginner_2_desc">\u003cp\u003e\r\n基本的な文法、語彙などを使って、基本的な口語を強化しましょう。\r\n\u003c/p\u003e</string>
+    <string name="co_locale_intermediate_1_desc">\u003cp\u003e\r\n専門の中国語の文法パターン、フレーズ、あなたの興味に合った語彙を学びましょう。\r\n\u003c/p\u003e</string>
+    <string name="co_locale_intermediate_2_desc">\u003cp\u003e\r\n毎日の会話に自信を持ち、実践的なトピックに基づいてより高度な文章構造を学ぶ。\r\n\u003c/p\u003e</string>
+    <string name="co_locale_advanced_1_desc">上級者1</string>
+    <string name="co_locale_advanced_2_desc">上級者2</string>
+
+    <string name="to_locale_desc_1">中国料理に関連する食べ物、エチケット、注文、準備などについて話してください。</string>
+    <string name="to_locale_desc_2">モダンで実用的な中国語を使って、自由時間を過ごす方法と、エンターテイメントのために何をするかについて話し合う。</string>
+    <string name="to_locale_desc_3">ロマンチック、家族的、プロフェッショナル、その他の様々な関係の中で、中国語でコミュニケーションする方法を学びます。</string>
+    <string name="to_locale_desc_4">中国語を使って、写真、音楽、映画、本などのさまざまな趣味について話し合ってください。</string>
+    <string name="to_locale_desc_5">関連するトピック、話題、歴史を通して中国文化についての知識を深めてください。</string>
+    <string name="to_locale_desc_6">中国では、チケット、交通機関、アトラクション、スモールトークなどのクラスで実践的な中国語を学びましょう。</string>
+    <string name="to_locale_desc_7">中国語を使って、環境、経済、政治などのトピックに関する深い社会問題を話し合う。</string>
+    <string name="to_locale_desc_8">運動関連のすべてについて話しをするので、あなた自身のフィットネス習慣と一般的なスポーツ文化について話し合うことができます。</string>
+
+    <string name="su_trial_submit_title">1-on-1無料体験授業</string>
+
+    <string name="su_trial_submit_text">
+    <![CDATA[
+            1-on-1中国語クラス<br/>
+            プロの中国語講師<br/>
+            全言語での評価<br/>
+            柔軟なスケジュール
+        ]]>
+    </string>
+    <string name="new_version">新バージョン</string>
+    <string name="critical_update">重要な更新プログラム</string>
+    <string name="new_version_available">TutorMandarinの新バージョンが利用可能です。</string>
+    <string name="update_new_version">TutorMandarinを更新してください。</string>
+    <string name="basic">ベーシック</string>
+    <string name="kids">子供</string>
+    <string name="update">ダウンロード</string>
+    <string name="filter">フィルター</string>
+    <string name="reset">やり直し</string>
+    <string name="sory_by_category">カテゴリー別に並べる</string>
+    <string name="sory_by_level">レベル別に並べる</string>
+    <string name="beginner1">初級者 1</string>
+    <string name="beginner2">初級者 2</string>
+    <string name="intermediate1">中級者 1</string>
+    <string name="intermediate2">中級者 2</string>
+    <string name="advanced1">上級者 1</string>
+    <string name="advanced2">上級者 2</string>
+    <string name="kid0">子供 0</string>
+    <string name="kid1">子供 1</string>
+    <string name="kid2">子供 2</string>
+    <string name="kid3">子供 3</string>
+    <string name="kid">子供</string>
+    <string name="adult">大人</string>
+    <string name="downloading">ダウンロード</string>
+    <string name="select_level">レベルでコースを選ぶ</string>
+    <string name="updating_title">TutorMandarinをアップデートする</string>
+    <string name="update_desc">TutorMandarin アプリ Updater</string>
+    <string name="download_complete">ダウンロード完了</string>
+    <string name="confirm_update">アップデートしますか？</string>
+    <string name="update_now">アップデート</string>
+    <string name="file_not_found">ファイルが見つかりません</string>
+
+    <!-- New in Version 2.1.3 -->
+    <string name="apply_trial_now">無料トライアルに申し込む</string>
+    <string name="select_time">時間を選択</string>
+    <string name="veryfy_phone">電話の認証</string>
+    <string name="finish">完了</string>
+    <string name="trial_today">今日無料トライアルを受ける</string>
+    <string name="submit_upcap">送信</string>
+    <string name="apply_free_trial">無料トライアル申請</string>
+    <string name="trial_intro">ようこそ！今すぐデモ授業をお試しになりたいですか？</string>
+    <string name="experience_now">今すぐ試す</string>
+    <string name="later">後で</string>
+    <string name="free_trial_today">今日無料トライアルを受ける</string>
+    <string name="send_request">確定</string>
+    <string name="trial_request_welcome">こんにちは、TutorMandarin相談室です。今日無料トライアルを受けたいですか？</string>
+    <string name="trial_request_schedule">ユーザー様、予約が %1$s で完了しました。確認をお願いします。</string>
+    <string name="et_confirm_number">TutorMandarinへのお申込みありがとうございます。SMSメッセージを送信致します。</string>
+    <string name="giving_up_trial">"授業を購入する前にトライアル授業を是非受講ください！
+※トライアル授業は無料かつプロの講師からあなたの母国語で評価を受けられます。この評価を基にあなたに最適な授業をお選びください。"
+        \n\n"しかし、無料トライアルを受けずに授業を購入することも出来ます。
+その場合は1クレジットを無料で受け取って、次回の授業購入時にご利用いただけます。お好きな方を選択ください！"</string>
+    <string name="giveup">クレジットを購入</string>
+    <string name="keep_trial">無料トライアルを受ける</string>
+    <string name="try_demo">デモ授業を試す</string>
+    <string name="student">学生</string>
+    <string name="consultant">相談する</string>
+</resources>

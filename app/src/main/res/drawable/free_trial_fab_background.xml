@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+               android:shape="oval">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#746af4"
+                android:endColor="#3c82f4" />
+        </shape>
+
+    </item>
+    <item android:gravity="center" >
+        <bitmap android:src="@drawable/ic_call"
+                android:gravity="fill_horizontal" />
+
+    </item>
+
+</layer-list>

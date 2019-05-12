@@ -1,0 +1,78 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+    <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_cover_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:overlayImage="@drawable/grey_layer"
+                    fresco:placeholderImage="@drawable/img_pre_course"
+                    fresco:placeholderImageScaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/text_color_black" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_course_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@color/text_color_black" />-->
+            </LinearLayout>
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_class_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shadow_bottom" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

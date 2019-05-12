@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 25dp -->
+    <dimen name="toolbar_top_padding">0dp</dimen>
+    <dimen name="actionbar_height">55dp</dimen>
+
+    <dimen name="fab_shadow">3dp</dimen>
+    <dimen name="fab_pressed_shadow">6dp</dimen>
+</resources>

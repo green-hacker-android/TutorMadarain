@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/flashcard_background_color"
+    tools:context=".ui.fragment.FlashcardTutorialFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imv_flashcard_icon"
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:contentDescription="@null"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <com.uncopt.android.widget.text.justify.JustifiedTextView
+            android:id="@+id/tv_flashcard_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imv_flashcard_tutorial_close"
+        android:layout_width="@dimen/icon_large_size"
+        android:layout_height="@dimen/icon_large_size"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_cross_white" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_update_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:padding="@dimen/very_large_margin"
+        android:text="@string/nt_today"
+        android:textColor="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_update_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_update_date" />
+</RelativeLayout>

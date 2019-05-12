@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_whats_on_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/very_large_margin"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/img_pre_whatson"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="@color/white"
+        fresco:roundingBorderWidth="2dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_whats_on_main_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/very_large_margin"
+        android:gravity="center"
+        android:padding="@dimen/normal_margin">
+
+        <ImageView
+            android:id="@+id/imv_whats_on_favourite_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_favourite_cancel"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_whats_on_favorite_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/sdv_whats_on_photo"
+        android:layout_toStartOf="@id/ll_whats_on_main_rate"
+        android:maxLines="2"
+        android:padding="@dimen/normal_margin"
+        android:textColor="#88bbbbbb" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/narrow_stroke"
+        android:layout_alignParentBottom="true"
+        android:background="#88bbbbbb" />
+
+</RelativeLayout>

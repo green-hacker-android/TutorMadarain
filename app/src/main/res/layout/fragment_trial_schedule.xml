@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="inc.osbay.android.tutormandarin.ui.fragment.TrialScheduleFragment">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_bar_height"
+        android:layout_below="@id/tool_bar">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow_downwards"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_downwards"/>
+
+        <ImageView
+            android:id="@+id/imv_trial_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="When would you like your free trial?"
+            android:textColor="@color/text_color_black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_bar_height"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow_upwards"/>
+
+        <TextView
+            android:id="@+id/tv_skip_trial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="SKIP"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/text_color_black"/>
+
+        <TextView
+            android:id="@+id/tv_submit_trial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="SUBMIT"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#e4645c"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/fl_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom_bar"
+        android:layout_below="@id/rl_top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_weekdays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_trial_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:placeholderImage="@drawable/ic_welcome_1"
+            fresco:placeholderImageScaleType="fitXY"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_trial_submit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/su_trial_submit_title"
+                android:textSize="22sp"
+                app:layout_marginStartPercent="16%"
+                app:layout_marginTopPercent="47%"/>
+
+            <TextView
+                android:id="@+id/tv_trial_submit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_trial_submit_title"
+                android:lineSpacingExtra="6dp"
+                app:layout_marginStartPercent="9%"
+                app:layout_marginTopPercent="4%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/very_large_margin">
+
+            <TextView
+                android:id="@+id/tv_apply_trial_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/btn_bg_package_tutorial_press"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="@dimen/very_large_margin"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingRight="@dimen/extremely_large_margin"
+                android:paddingLeft="@dimen/extremely_large_margin"
+                android:text="@string/apply_trial_now"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="@dimen/very_large_margin"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingRight="@dimen/extremely_large_margin"
+                android:paddingLeft="@dimen/extremely_large_margin"
+                android:text="@string/wt_skip"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_marginStartPercent="9%"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imv_close_trial_info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_cross_white"/>
+    </RelativeLayout>
+</RelativeLayout>

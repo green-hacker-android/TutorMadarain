@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/extremely_large_margin"
+              android:paddingTop="@dimen/extremely_large_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:text="@string/tu_select_class_type"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/text_color_black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_booking_lessons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_large_margin"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/very_large_margin"
+        android:text="@string/tu_select_course"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black"
+        />
+
+    <TextView
+        android:id="@+id/tv_booking_topics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/very_large_margin"
+        android:text="@string/tu_select_topic"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black"
+        />
+</LinearLayout>

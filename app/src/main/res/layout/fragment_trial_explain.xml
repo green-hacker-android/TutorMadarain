@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.fragment.TrialExplainFragment">
+
+    <!--<include-->
+    <!--android:id="@+id/tool_bar"-->
+    <!--layout="@layout/tool_bar" />-->
+
+        <RelativeLayout
+            android:id="@+id/tool_bar_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:background="#E45F56"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tool_bar_space">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <ImageView
+                    android:id="@+id/imv_free_trial_process_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imv_free_trial_process_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imv_free_trial_process_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imv_free_trial_process_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imv_free_trial_process_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tool_bar"
+            android:background="@drawable/shadow_bottom"/>
+</RelativeLayout>

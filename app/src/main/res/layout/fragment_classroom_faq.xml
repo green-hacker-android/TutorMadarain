@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/faq1_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_1"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq1_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="@string/faq1_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq1_content2"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq1_content3"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq2_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_2"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq2_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq2_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq2_content2"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq3_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_3"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq3_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq3_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq3_content2"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq4_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_4"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq4_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq4_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq5_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_5"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq5_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq5_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq6_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_6"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq6_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq6_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq6_content2"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq7_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_7"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow7"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq7_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq7_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq8_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_8"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow8"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq8_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="@string/faq8_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq8_content2"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq9_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_9"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow9"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq9_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq9_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq10_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_10"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq10_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq10_content1"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq11_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_11"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow11"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq11_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq11_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq12_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_12"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow12"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq12_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq12_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq12_content2"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq12_content3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq12_content4"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq12_content5"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq13_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_13"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow13"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq13_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq13_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq13_content2"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq13_content3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq13_content4"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq14_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_14"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow14"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq14_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq14_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq15_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_15"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow15"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq15_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq15_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq16_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_16"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow16"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq16_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq16_content1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq16_content2"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq17_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_17"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow17"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq17_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq17_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/faq18_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_18"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/arrow18"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_head_down_black"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/grey_gradient"/>
+
+            <LinearLayout
+                android:id="@+id/faq18_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:paddingStart="@dimen/extremely_large_margin"
+                android:paddingTop="@dimen/very_large_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq18_content1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

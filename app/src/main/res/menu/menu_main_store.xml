@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/opt_promo_code"
+        android:icon="@drawable/ic_menu_promo_code"
+        android:title="Promo Code"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/opt_store"
+        android:icon="@drawable/ic_menu_store"
+        android:title="@string/cs_title"
+        app:showAsAction="always"/>
+</menu>

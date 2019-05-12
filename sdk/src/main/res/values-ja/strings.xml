@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sdk</string>
+    <string name="os_call_support_success">あなたは%1$sを%2$sに電話しました。</string>
+    <string name="os_call_support_fail">あなたは%1$sを%2$sに電話できませんでした。</string>
+</resources>

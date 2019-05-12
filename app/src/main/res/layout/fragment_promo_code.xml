@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="inc.osbay.android.tutormandarin.ui.fragment.PromoCodeFragment"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_promo_code_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_promo_blur"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_promo_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"/>
+
+        <LinearLayout
+            android:id="@+id/ll_my_promo_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tool_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/pc_promo_code_icon_miss"
+                android:src="@drawable/ic_promo_code_top"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pc_my_promo_code_lbl"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_my_promo_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_my_promo_code"
+                android:paddingBottom="5dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/pc_my_promo_code_hint"
+                android:textColor="@color/promo_based_color"
+                android:textSize="25sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_my_promo_code_explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:textColor="@color/text_color_black"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_refer_a_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/btn_bg_refer_friend"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/pc_refer_a_friend"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_have_promo_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="@string/pc_have_promo_code"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

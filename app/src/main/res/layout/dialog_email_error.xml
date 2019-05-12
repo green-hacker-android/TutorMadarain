@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_email_err_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/si_dialog_email_error_lbl"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_invalid_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email_err_lbl"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/si_invalid_email"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_email_err"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_invalid_email"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:background="@drawable/transparent_rectangle"
+        android:hint="@string/si_dialog_forget_pwd_email"
+        android:padding="10dp" />
+
+</RelativeLayout>

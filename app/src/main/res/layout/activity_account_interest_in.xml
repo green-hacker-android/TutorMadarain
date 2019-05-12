@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layout_background_light_white"
+              android:orientation="vertical"
+              tools:context=".ui.activity.AccountInterestInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginTop="@dimen/toolbar_top_padding"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/ac_info_interest_in"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imv_interest_in_back"
+                android:layout_width="@dimen/icon_normal_size"
+                android:layout_height="@dimen/icon_normal_size"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_left"
+                android:textColor="@color/text_color_black"/>
+
+            <TextView
+                android:id="@+id/tv_interest_in_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ac_info_interest_in_save"
+                android:textColor="@color/text_color_black"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_bottom"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_interest_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+</LinearLayout>
+

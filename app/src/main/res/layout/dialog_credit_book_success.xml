@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/extremely_large_margin"
+    android:paddingTop="@dimen/extremely_large_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:text="@string/bo_booking_confirmed"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/text_color_black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_my_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_large_margin"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="@string/bo_view_my_schedule"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black" />
+
+    <TextView
+        android:id="@+id/tv_book_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_large_margin"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="@string/bo_book_another_lesson"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black" />
+
+    <TextView
+        android:id="@+id/tv_choose_tutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_large_margin"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="@string/bo_view_other_tutors"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black" />
+
+    <TextView
+        android:id="@+id/tv_back_to_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_large_margin"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="@string/bo_back_main_menu"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black" />
+
+</LinearLayout>

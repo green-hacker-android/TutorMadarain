@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:background="@color/layout_background_light_white">
+
+        <RelativeLayout
+            android:id="@+id/rl_today_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/more_light_gray">
+
+            <RelativeLayout
+                android:id="@+id/rl_sub_today_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/very_large_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_selected_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="March 2016"
+                        android:textColor="@color/primary_color" />
+
+                    <TextView
+                        android:id="@+id/tv_selected_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sd_today"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/primary_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imv_schedule_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/very_large_margin"
+                        android:paddingRight="@dimen/very_large_margin"
+                        android:src="@drawable/ic_grey_todo_list" />
+
+                    <ImageView
+                        android:id="@+id/imv_schedule_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/very_large_margin"
+                        android:src="@drawable/ic_black_schedule" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_today_bar">
+
+            <LinearLayout
+                android:id="@+id/ll_week_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sd_sunday"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sd_monday"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sd_tuesday"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sd_wednesday"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sd_thursday"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sd_friday"
+                    android:textColor="@color/text_color_black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sd_saturday"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_date_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_week_days" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_package_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_calendar_view"
+            android:orientation="horizontal"
+            android:padding="@dimen/very_large_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@color/yellow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/normal_margin"
+                    android:text="@string/sd_package_booking"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/very_large_margin"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@color/primary_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/normal_margin"
+                    android:text="@string/sd_credit_booking"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_schedule_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_package_credit"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            android:paddingTop="@dimen/normal_margin" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_package_credit"
+            android:gravity="center"
+            android:text="@string/sd_no_booking"
+            android:textColor="@color/text_color_black"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/rl_calendar_view"
+            android:background="@drawable/shadow_bottom" />
+    </RelativeLayout>
+</RelativeLayout>

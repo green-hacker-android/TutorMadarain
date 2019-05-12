@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/layout_background_light_white"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_fc_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_grammar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:text="YESB"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_pinyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="women"
+                    android:textAppearance="@android:style/TextAppearance.Large" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imv_opt_more"
+                android:layout_width="@dimen/icon_normal_size"
+                android:layout_height="@dimen/icon_normal_size"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_more_option" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_finished_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_part_of_speech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Noun"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/text_color_gray" />
+
+                <TextView
+                    android:id="@+id/tv_definition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="We, Us, Ourselves"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_example"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Example"
+                    android:textColor="@color/text_color_black" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

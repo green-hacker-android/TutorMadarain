@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.activity.WelcomeTutorialActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_welcome_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_wt_sign_in_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_wt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_sign_up_rect_red"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/wt_sign_up"
+            android:textAllCaps="true"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_wt_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_rectangle_white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/wt_sign_in"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dots_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_wt_sign_in_up">
+
+        <TextView
+            android:id="@+id/tv_welcome_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ll_vp_welcome_tutorial_dots_count"
+            android:padding="20dp"
+            android:text="@string/wt_skip"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_vp_welcome_tutorial_dots_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_welcome_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ll_vp_welcome_tutorial_dots_count"
+            android:padding="20dp"
+            android:text="@string/wt_next"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>

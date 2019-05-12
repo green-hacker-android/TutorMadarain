@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.fragment.CourseListFragment">
+
+    <LinearLayout
+        android:id="@+id/filter_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/large_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/filter_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/large_margin"
+            android:text="@string/filter"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/filter_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/filter"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vieww"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/filter_ll"
+        android:background="@drawable/grey_layer"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_course_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/vieww"
+        android:padding="5dp"/>
+
+</RelativeLayout>

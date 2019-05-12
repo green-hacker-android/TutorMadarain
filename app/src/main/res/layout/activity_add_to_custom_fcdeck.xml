@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_light_white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.CreateFCDeckActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginTop="@dimen/toolbar_top_padding"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/fc_add_to_custom_list"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/fc_cancel"
+                android:textColor="@color/text_color_black" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/fc_save"
+                android:textColor="@color/text_color_black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_bottom" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_custom_fcdeck_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

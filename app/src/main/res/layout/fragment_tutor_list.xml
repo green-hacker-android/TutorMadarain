@@ -1,0 +1,82 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2C666">
+
+            <RelativeLayout
+                android:id="@+id/rl_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/very_large_margin"
+                android:background="@drawable/bg_tab_normal"
+                android:gravity="center_vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/imv_search_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_search" />
+
+                <ImageView
+                    android:id="@+id/imv_search_cancel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_cross_white" />
+
+                <EditText
+                    android:id="@+id/edt_search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imv_search_icon"
+                    android:layout_toStartOf="@id/imv_search_cancel"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:hint="@string/tu_search"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_white"
+                    android:textColorHint="@color/text_color_white" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tutor_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_header"
+            android:background="#dddddd" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/ll_header"
+            android:background="@drawable/shadow_bottom" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/right_favorite_drawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />
+
+</android.support.v4.widget.DrawerLayout>

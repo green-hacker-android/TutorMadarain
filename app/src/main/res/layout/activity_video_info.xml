@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.VideoInfoActivity">
+
+    <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+    <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3825A"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:id="@+id/imv_back"
+                android:layout_width="@dimen/icon_large_size"
+                android:layout_height="@dimen/icon_large_size"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_cross_white" />
+
+            <TextView
+                android:id="@+id/tv_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/icon_large_size"
+                android:layout_toEndOf="@id/imv_back"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/other_views"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tasting amazing taiwan food... in taiwan!!"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/vi_author_name"
+                android:textColor="@color/text_color_gray" />
+
+            <TextView
+                android:id="@+id/tv_video_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viewed : 1,224,144"
+                android:textColor="@color/text_color_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_gray" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_video_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_background_light_white"
+                app:tabIndicatorColor="#00ABA0"
+                app:tabIndicatorHeight="4dp"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabTextColor="@color/text_color_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="-1dp"
+                android:background="@color/light_gray" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_video_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

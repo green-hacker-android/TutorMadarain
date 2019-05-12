@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_background_light_white"
+                tools:context=".ui.fragment.PackageStoreFragment">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:padding="@dimen/very_large_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/pk_my_credits"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/very_large_margin">
+
+            <LinearLayout
+                android:id="@+id/ll_new_package_info_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/very_large_margin">
+
+                <TextView
+                    android:id="@+id/tv_student_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/primary_color"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pk_credits"
+                    android:textColor="@color/primary_color"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_add_credit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/ll_new_package_info_credit"
+                android:scaleType="center"
+                android:src="@drawable/ic_plus_white"
+                app:backgroundTint="@color/primary_color"
+                app:elevation="@dimen/fab_shadow"
+                app:pressedTranslationZ="@dimen/fab_pressed_shadow"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_my_credit"
+        android:layout_marginEnd="@dimen/very_large_margin"
+        android:layout_marginStart="@dimen/very_large_margin">
+
+        <LinearLayout
+            android:id="@+id/package_store_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/very_large_margin"
+                android:text="@string/pk_store_recommended"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recommended_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/very_large_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+
+            <TextView
+                android:id="@+id/basic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/very_large_margin"
+                android:text="@string/basic"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_basic_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/very_large_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+
+            <TextView
+                android:id="@+id/kid_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/very_large_margin"
+                android:text="@string/kids"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_kids_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/very_large_margin"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/rl_my_credit"
+        android:background="@drawable/shadow_bottom"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_pk_store_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_triangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/triangle"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/rl_triangle"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rectangle"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_pk_store_what_is_package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ll_pk_store_booking_rule"
+                android:layout_alignStart="@+id/ll_pk_store_booking_rule"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ic_whats_package"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_pk_store_is_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/pk_lst_what_is_package_lbl"
+                    android:textColor="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pk_store_booking_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_pk_store_what_is_package"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ic_booking_rule"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_booking_rule_lbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/pk_lst_booking_rules"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_alignEnd="@id/tv_booking_rule_lbl"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/light_gray"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

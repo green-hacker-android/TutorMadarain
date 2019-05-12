@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/extremely_large_margin"
+              android:paddingTop="@dimen/extremely_large_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:text="@string/bo_cb_cancelled"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/text_color_black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/text_color_black"
+        android:text="@string/bo_cb_cancel_success"/>
+
+    <TextView
+        android:id="@+id/tv_book_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/very_large_margin"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:text="@string/bo_cb_another_time"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black"
+        />
+
+    <TextView
+        android:id="@+id/tv_my_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_large_margin"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingLeft="@dimen/extremely_large_margin"
+        android:paddingRight="@dimen/extremely_large_margin"
+        android:paddingTop="@dimen/very_large_margin"
+        android:text="@string/bo_cb_back_to_schedule"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/text_color_black"
+        />
+
+</LinearLayout>

@@ -1,0 +1,1472 @@
+<resources>
+    <string name="app_name">TutorMandarin</string>
+
+    <!-- Keys -->
+    <string name="server_client_id">118678332637-63kmuc5nuc4l17tv3e0a3j5jn77915a9.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1439689359690020</string>
+    <string name="fabric_api_key">xQdgo3nwPtBLbuYh7gtwBnbW8</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+
+    <!-- LeftDrawerMenu Part (lmd) -->
+    <string name="lmd_sign_up_sign_in">Registrierung/Anmeldung</string>
+    <string name="lmd_notifications">Benachrichtigungen</string>
+    <string name="lmd_upcoming_lesson">Antehender Unterricht</string>
+    <string name="lmd_my_resume">Meine Leistungen</string>
+    <string name="lmd_my_level">Mein Level</string>
+    <string name="lmd_my_badges">Meine Auszeichnungen</string>
+    <string name="lmd_my_notes">Meine Bemerkungen</string>
+    <string name="lmd_walkthrough">Rundgang</string>
+    <string name="lmd_understand_free_trial">Ablauf Kostenlose Probestunde</string>
+    <string name="lmd_credit">CREDITS</string>
+    <string name="lmd_sign_out">Abmelden</string>
+    <string name="lmd_share_app">TutorMandarin Teilen</string>
+    <string name="lmd_no_upcoming">Kein anstehender Unterricht</string>
+    <string name="lmd_refer_a_friend">Einen Freund werben</string>
+    <string name="lmd_share_extra_title">&#160;hat Dich eingeladen Chinesisch mit TutorMandarin zu
+        lernen.
+    </string>
+    <string name="lmd_share_extra_content">
+        <![CDATA[Ich verwende die neue App TutorMandarin um Chinesisch zu lernen. Klick <u><a href="https://www.tutormandarin.net/de/">hier</a></u> um es auch auszuprobieren! <br/>http://tutormandarin.net]]>
+    </string>
+    <string name="lmd_sign_out_msg">Bist Du sicher, dass Du Dich abmelden willst?</string>
+    <string name="lmd_sign_out_cancel">Abbrechen</string>
+    <string name="lmd_btn_sign_out">Abmelden</string>
+    <string name="lmd_whats_price">Was ist die Preisgestaltung</string>
+
+    <!-- SignIn Part (si) -->
+    <string name="si_email_hint">beispiel@name.de</string>
+    <string name="si_invalid_email">Das E-Mail-Format ist nicht korrekt.</string>
+    <string name="si_mobile_phone">Telefon</string>
+    <string name="si_rb_mobile_phone">Telefon</string>
+    <string name="si_invalid_phone">Format Telefon nicht korrekt.</string>
+    <string name="si_email">E-Mail</string>
+    <string name="si_password">Passwort</string>
+    <string name="si_invalid_password">Format Passwort nicht korrekt.</string>
+    <string name="si_forgot_password">Passwort vergessen</string>
+    <string name="si_btn_sign_in">Anmelden</string>
+    <string name="si_sign_in">Anmelden</string>
+    <string name="si_sign_up_link">Noch keinen Account? Zur Anmeldung</string>
+    <string name="si_have_account">Noch keinen Account?</string>
+    <string name="si_sign_up">Registrieren</string>
+    <string name="si_dialog_ok">OK</string>
+    <string name="si_signing_in">Anmelden&#8230;</string>
+    <string name="si_sign_in_error">Fehler</string>
+    <string name="si_dialog_email_error_lbl">Die E-Mail, die Sie eingegeben haben, ist nicht
+        vorhanden. Bitte überprüfen Sie erneut.
+    </string>
+    <string name="si_dialog_forget_pwd_email">E-mail</string>
+    <string name="si_dialog_forget_pwd_lbl">Senden Sie ein neues Passwort an Ihre E-Mail.</string>
+    <string name="si_dialog_forget_pwd_ok">OK</string>
+    <string name="si_dialog_forget_pwd_cancel">Stornieren</string>
+    <string name="si_dialog_forget_loading">Laden&#8230;</string>
+    <string name="si_dialog_email_error_loading">Laden&#8230;</string>
+    <string name="si_dialog_reset_time_limit">Passwort zurücksetzen darf nicht weniger als 1 min
+        auslösen. Bitte versuchen Sie es später noch einmal
+    </string>
+    <string name="si_dialog_reset_time_limit_ok">OK</string>
+    <string name="si_dialog_send_succeed">Senden Sie Erfolg</string>
+    <string name="si_dialog_send_succeed_txt">Die Post wird Ihnen in wenigen Minuten zugeschickt,
+        bitte ändern Sie das Passwort in 30 Minuten.
+    </string>
+    <string name="si_dialog_send_succeed_ok">OK</string>
+    <string name="si_google_sign_in_error">Kann sich nicht anmelden</string>
+    <string name="si_google_result_error">Fehler</string>
+    <string name="si_connection_error">Verbindungsfehler</string>
+    <string name="si_sign_in_with">Melden Sie sich mit</string>
+
+    <!-- Sign Up Part (su) -->
+    <string name="su_sign_up_trailer">Anmeldung zur Kostenlosen Probestunde</string>
+    <string name="su_invalid_name">Vor- und Nachname-Format nicht korrekt.</string>
+    <string name="su_email">E-Mail</string>
+    <string name="su_invalid_email">Format E-Mail nicht korrekt.</string>
+    <string name="su_phone">Telefon</string>
+    <string name="su_invalid_phone">Format Telefon nicht korrekt.</string>
+    <string name="su_password">Passwort</string>
+    <string name="su_invalid_password">Format Passwort nicht korrekt.</string>
+    <string name="su_sign_up_create_account">Account erstellen</string>
+    <string name="su_first_name">Vorname</string>
+    <string name="su_last_name">Nachname</string>
+    <string name="su_eg_email">123@beipsiel.de</string>
+    <string name="su_mobile_phone">Telefon</string>
+    <string name="su_password_hint">6–10 Zeichen</string>
+    <string name="su_dialog_ok">OK</string>
+    <string name="su_congratulation">Glückwunsch!</string>
+    <string name="su_congratulation_msg">Du hast Dich für Deine 50-minütige kostenlose Probestunde
+        angemeldetinute. Einer unserer Consultants wird dich so bald wie möglich kontaktieren und
+        mit Dir eine Zeit ausmachen.
+    </string>
+    <string name="su_dialog_congratulation_ok">OK</string>
+    <string name="su_sign_up_error">Fehler</string>
+    <string name="su_signing_up">Anmelden&#8230;</string>
+    <string name="su_term_and_agreement_1">Ich erkläre mich einverstanden mit den TutorMandarin\'s&#160;</string>
+    <string name="su_term_and_agreement_2">Geschäftsbedingungen</string>
+    <string name="su_term_and_agreement_3">&#160;und&#160;</string>
+    <string name="su_term_and_agreement_4">Datenschutzbestimmungen.</string>
+    <string name="su_have_account">Du hast schon einen Account?</string>
+    <string name="su_sign_in">Anmelden</string>
+    <string name="su_step_of_three">Schritt %d von 3</string>
+    <string name="su_google_sign_in_error">Kann sich nicht anmelden</string>
+    <string name="su_google_result_error">Fehler</string>
+    <string name="su_connection_error">Verbindungsfehler</string>
+    <string name="su_tutormandarin_account">TutorMandarin Konto</string>
+    <string name="su_chinese_level_title">Dein chinesisches Niveau</string>
+    <string name="su_chinese_level_msg">Sagen Sie uns, welchen Level Sie jetzt denken. So können wir
+        geeignete Kurse, Materialien und vieles mehr empfehlen. Machen Sie sich keine Sorgen, wenn
+        es los ist, alle Schüler haben die Möglichkeit, eine vollständige Sprachauswertung von einem
+        professionellen chinesischen Tutor zu bekommen.
+    </string>
+    <string name="su_chinese_level_ok">OK</string>
+    <string name="su_your_goals_title">Deine Tore</string>
+    <string name="su_your_goals_msg">Wir verstehen, dass sich Ihre Ziele im Laufe der Zeit ändern
+        können. Besuchen Sie Ihr Profil jederzeit zu aktualisieren.
+    </string>
+    <string name="su_your_goals_ok">OK</string>
+    <string name="su_your_interests_title">Deine Interessen</string>
+    <string name="su_your_interests_msg">Sie sind effektiver und bleiben länger motiviert, wenn Sie
+        aus Themen lernen, die Sie interessieren. Passen Sie Ihre Interessen jederzeit an, indem Sie
+        Ihr Profil besuchen.
+    </string>
+    <string name="su_your_interests_ok">OK</string>
+    <string name="su_choose_request_notice">Beachten</string>
+    <string name="su_choose_request_msg">Bitte wählen Sie mindestens 1 Option.</string>
+    <string name="su_choose_request_ok">OK</string>
+    <string name="su_updating">Aktualisierung&#8230;</string>
+    <string name="su_sign_in_with">Melden Sie sich mit</string>
+    <string-array name="su_goals">
+        <item>Reise</item>
+        <item>Geschäft</item>
+        <item>Chinesischer Eignungstest</item>
+        <item>Bildung</item>
+        <item>Tägliche Kommunikation</item>
+    </string-array>
+    <string-array name="su_interests">
+        <item>Sätze</item>
+        <item>Sprachen lernen</item>
+        <item>Überlebensfähigkeiten</item>
+        <item>Nachrichten</item>
+        <item>Verständnis von China</item>
+        <item>Komisch</item>
+        <item>Gespräche</item>
+        <item>Musik</item>
+    </string-array>
+    <string name="su_beginner_1">Anfänger 1</string>
+    <string name="su_beginner_1_desc">Sie sprechen kein Chinesisch oder sprechen nur ein bisschen
+        Chinesisch.
+    </string>
+    <string name="su_beginner_2">Anfänger 2</string>
+    <string name="su_beginner_2_desc">Sie können grundlegende Gespräche führen und einfache Fragen
+        auf Chinesisch stellen.
+    </string>
+    <string name="su_intermediate_1">Zwischenstufe 1</string>
+    <string name="su_intermediate_1_desc">Sie können sich bereits vertrauensvoll über vertraute
+        Themen im Zusammenhang mit Ihren Interessen verständigen. Sie können den Kontext eines
+        Gesprächs verstehen und an einem Austausch teilnehmen.
+    </string>
+    <string name="su_intermediate_2">Zwischenstufe 2</string>
+    <string name="su_intermediate_2_desc">Sie können vertraulich in Chinesisch sowohl auf
+        routinemäßige als auch auf nicht-routinemäßige Angelegenheiten im Zusammenhang mit Ihren
+        Interessen kommunizieren.
+    </string>
+    <string name="su_advanced_1">Fortgeschrittene 1</string>
+    <string name="su_advanced_1_desc">Sie können mit einheimischen chinesischen Sprechern in
+        alltäglichen Situationen mit wenig Missverständnis kommunizieren und verstehen, aber immer
+        noch gelegentliche Fehler machen.
+    </string>
+    <string name="su_advanced_2">Fortgeschrittene 2</string>
+    <string name="su_advanced_2_desc">Sie können mit einheimischen chinesischen Sprechern in
+        vielfältigen Situationen interagieren und sich mit grammatikalischer Genauigkeit und einem
+        breiten Spektrum von Vokabeln ausdrücken.
+    </string>
+    <string name="su_continue_step">Schritt 1 von 3</string>
+    <string name="su_continue_back">ZURÜCK</string>
+    <string name="su_continue_next">NÄCHSTER</string>
+    <string name="su_accomplish_chinese">Was möchtest du mit Chinesen erreichen?</string>
+    <string name="su_what_interest_in">Was interessiert dich?</string>
+    <string name="su_verify_number_desc">
+        <![CDATA[Wir haben einen 4-stelligen Bestätigungscode an <b>%1$s %2$s</b> gesendet. Bitte unten eingeben.]]></string>
+    <string name="su_sign_up">Anmelden</string>
+
+    <!-- Main Fragment (main) -->
+    <string name="main_trial_not_complete">Kostenlose Probestunde noch nicht absolviert</string>
+    <string name="main_schedule">Stundenplan</string>
+    <string name="main_explore_now">Jetzt erkunden</string>
+    <string name="main_sign_up">Anmelden</string>
+    <string name="main_up_to">BIS ZU</string>
+    <string name="main_off">WENIGER</string>
+    <string name="main_package">PAKETE</string>
+    <string name="main_package_explanation">Lernen mit Kurspaketen</string>
+    <string name="main_course">Kurse</string>
+    <string name="main_course_explanation">Wähle Level oder Thema</string>
+    <string name="main_tutor">Tutor</string>
+    <string name="main_tutor_explanation">Wähle einen professionellen Tutor</string>
+    <string name="main_daily_content">AKTUELL</string>
+    <string name="main_daily_content_article">Chinesische Artikel, Videos and Lernkarten</string>
+    <string name="main_online_support">ONLINE SUPPORT</string>
+    <string name="main_online_support_explanation">TutorMandarin kontaktieren</string>
+    <string name="main_unavailable">Nicht verfügbar</string>
+    <string name="main_unavailable_msg">Sorry, auf diesen Inhalt kann erst nach Abschluss der kostenlosen Probestunde zugegriffen werden.Sie müssen den Test beenden, um einen anderen Kauf zu tätigen.
+    </string>
+    <string name="main_unavailable_ok">Ich werde mich umsehen</string>
+    <string name="main_alert_notice">Beachten</string>
+    <string name="main_alert_notice_ok">OK</string>
+    <string name="main_awaiting_trial">Auf freie Testversion warten</string>
+    <string name="main_sign_up_trial">Melden Sie sich kostenlos an</string>
+    <string name="main_submit_information">Geben Sie die erforderlichen Informationen ein</string>
+    <string name="main_pk_loading">Laden</string>
+
+    <!-- Study Material Part (sm) -->
+    <string name="sm_title">LERNMATERIALIEN</string>
+    <string name="sm_whats_on">WAS GEHT AB</string>
+    <string name="sm_whats_on_msg">Chinesische Redewendungen, Nachrichten, Spaß und mehr</string>
+    <string name="sm_videos">VIDEOS</string>
+    <string name="sm_videos_msg">Chinesische videos</string>
+    <string name="sm_flash_cards">LERNKARTEN</string>
+    <string name="sm_flash_cards_msg">Chinesische Lernkarten</string>
+
+    <!-- Whats On Part (wo) -->
+    <string name="wo_list_all">Alle</string>
+    <string name="wo_select_topic">AUSWAHL THEMEN</string>
+    <string name="wo_title">WAS GEHT AB</string>
+    <string name="wo_dialog_loading">Laden</string>
+    <string name="wo_connection_error">Verbindungsfehler.</string>
+    <string name="wo_search">Suche&#8230;</string>
+    <string name="wo_add_to_favourite">Zu Favoriten hinzufügen</string>
+    <string name="wo_share">Teilen</string>
+    <string name="wo_already_added">Du hast dies bereits hinzugefügt</string>
+    <string name="wo_article">Artikel</string>
+    <string name="wo_vocab">Vokabular</string>
+    <string name="wo_grammar">Grammatik</string>
+    <string name="wo_successfully_added">Erfolgreich zu den Favoriten hinzugefügt</string>
+    <string name="wo_no_vocab">Keine Vokabeln.</string>
+    <string name="wo_no_grammar">Keine Grammatik.</string>
+    <string name="wo_posted">Geposted</string>
+    <string name="wo_fav_feature_unavailable">Nicht verfügbar</string>
+    <string name="wo_fav_feature_msg">Bitte melden Sie sich an \'favorite\' Funktion.</string>
+    <string name="wo_fav_feature_sign_in">Anmelden</string>
+    <string name="wo_fav_feature_cancel">Stornieren</string>
+
+    <!-- Video Part (vi) -->
+    <string name="vi_title">VIDEOS</string>
+    <string name="vi_select_topic">AUSWAHL THEMEN</string>
+    <string name="vi_list_all">Alle</string>
+    <string name="vi_dialog_loading">Laden</string>
+    <string name="vi_connection_error">Verbindungsfehler</string>
+    <string name="vi_search">Suche&#8230;</string>
+    <string name="vi_description">Beschreibung</string>
+    <string name="vi_vocab">Vokabular</string>
+    <string name="vi_viewed_count">Angesehen : %1$s</string>
+    <string name="vi_author_name">Name des Autors</string>
+
+    <!-- Flashcard part (fc) -->
+    <string name="fc_title">Lernkarten</string>
+    <string name="fc_common">Allgemein</string>
+    <string name="fc_custom">Individuell</string>
+    <string name="fc_rename_pack">Diesen Stapel umbenennen</string>
+    <string name="fc_btn_rename">UMBENENNEN</string>
+    <string name="fc_btn_rename_cancel">ABBRECHEN</string>
+    <string name="fc_delete_title">Bestätigen</string>
+    <string name="fc_delete_msg">Diese Liste löschen?</string>
+    <string name="fc_btn_delete">LÖSCHEN</string>
+    <string name="fc_btn_delete_cancel">ABBRECHEN</string>
+    <string name="fc_notice_title">Hinweis</string>
+    <string name="fc_notice_msg">Diese Liste ist leer. Du kannst Lernkarten von den allgemeinen
+        Listen zu dieser oder einer Deiner anderen eigenen Listen hinzufügen.
+    </string>
+    <string name="fc_btn_notice_ok">OK</string>
+    <string name="fc_dialog_loading">Laden</string>
+    <string name="fc_error">Fehler.</string>
+    <string name="fc_custom_cards">Karten</string>
+    <string name="fc_common_cards">Karten</string>
+    <string name="fc_common_title">Vokabular, Grammatik, Redewendungen</string>
+    <string name="fc_download_loading">Laden&#8230;</string>
+    <string name="fc_download_error">Fehler</string>
+    <string name="fc_download_ok">OK</string>
+    <string name="fc_add_to_custom_list">ZUR INDIVIDUELLEN LISTE HINZUFÜGEN</string>
+    <string name="fc_share">TEILEN</string>
+    <string name="fc_cancel">ABBRECHEN</string>
+    <string name="fc_save">SPEICHERN</string>
+    <string name="fc_download_image_loading">Laden&#8230;</string>
+    <string name="fc_audio_download_unsuccessful">Audio-Datei kann nicht heruntergeladen werden.
+    </string>
+    <string name="fc_package_title">Paket Titel</string>
+    <string name="fc_extra_share_item">Lernkarten</string>
+    <string name="fc_explain_1">Lernkarten werden beim Kauf einer Unterrichtseinheit automatisch
+        entriegelt und direkt zum passenden Level hinzugefügt.
+    </string>
+    <string name="fc_explain_2">Alle Lernkarten können zu den \'Individuellen Listen\' hinzugefügt
+        werden
+    </string>
+    <string name="fc_explain_3">\'Individuelle Listen\' können jederzeit bearbeitet oder gelöscht
+        werden
+    </string>
+    <string name="fc_lessons_complete">%1$s/%2$s Unterrichtseinheit abgeschlossen</string>
+    <string name="fc_add_new_list">Neue Liste hinzufügen</string>
+    <string name="fc_new_custom_list">NEUE INDIVIDUELLE LISTE</string>
+    <string name="fc_list_title">Listentitel</string>
+    <string name="fc_create_error">Fehler</string>
+    <string name="fc_create_msg">Cannot create flashcard pack with this name.</string>
+    <string name="fc_create_ok">OK</string>
+    <string name="fc_dialog_cancel">Cancel</string>
+
+
+    <!-- Resume part (re) -->
+    <string name="re_title">MY RESUME</string>
+    <string name="re_note_error">Fehler.</string>
+    <string name="re_badges_error">Fehler.</string>
+    <string name="re_status_tab_title">Status</string>
+    <string name="re_note_tab_title">Bemerkungen</string>
+    <string name="re_badges_tab_title">Auszeichnungen</string>
+    <string name="re_resume_learning_goal">Lernziel</string>
+    <string name="re_resume_overall">Überblick</string>
+    <string name="re_resume_level">Level</string>
+    <string name="re_resume_progress">Fortschritt</string>
+    <string name="re_resume_pronunciation">Aussprache</string>
+    <string name="re_resume_speaking">Sprechen</string>
+    <string name="re_resume_listening">Hören</string>
+    <string name="re_note_empty">Keine Bemerkungen</string>
+    <string name="re_class_finished_date">Abgeschlossen : %1$s</string>
+    <string name="re_note_class_summary">Zusammenfassung der Unterrichtseinheit</string>
+    <string name="re_note_vocab">Vokabular</string>
+    <string name="re_note_grammar">Grammatik</string>
+    <string name="re_note_pronunciation">Aussprache</string>
+    <string name="re_note_speaking">Sprechen</string>
+    <string name="re_note_listening">Hören</string>
+    <string name="re_time_based">Nach Zeit</string>
+    <string name="re_course_based">Nach Kursen</string>
+    <string name="re_social_based">Nach Bewertungen</string>
+    <string name="re_rating_and_reviews">Rückblick und Bewertung</string>
+    <string name="re_update_date">UPDATE : %1$s</string>
+    <string name="re_credits">Credits</string>
+    <string name="re_badges_complete">% Complete</string>
+    <string name="re_lessons_complete">%1$s/%2$s Lektionen abgeschlossen</string>
+
+    <!-- Package (pk) -->
+    <string name="pk_booking_rule_title">Buchungsregeln für Pakete</string>
+    <string name="pk_course_structure_title">Kursstruktur</string>
+    <string name="pk_ticket_design_title">Ticketdesign</string>
+    <string name="pk_auto_repeat_title">AUTOFILL</string>
+    <string name="pk_auto_repeat">Autofill ermöglicht es Dir die Wochentage zu wählen, an denen du
+        lernen willst. Es überträgt automatisch die richtigen Unterrichtsstunden und wählt den für
+        diese Zeit am besten verfügbaren Tutor aus. Wähle zum Beispiel Montag und Dienstag um 19 Uhr
+        aus und die Zeiten werden automatisch für einen ganzen Monat übertragen. Bitte beachte, dass
+        Besitzer von Kurspaketen mindestens alle sieben Tage eine Unterrichtsstunde nehmen müssen.
+    </string>
+    <string name="pk_booking_rule">Willkommen zum Paketbuchungssystem. Pakete sind vollständig
+        Kurse, die zu einem niedrigeren Preis verkauft werden und nach bestimmten Buchungsregeln
+        verwendet werden können. Wir empfehlen Dir Pakete, weil diese 1.) die einfachste und Wahl
+        sind und 2.) den besten Lernerfolg ermöglichen.
+    </string>
+    <string name="pk_course_structure">Die Kurse sind darauf ausgelegt, Dich Schritt für Schritt auf
+        das nächste HSK-Level vorzubereiten. Die Kurse bestehen aus 25&#8211;30 gewählten
+        „Unterrichtseinheiten“ und „Zusatzstunden“. Unterrichtsstunden dauern 50 Minuten und bringen
+        Dir neue Konzepte und Fähigkeiten bei. Die Zusatzstunden sind ebenfalls 50 Minuten lang und
+        vertiefen zuvor gelernte Konzepte und Fähigkeiten weiter.
+    </string>
+    <string name="pk_ticket_design">Jede Unterrichtseinheit wird als Ticket mit Zeit, Tutor und
+        Einheit angegeben. Tickets können bis 24 Stunden vor Beginn der Stunde geändert werden.
+        Erfolgt eine Änderung oder Absage der Stunde weniger als 24 Stunden vor Beginn, so gehen die
+        Credits für diese Stunde verloren und das Autofill wird die Reihenfolge Deiner
+        Unterrichtsstunden anpassen.
+    </string>
+    <string name="pk_start_now">STARTE JETZT</string>
+    <string name="pk_learn_more">mehr erfahrene</string>
+    <string name="pk_title">PAKET</string>
+    <string name="pk_what_title">Paket</string>
+    <string name="pk_lesson_count">Unterrichtsstunde:&#160;</string>
+    <string name="pk_supplement_count">Zusatzstunde:&#160;</string>
+    <string name="pk_completed_lesson">Abgeschlossene Unterrichtseinheiten</string>
+    <string name="pk_btn_my_booking">Buchen</string>
+    <string name="pk_my_booking_course_structure_title">Kursstruktur</string>
+    <string name="pk_my_booking_course_structure_msg">Die Kurse sind darauf ausgelegt, Dich Schritt
+        für Schritt auf das nächste HSK-Level vorzubereiten. Die Kurse bestehen aus 25&#8211;30
+        gewählten „Unterrichtseinheiten“ und „Zusatzstunden“. Unterrichtsstunden dauern 50 Minuten
+        und bringen Dir neue Konzepte und Fähigkeiten bei. Die Zusatzstunden sind ebenfalls 50
+        Minuten lang und vertiefen zuvor Gelernte Konzepte und Fähigkeiten weiter.
+    </string>
+    <string name="pk_booking_expired_date">Ablaufdatum: %1$s</string>
+    <string name="pk_section_title">Abschnitt %1$s</string>
+    <string name="pk_lesson_number">Unterrichtseinheit</string>
+    <string name="pk_supplement_number">Zusatzstunde</string>
+    <string name="pk_lesson_name">%1$s %2$s</string>
+    <string name="pk_my_lst_title">PAKET</string>
+    <string name="pk_my_lst_loading">Laden&#8230;</string>
+    <string name="pk_lst_booking_expired_date">Ablaufdatum: %1$s</string>
+    <string name="pk_user_unavailable_title">Nicht verfügbar</string>
+    <string name="pk_user_unavailable_msg">Sorry, auf diesen Inhalt kann erst nach Abschluss der kostenlosen Probestunde zugegriffen werden.Sie müssen den Test beenden, um einen anderen Kauf zu tätigen.
+    </string>
+    <string name="pk_user_unavailable_ok">Ich werde mich umsehen</string>
+    <string name="pk_package_title">Paket-Titel</string>
+    <string name="pk_lst_completed_lessons">Abgeschlossene Unterrichtseinheiten</string>
+    <string name="pk_lst_buy_new_package">Kaufe ein neues Paket</string>
+    <string name="pk_lst_what_is_package">Was ist ein Paket?</string>
+    <string name="pk_lst_what_is_package_lbl">Was ist Paket</string>
+    <string name="pk_lst_booking_rules">Paket Buchungsregeln</string>
+    <string name="pk_lst_no_package">Du hast keine Pakete</string>
+    <string name="pk_lst_purchase_package">Klicke hier um ein Paket zu erwerben</string>
+    <string name="pk_lst_btn_purchase">Paket erweben</string>
+    <string name="pk_store_title">PAKET STORE</string>
+    <string name="pk_store_dialog_loading">Shop&#8230;</string>
+    <string name="pk_store_recommended">Empfohlen</string>
+    <string name="pk_store_all">Alle</string>
+    <string name="pk_download_packages_error">Fehler</string>
+    <string name="pk_new_package_credit">%1$s Credits</string>
+    <string name="pk_lesson_mins">%1$s Mins.</string>
+    <string name="pk_store_recommended_title">Empfohlen</string>
+    <string name="pk_store_all_title">Alle</string>
+    <string name="pk_my_credits">Meine Credits</string>
+    <string name="pk_credits">Credits</string>
+
+    <!-- Tutor (tu) -->
+    <string name="tu_search">Suche&#8230;</string>
+    <string name="tu_lst_title">TUTOR</string>
+    <string name="tu_lst_loading">Laden&#8230;</string>
+    <string name="tu_lst_refresh_failed">Aktualisierung der Tutorenliste fehlgeschlagen</string>
+    <string name="tu_lst_media_loading">Laden&#8230;</string>
+    <string name="tu_lst_cant_download_video">kann Video-Datei nicht herunterladen</string>
+    <string name="tu_lst_credit_weight">Credit-Gewichtung</string>
+    <string name="tu_lst_teaching_exp">Lehrerfahrung.</string>
+    <string name="tu_lst_location">Ort</string>
+    <string name="tu_select_class_type">Wähle den Kurstyp aus</string>
+    <string name="tu_select_course">Kurs - 50-minütige Unterrichtsstunde</string>
+    <string name="tu_select_topic">Thema - 25-minütige Unterrichtseinheit</string>
+    <string name="tu_rate">Rate</string>
+    <string name="tu_exp_spec">Erfahrung und besondere Themen des Tutors</string>
+    <string name="tu_book_on_schedule">Buche im Stundenplan</string>
+    <string name="tu_special_topic">Besondere Themen Topics: %1$s</string>
+    <string name="tu_exp">Lehrerfahrung: %1$s</string>
+    <string name="tu_add_to_favorite">Zu den Favoriten hinzufügen</string>
+    <string name="tu_share">Teilen</string>
+    <string name="tu_already_added">Du hast bereits einen Tutor hinzugefügt</string>
+    <string name="tu_successfully_added">Erfolgreich den Favoriten hinzugefügt</string>
+    <string name="tu_extra_share_item">Tutor</string>
+    <string name="tu_unavailable_user_title">Nicht verfügbar</string>
+    <string name="tu_unavailable_user_msg">Sorry, auf diesen Inhalt kann erst nach Abschluss der kostenlosen Probestunde zugegriffen werden.Sie müssen den Test beenden, um einen anderen Kauf zu tätigen.</string>
+    <string name="tu_unavailable_user_ok">Ich werde mich umsehen</string>
+    <string name="tu_audio_file_download">Laden&#8230;</string>
+    <string name="tu_video_file_download_error">kann Video-Datei nicht herunterladen</string>
+    <string name="tu_available_tutor">Verfügbarer Tutor</string>
+    <string name="tu_not_available">Nicht verfügbar</string>
+    <string name="tu_btn_select_confirm">Bestätigen</string>
+    <string name="tu_dialog_download_loading">Laden&#8230;</string>
+    <string name="tu_dialog_download_error">Fehler</string>
+    <string name="tu_dialog_download_ok">OK</string>
+    <string name="tu_dialog_reload_loading">Laden&#8230;</string>
+    <string name="tu_dialog_no_schedule_error">Fehler</string>
+    <string name="tu_dialog_no_schedule_ok">OK</string>
+    <string name="tu_dialog_schedule_error">Fehler</string>
+    <string name="tu_dialog_schedule_ok">OK</string>
+    <string name="tu_dialog_parse_error">Fehler</string>
+    <string name="tu_dialog_parse_ok">Fehler</string>
+    <string name="tu_no_tutor_schedule">Dieser Tutor hat leider momentan keine Unterrichtsstunden
+        frei
+    </string>
+    <string name="tu_select_tutor_first">Wähle zuerst den Tutor aus</string>
+    <string name="tu_dialog_select_tutor_time_loading">Laden&#8230;</string>
+    <string name="tu_dialog_already_booked">Bereits gebucht</string>
+    <string name="tu_dialog_already_booked_msg">Zu dieser Zeit hast Du bereits einen
+        Unterrichtstermin.
+    </string>
+    <string name="tu_dialog_already_booked_ok">OK</string>
+    <string name="tu_dialog_booking_check_time_error">Fehler</string>
+    <string name="tu_dialog_booking_check_time_ok">OK</string>
+    <string name="tu_package_title">Paket-Titel</string>
+    <string name="tu_enter_comment_here">Gib hier Deinen Kommentar ein&#8230;</string>
+    <string name="tu_star_3_5">Danke! Hast Du weitergehende Vorschläge?</string>
+    <string name="tu_rating_notice">Hinweis: \Mit einem Wisch nach rechts kannst Du weitere
+        Bewertungen und Kommentare abgeben.
+    </string>
+    <string name="tu_btn_rating_submit">übermitteln</string>
+    <string name="tu_feedback_title">Feedback des Tutors</string>
+    <string name="tu_tutor_feedback">Wie war Dein Tutor heute?</string>
+    <string name="tu_rating_drag_and_press">Berühre zum Bewerten</string>
+    <string name="tu_star_1_2">Das tut uns leid. Würdest Du uns noch mehr Feedback dazu geben?
+    </string>
+    <string name="tu_call_quality">Wie war die Anrufqualität heute?</string>
+    <string name="tu_feedback_content">Wie waren die Unterrichtsinhalte heute?</string>
+    <string name="tu_feedback_others">Hast du noch weitere Anmerkungen?</string>
+    <string name="tu_fav_unavailable">Nicht verfügbar</string>
+    <string name="tu_fav_msg">Bitte melden Sie sich an, um die Favoritenfunktion zu verwenden.
+    </string>
+    <string name="tu_fav_sign_in">Anmelden</string>
+    <string name="tu_fav_sign_in_cancel">Stornieren</string>
+    <string name="tu_sign_up_free_trail">Entschuldigung, dieser Inhalt ist nicht verfügbar, um
+        Benutzer vorzutragen. Melden Sie sich für Ihre kostenlose Testversion an&#160;</string>
+    <string name="tu_sign_up_now">jetzt</string>
+    <string name="tu_sign_in_book_unavailable">Unavailable</string>
+    <string name="tu_sign_in_book_msg">Bitte melde dich an, um einen tutor zu buchen.</string>
+    <string name="tu_sign_in_book">Anmelden</string>
+    <string name="tu_sign_in_book_cancel">Stornieren</string>
+    <string name="tu_rate_text">x %1$s</string>
+    <string name="tu_search_all_lbl">Suche\nalle</string>
+    <string name="tu_search_all_loading">Laden</string>
+    <string name="tu_search_all_sun">SO</string>
+    <string name="tu_search_all_mon">MO</string>
+    <string name="tu_search_all_tue">DI</string>
+    <string name="tu_search_all_wed">MI</string>
+    <string name="tu_search_all_thu">DO</string>
+    <string name="tu_search_all_fri">FR</string>
+    <string name="tu_search_all_sat">SA</string>
+    <string name="tu_search_all_today">HEUTE</string>
+    <string name="tu_search_all_expired">Ablaufzeit kann nicht wählen</string>
+    <string name="tu_search_all_expired_ok">OK</string>
+
+    <string-array name="tutor_feedback_type">
+        <item>Feedback des Tutors</item>
+        <item>Anrufqualität</item>
+        <item>Inhalt</item>
+        <item>Weitere Anmerkungen</item>
+    </string-array>
+
+    <string name="tu_dialog_submit_loading">Laden&#8230;</string>
+
+    <string name="credit_multiply">X</string>
+
+    <!-- Online Support (os) -->
+    <string name="os_dialog_connect_failure_error">Fehler</string>
+    <string name="os_dialog_connect_failure_msg">Konnte sich nicht mit dem Klassenraum verbinden.
+    </string>
+    <string name="os_dialog_connect_failure_ok">OK</string>
+    <string name="os_request_permission_msg">Die TutorMandarin-App benötigt Zugangsberechtigungen zu
+        Deiner Kamera und Deinem Mikrofon. Bitte geben Sie diese Berechtigung in den
+        App-Einstellungen frei.
+    </string>
+    <string name="os_online_support_lbl">Online Support</string>
+    <string name="os_calling">Anrufen &#8230;</string>
+    <string name="os_speaker">Sound</string>
+    <string name="os_mute">Stumm schalten</string>
+    <string name="os_hide">Verbergen</string>
+    <string name="os_end_call">ANRUF BEENDEN</string>
+    <string name="os_send">SENDEN</string>
+    <string name="os_title">ONLINE SUPPORT</string>
+    <string name="os_msg_body">Hi, dies ist der TutorMandarin Online-Support. Wie können wir Dir
+        helfen?
+    </string>
+    <string name="os_dialog_msg_loading">Laden&#8230;</string>
+    <string name="os_call_ready">Bereit zum Anruf?</string>
+    <string name="os_call_ready_msg">Du bist im Begriff, einen Anruf zu einem Support-Consultant von
+        TutorMandarin herzustellen. Drücke Bestätigen um anzurufen.
+    </string>
+    <string name="os_call_ready_confirm">Bestätigen</string>
+    <string name="os_call_ready_cancel">Abbrechen</string>
+    <string name="os_working_period">Sorry, der TutorMandarin Online-Support ist nur von 9 bis 18
+        Uhr, chinesischen Ortszeit (UTC+8) verfügbar. Senden Sie uns entweder eine Textnachricht
+        oder rufen uns für eine unverzügliche Antwort zu der genannten Zeit an.
+    </string>
+    <string name="os_no_online_support_title">Sorry</string>
+    <string name="os_no_online_support_msg">Der TutorMandarin Online-Support ist gerade nicht
+        verfügbar.
+    </string>
+    <string name="os_no_online_support_ok">OK</string>
+    <string name="os_server_error">Fehler</string>
+    <string name="os_server_error_ok">OK</string>
+    <string name="os_twilio_access_error">Fehler</string>
+    <string name="os_twilio_access_error_ok">OK</string>
+    <string name="os_not_available_title">Sorry</string>
+    <string name="os_not_available_msg">Der TutorMandarin Online-Support ist gerade nicht
+        verfügbar.
+    </string>
+    <string name="os_not_available_ok">OK</string>
+    <string name="os_no_operator_error">Fehler</string>
+    <string name="os_no_operator_error_ok">OK</string>
+    <string name="os_no_consultants">Sorry, es ist gerade kein TutorMandarin-Mandarin Mitarbeiter
+        frei, der Deinen Anruf entgegen nehmen kann. Bitte schreibe uns eine Nachricht über das
+        Nachrichten-Fenster und wir werden uns so schnell wie möglich bei dir zurück melden.
+    </string>
+    <string name="os_call_ended">The call was ended.</string>
+    <string name="os_call_support_success">You had called %1$s successfully at %2$s</string>
+    <string name="os_call_support_fail">You had called %1$s failed at %2$s</string>
+
+    <!-- Account (ac) -->
+    <string name="ac_setting_title">EINSTELLUNGEN</string>
+    <string name="ac_email_title">E-Mail</string>
+    <string name="ac_email_save">SPEICHERN</string>
+    <string name="ac_add_mail">E-Mail hinzufügen</string>
+    <string name="ac_walkthrough">Rundgang</string>
+    <string name="ac_rate">Bewerten</string>
+    <string name="ac_website">Webseite</string>
+    <string name="ac_faq">FAQ</string>
+    <string name="ac_terms_of_service">Geschäftsbedingungen</string>
+    <string name="ac_privacy_policy">Datenschutz</string>
+    <string name="ac_acknowledgement">Danksagung</string>
+    <string name="ac_about_us">Über TutorMandarin</string>
+    <string name="ac_company_name">GTA Ltd.</string>
+    <string name="ac_version">Version</string>
+    <string name="ac_interest_title">Interessen</string>
+    <string name="ac_learning_purpose_title">Lernziel</string>
+    <string name="ac_setting_save">SPEICHERN</string>
+    <string name="ac_dialog_location_loading">Laden&#8230;</string>
+    <string name="ac_location_title">Ort</string>
+    <string name="ac_location_save">SPEICHERN</string>
+    <string name="ac_search_location">Suche Ort</string>
+    <string name="ac_choose_location">Bitte wähle einen Ort aus</string>
+    <string name="ac_no_search_location">Es gibt keinen Ort, wo du gesucht hast.</string>
+    <string name="ac_name_title">Name</string>
+    <string name="ac_name_save">SPEICHERN</string>
+    <string name="ac_first_name_lbl">Vorname</string>
+    <string name="ac_first_name_hint">Vornamen hinzufügen</string>
+    <string name="ac_last_name_lbl">Nachname</string>
+    <string name="ac_last_name_hint">Nachnamen hinzufügen</string>
+    <string name="ac_name_empty">Vor- oder Nachname sind leer.</string>
+    <string name="ac_phone_title">Telefon</string>
+    <string name="ac_phone_save">Speichern</string>
+    <string name="ac_mobile_phone">Telefon</string>
+    <string name="ac_reset_password_title">Passwort zurücksetzen</string>
+    <string name="ac_current_password_hint">Gegenwärtiges Passwort</string>
+    <string name="ac_forgot_password">Passwort?</string>
+    <string name="ac_new_password_hint">Neues Passwort</string>
+    <string name="ac_confirm_password_hint">Bestätige Neues Passwort</string>
+    <string name="ac_btn_password_submit">senden</string>
+    <string name="ac_old_password_empty">Bitte altes Passwort eingeben</string>
+    <string name="ac_new_password_empty">Bitte neues Passwort eingeben</string>
+    <string name="ac_confirm_password_empty">Bitte neues Passwort bestätigen</string>
+    <string name="ac_no_match_password">Das neues Passwort stimmt nicht mit dem zur Bestätigung
+        eingegebenen Passwort überein.
+    </string>
+    <string name="ac_old_password_error">Das alte Passwort stimmt nicht</string>
+    <string name="ac_invalid_password">Das Passwort-Format ist nicht korrekt.</string>
+    <string name="ac_info_choose">Auswählen</string>
+    <string name="ac_choose_from_photos">Galerie</string>
+    <string name="ac_take_photo">Foto machen</string>
+    <string name="ac_no_photo_url">Foto nicht lesbar</string>
+    <string name="ac_info_name">Name</string>
+    <string name="ac_info_gender">Geschlecht</string>
+    <string name="ac_info_location">Ort</string>
+    <string name="ac_speaking_language">Sprache sprechen</string>
+    <string name="ac_speaking_language_title">Sprache sprechen</string>
+    <string name="ac_info_reset_password">Passwort zurücksetzen</string>
+    <string name="ac_info_chinese_level">Chinesisch-Niveau</string>
+    <string name="ac_info_interest_in">Interessen</string>
+    <string name="ac_info_interest_in_save">SPAREN</string>
+    <string name="ac_info_email">E-Mail</string>
+    <string name="ac_info_learning_purpose">Lernziel</string>
+    <string name="ac_info_learning_purpose_save">SPAREN</string>
+    <string name="ac_dialog_location_title">Zeitzonenanpassung?</string>
+    <string name="ac_dialog_location_msg">Bitte berücksichtige, dass die Zeiten Deiner
+        Unterrichtsstunden nicht automatisch an die neu gesetzte Zeitzone angepasst werden.
+    </string>
+    <string name="ac_dialog_location_ok">OK</string>
+    <string name="ac_dialog_chinese_level_title">Chinesisch-Level</string>
+    <string name="ac_dialog_chinese_level_msg">Dein Chinesisch-Sprachniveau wird bestimmt durch die
+        Auswertung Deiner kostenlosen Probestunde. Dadurch startest Du direkt auf dem richtigen
+        Level, sowohl bei den Kursen als auch bei den Themenstunden. Dein Chinesisch-Level wird nach
+        jeder Kursevaluation aktualisiert und kann nicht manuell geändert werden. Bitte kontaktiere
+        für weitere Informationen einen Consultant über das \'Online-Support\' Fenster.
+    </string>
+    <string name="ac_dialog_chinese_level_ok">OK</string>
+    <string name="ac_invalid_email">E-Mail-Format ist nicht korrekt.</string>
+    <string-array name="ic_interest_in_list">
+        <item>Redewendungen</item>
+        <item>Language Learning</item>
+        <item>Notfallkommunikation</item>
+        <item>Nachrichten</item>
+        <item>China verstehen</item>
+        <item>Lustig</item>
+        <item>Gespräche</item>
+        <item>Musik</item>
+    </string-array>
+    <string-array name="ic_learning_purpose_list">
+        <item>Business</item>
+        <item>Bildung</item>
+        <item>Reisen/Leben im Ausland</item>
+        <item>Alltagskommunikation</item>
+        <item>Chinesischer Leistungstest</item>
+    </string-array>
+    <string name="ac_gender_title">Geschlecht</string>
+    <string name="ac_gender_save">SPAREN</string>
+    <string name="ac_gender_male">Männlich</string>
+    <string name="ac_gender_female">weiblich</string>
+    <string name="ac_speaking_save">SPAREN</string>
+    <string name="ac_speaking_thai">Thai</string>
+    <string name="ac_speaking_korea">Korea</string>
+    <string name="ac_speaking_japan">Japan</string>
+    <string name="ac_speaking_english">Englisch</string>
+    <string name="ac_speaking_german">Deutsche</string>
+    <string name="ac_speaking_french">Französisch</string>
+    <string name="ac_speaking_other">Andere</string>
+
+    <!-- Course (co) -->
+    <string name="co_title">KURS</string>
+    <string name="co_lst_lesson_count">&#160;Unterrichtseinheiten +&#160;</string>
+    <string name="co_lst_supplement_count">&#160;Zusatzstunden</string>
+    <string name="co_download_error">Verbindungsfehler.</string>
+    <string name="co_tab_title">KURSE</string>
+    <string name="co_vocab_lbl">Vokabular</string>
+    <string name="co_grammar_lbl">Grammatik</string>
+    <string name="co_total_time_lbl">Zeit insgesamt</string>
+    <string name="co_credits">Credits</string>
+    <string name="co_content">Inhalt :&#160;</string>
+    <string name="co_lesson_count">&#160;Unterrichtseinheiten,&#160;</string>
+    <string name="co_supplement_count">&#160;Zusatzstunden</string>
+    <string name="co_dialog_lesson_loading">Laden&#8230;</string>
+    <string name="co_available_soon_title">Kurse bald verfügbar</string>
+    <string name="co_available_soon_msg">Dieser Kurs ist derzeit nicht verfügbar, wird aber bald
+        kommen.
+    </string>
+    <string name="co_available_soon_ok">OK</string>
+    <string name="co_tab_all">Alle</string>
+    <string name="co_tab_lessons">Unterrichtseinheiten</string>
+    <string name="co_tab_supplements">Zusatzstunden</string>
+    <string name="co_fav_unavailable">Nicht verfügbar</string>
+    <string name="co_fav_msg">Bitte melden Sie sich an, um die Favoritenfunktion zu verwenden.
+    </string>
+    <string name="co_fav_sign_in">Anmelden</string>
+    <string name="co_fav_cancel">Stornieren</string>
+    <string name="co_dialog_new_package">Laden&#8230;</string>
+    <string name="ls_unlock_content">Presse-Buch, um den Inhalt zu entsperren</string>
+    <string name="ls_no_file">Es gibt keine Datei.</string>
+    <string name="ls_file_incorrect">Datei ist nicht korrekt.</string>
+    <string name="ls_no_internet">Keine Internetverbindung</string>
+
+    <!-- Topic (to) -->
+    <string name="to_title_all">All</string>
+    <string name="to_download_error">Verbindungsfehler.</string>
+    <string name="to_tab_title">THEMA</string>
+    <string name="to_class_count">%1$s Thema</string>
+    <string name="to_class_counts">%1$s Themen</string>
+    <string name="to_level">Level</string>
+    <string name="to_class_title">Auswahl Thema</string>
+    <string name="to_class_credits">Credits</string>
+    <string name="to_class_select_level">Auswahl Level</string>
+    <string name="to_cb_class_select_level">Auswahl Level</string>
+    <string name="to_select_topic">Auswahl Thema</string>
+    <string name="to_cb_select_topic">Themenauswahl</string>
+    <string name="to_unavailable_title">Nicht verfügbar</string>
+    <string name="to_unavailable_msg">Sorry, auf diesen Inhalt kann erst nach Abschluss der kostenlosen Probestunde zugegriffen werden.Sie müssen den Test beenden, um einen anderen Kauf zu tätigen.</string>
+    <string name="to_unavailable_ok">Ich werde mich umsehen</string>
+    <string name="to_class_dialog_loading">Laden&#8230;</string>
+    <string name="to_class_dialog_download_error">Fehler</string>
+    <string name="to_class_dialog_download_ok">OK</string>
+    <string name="to_class_vocab_count">&#160;Vokabular</string>
+    <string name="to_class_high_level">Sorry</string>
+    <string name="to_class_high_level_msg">Dieser Kurs übersteig Dein Sprachniveau. Bitte wähle ein
+        Thema aus, das Deinem Level entspricht.
+    </string>
+    <string name="to_class_high_level_ok">OK</string>
+    <string name="to_class_loading">Laden&#8230;</string>
+    <string name="to_unavailable_user">Nicht verfügbar</string>
+    <string name="to_unavailable_user_msg">Sorry, auf diesen Inhalt kann erst nach Abschluss der kostenlosen Probestunde zugegriffen werden.Sie müssen den Test beenden, um einen anderen Kauf zu tätigen.
+    </string>
+    <string name="to_unavailable_user_ok">Ich werde mich umsehen</string>
+    <string name="to_class_vocab">&#160;Vokabular</string>
+    <string name="to_above_level">Sorry</string>
+    <string name="to_above_level_msg">Dieser Kurs liegt über Deinem Sprachniveau. Bitte wähle ein
+        Thema aus, das Deinem Level entspricht.
+    </string>
+    <string name="to_above_level_ok">OK</string>
+    <string name="to_sign_in_unavailable">Nicht verfügbar</string>
+    <string name="to_sign_in_msg">Bitte melden Sie sich an, um die Themenklasse zu sehen.</string>
+    <string name="to_btn_sign_in">Anmelden</string>
+    <string name="to_btn_sign_in_cancel">Stornieren</string>
+
+    <!-- Class (cl) -->
+    <string name="cl_add_to_favourite">Zu Favoriten hinzufügen</string>
+    <string name="cl_share">Teilen</string>
+    <string name="cl_already_added">Du hast bereits ein Thema hinzugefügt</string>
+    <string name="cl_successfully_added">Erfolgreich zu Deinen Favoriten hinzugefügt.</string>
+    <string name="cl_check_booking">Laden&#8230;</string>
+    <string name="cl_already_booked">Bereits gebucht!</string>
+    <string name="cl_already_booked_msg">Du hast diesen Kurs bereits gebucht. Bitte wählen Sie einen
+        anderen aus.
+    </string>
+    <string name="cl_already_booked_ok">OK</string>
+    <string name="cl_topic_already_booked">Bereits gebucht!</string>
+    <string name="cl_topic_already_booked_msg">Du hast diesen Kurs schon gebucht. Bitte wähle einen
+        anderen aus.
+    </string>
+    <string name="cl_topic_already_booked_ok">OK</string>
+    <string name="cl_topic_level_high">Sorry</string>
+    <string name="cl_topic_level_high_msg">Dieser Kurs liegt über Deinem Sprachniveau. Bitte wähle
+        ein Thema aus, das Deinem Level entspricht.
+    </string>
+    <string name="cl_topic_level_high_ok">OK</string>
+    <string name="cl_server_error">Fehler</string>
+    <string name="cl_server_error_ok">OK</string>
+    <string name="cl_btn_book">Buchen</string>
+
+    <!-- Lesson (ls) -->
+    <string name="ls_credits">Credits</string>
+    <string name="ls_unavailable_title">Nicht verfügbar</string>
+    <string name="ls_unavailable_msg">Sorry, auf diesen Inhalt kann erst nach Abschluss der kostenlosen Probestunde zugegriffen werden.Sie müssen den Test beenden, um einen anderen Kauf zu tätigen.</string>
+    <string name="ls_unavailable_ok">Ich werde mich umsehen</string>
+    <string name="ls_check_lesson_loading">Laden&#8230;</string>
+    <string name="ls_lesson_no">Lesson&#160;</string>
+    <string name="ls_vocab_count">&#160;Vokabular</string>
+    <string name="ls_paid_user_title">Sorry</string>
+    <string name="ls_paid_user_msg">Sorry, diese Unterrichtseinheit ist nur für zahlende Nutzer
+        verfügbar.
+    </string>
+    <string name="ls_paid_user_ok">OK</string>
+    <string name="ls_chinese_level_lower">Du kannst nur Themenbasierte Stunden wählen, die Deinem
+        Sprachniveau entsprechen. Du kannst Dein Sprachniveau im "Leistungs"-Bereich einsehen oder
+        eine Frage im \'online support\' .-Bereich stellen.
+    </string>
+    <string name="ls_btn_book">BOOK</string>
+    <string name="ls_add_to_favourite">Zu den Favoriten hinzufügen</string>
+    <string name="ls_share">Teilen</string>
+    <string name="ls_already_added_msg">Du hast schon eine Unterrichtseinheit hinzugefügt.</string>
+    <string name="ls_successfully_added">Erfolgreich zu den Favoriten hinzugefügt</string>
+    <string name="ls_extra_share_item">Unterrichtseinheit</string>
+    <string name="ls_lesson_count">Unterrichtseinheit&#160;</string>
+    <string name="ls_select_level">Level auswählen</string>
+    <string name="ls_select_course">urs auswählen</string>
+    <string name="ls_select_course_title">Kurs auswählen</string>
+    <string name="ls_lst_download_loading">Laden&#8230;</string>
+    <string name="ls_lst_download_error">Fehler</string>
+    <string name="ls_lst_download_ok">OK</string>
+    <string name="ls_select_supplement_count">Zusatzstunde&#160;</string>
+    <string name="ls_select_vocab_count">&#160;Vokabular,&#160;</string>
+    <string name="ls_select_grammar_count">&#160;Grammatik</string>
+    <string name="ls_select_lesson_count">Unterrichtseinheit&#160;</string>
+    <string name="ls_booked_in_package_error">Fehler</string>
+    <string name="ls_booked_in_package_msg">Diese Stunde ist schon in Deinem Paket enthalten. Wenn
+        du weitere Unterrichtseinaheiten in Deinem Paket buchen willst, dann gehe bitte zur
+        Paket-Buchung.
+    </string>
+    <string name="ls_booked_in_package_ok">OK</string>
+    <string name="ls_higher_level_error">Sorry</string>
+    <string name="ls_higher_level_msg">Dieser Kurs liegt über Deinem Sprachniveau. Bitte wähle ein
+        Thema aus, das Deinem Level entspricht.
+    </string>
+    <string name="ls_higher_level_ok">OK</string>
+    <string name="ls_already_booked_error">Bereits gebucht</string>
+    <string name="ls_already_booked_msg">Diese Unterrichtseinheit ist in einem Paket enthalten, dass
+        Du bereits gebucht hast.
+    </string>
+    <string name="ls_already_booked_ok">OK</string>
+    <string name="ls_chinese_level_lower_error">Fehler</string>
+    <string name="ls_chinese_level_lower_ok">OK</string>
+    <string name="ls_server_error">Fehler</string>
+    <string name="ls_server_error_ok">OK</string>
+    <string name="ls_fav_unavailable">Nicht verfügbar</string>
+    <string name="ls_fav_unavailable_msg">Bitte melden Sie sich an, um die Favoritenfunktion zu
+        verwenden.
+    </string>
+    <string name="ls_fav_sign_in">Anmelden</string>
+    <string name="ls_fav_cancel">Stornieren</string>
+    <string name="ls_book_unavailable">Nicht verfügbar</string>
+    <string name="ls_book_unavailable_msg">Bitte melden Sie sich an, um Lektion zu buchen.</string>
+    <string name="ls_book_sign_in">Anmelden</string>
+    <string name="ls_book_cancel">Stornieren</string>
+    <string name="ls_lesson">Lektion</string>
+    <string name="ls_warm_up">1. Aufwärmen</string>
+    <string name="ls_conversation">2. Konversation</string>
+    <string name="ls_discuss">3. Diskutieren Sie</string>
+    <string name="ls_vocabulary">4. Vokabular</string>
+    <string name="ls_exercises">5. Übungen</string>
+    <string name="ls_grammar">6. Grammatik</string>
+    <string name="ls_practice">7. Üben Sie</string>
+
+    <!-- Schedule (sd) -->
+    <string name="sd_schedule_title">STUNDENPLAN</string>
+    <string name="sd_schedule_loading">Laden&#8230;</string>
+    <string name="sd_today">HEUTE</string>
+    <string name="sd_coming_up">BEVORSTEHEND</string>
+    <string name="sd_finished">ABGESCHLOSSEN</string>
+    <string name="sd_canceled">ABGESAGT</string>
+    <string name="sd_missed">VERPASST</string>
+    <string name="sd_package_booking">Paket-Buchung</string>
+    <string name="sd_credit_booking">Credit-Buchung</string>
+    <string name="sd_lesson_name">Probestunde</string>
+    <string name="sd_lesson_level">Probestunde</string>
+    <string name="sd_topic_name">Thema</string>
+    <string name="sd_supplement_no">Zusatzstunde&#160;</string>
+    <string name="sd_lesson_no">Unterrichtseinheit&#160;</string>
+    <string name="sd_unavailable_title">Nicht verfügbar</string>
+    <string name="sd_unavailable_msg">Sorry, auf diesen Inhalt kann erst nach Abschluss der kostenlosen Probestunde zugegriffen werden.Sie müssen den Test beenden, um einen anderen Kauf zu tätigen.</string>
+    <string name="sd_unavailable_ok">Ich werde mich umsehen</string>
+    <string name="sd_change_booking_cancel">ABBRECHEN</string>
+    <string name="sd_change_booking_sure">ICH BIN MIR SICHER</string>
+    <string name="sd_class_change_cancel_title">Bist Du sicher?</string>
+    <string name="sd_class_change_cancel_msg">Unterrichtseinheiten, die weniger als 24 Stunden vor
+        Unterrichtsbeginn abgesagt werden, können nicht erstattet werden.
+    </string>
+    <string name="sd_change_time_cancel_title">Warnung</string>
+    <string name="sd_change_time_cancel_msg">Bist Du sicher? Du verlierst Deine Priorität für den
+        ausgewählten Tutor und die ausgewählte Zeit, wenn Du die Stunde absagst oder die Zeit
+        änderst.
+    </string>
+    <string name="sd_change_booking_time_msg">Du schaffst es nicht? Ändere die Zeit <u>hier</u>.
+    </string>
+    <string name="sd_sunday">SO</string>
+    <string name="sd_monday">MO</string>
+    <string name="sd_tuesday">DI</string>
+    <string name="sd_wednesday">MI</string>
+    <string name="sd_thursday">DO</string>
+    <string name="sd_friday">FR</string>
+    <string name="sd_saturday">SA</string>
+    <string name="sd_no_booking">Keine Buchung</string>
+    <string name="sd_user_level">LEVEL :</string>
+    <string name="sd_btn_start_class">UNTERRICHTSSTART</string>
+    <string name="sd_start_time">Beginn</string>
+    <string name="sd_network_notice">Beachten</string>
+    <string name="sd_network_msg">Vergewissern Sie sich, dass Ihr Gerät über ausreichend freien
+        Speicher und stabile Netzwerkverbindung verfügt.
+    </string>
+    <string name="sd_network_continue">Fortsetzen</string>
+    <string name="sd_network_cancel">Stornieren</string>
+
+    <!-- booking (bo) -->
+    <string name="bo_booking_title">MEINE BUCHUNGEN</string>
+    <string name="bo_total_cost">Total %1$s Credits</string>
+    <string name="bo_select_lesson_supplement">Bitte wähle Unterrichtseinheit oder Zusatzstunde
+        aus
+    </string>
+    <string name="bo_select_topic">Bitte wähle ein Thema</string>
+    <string name="bo_select_tutor">Bitte wähle Tutor und Zeit.</string>
+    <string name="bo_topic_level">Level: %1$s</string>
+    <string name="bo_supplement">Zusatzstunde</string>
+    <string name="bo_lesson">Unterrichtseinheit</string>
+    <string name="bo_level">Level :</string>
+    <string name="bo_not_booking_title">Warnung</string>
+    <string name="bo_not_booking_msg">Bist Du sicher? Du verlierst Deine Priorität für den
+        ausgewählten Tutor und die ausgewählte Zeit, wenn Du die Stunde absagst oder die Zeit
+        änderst.
+    </string>
+    <string name="bo_not_booking_cancel">Abbrechen</string>
+    <string name="bo_not_booking_sure">Sicher</string>
+    <string name="bo_dialog_booking">Buchung&#8230;</string>
+    <string name="bo_dialog_lesson_error">Fehler</string>
+    <string name="bo_dialog_lesson_ok">OK</string>
+    <string name="bo_dialog_class_error">Fehler</string>
+    <string name="bo_dialog_class_ok">OK</string>
+    <string name="bo_parse_exception">Fehler.</string>
+    <string name="bo_check_cost_error">Warnung</string>
+    <string name="bo_check_cost_msg">Du hast nicht genug Credits. Bitte gehe in den Shop um weitere
+        Credits zu erwerben.
+    </string>
+    <string name="bo_check_cost_cancel">Abbrechen</string>
+    <string name="bo_check_cost_ok">OK</string>
+    <string name="bo_booking_confirmed">Buchung bestätigt!</string>
+    <string name="bo_view_my_schedule">Meinen Stundenplan ansehen</string>
+    <string name="bo_book_another_lesson">Eine weitere Unterrichtseinheit buchen</string>
+    <string name="bo_view_other_tutors">Andere Tutoren ansehen</string>
+    <string name="bo_back_main_menu">Zurück zum Hauptmenü</string>
+    <string name="bo_btn_confirm_reservation">Reservierung bestätigen</string>
+    <string name="bo_my_credits">Meine Credits</string>
+    <string name="bo_credit">Credit</string>
+    <string name="bo_select_a_tutor">Bitte wähle einen Tutor</string>
+    <string name="bo_credit_lbl">Credit</string>
+    <string name="bo_start_time">Beginn</string>
+    <string name="bo_total">Insgesamt</string>
+    <string name="bo_cg_title">Buchung ändern</string>
+    <string name="bo_total_credit_cost">Insgesamt %1$s Credits</string>
+    <string name="bo_canceling">Abbruch&#8230;</string>
+    <string name="bo_cancel_error">Fehler</string>
+    <string name="bo_cancel_ok">OK</string>
+    <string name="bo_cg_loading">Ändern&#8230;</string>
+    <string name="bo_cg_success">Unterrichtseinheit erfolgreich geändert</string>
+    <string name="bo_cg_success_msg">Du hast erfolgreich Dein Unterrichtsticket geändert.</string>
+    <string name="bo_cg_success_ok">OK</string>
+    <string name="bo_cg_error">Fehler</string>
+    <string name="bo_cg_ok">OK</string>
+    <string name="bo_utc_parse_error">Die Bestimmung der UTC-Zeitzone war nicht erfolgreich.
+    </string>
+    <string name="bo_cg_select_lesson">Bitte wähle eine Unterrichtseinheit aus.</string>
+    <string name="bo_cg_select_topic">Bitte wählen Sie ein Thema aus.</string>
+    <string name="bo_cg_select_tutor">Bitte wählen Sie einen Tutor und eine Zeit.</string>
+    <string name="bo_low_credit_error">Warnung</string>
+    <string name="bo_low_credit_msg">Du hast nicht genug Credits. Bitte gehe in den Store und
+        erwerbe mehr.
+    </string>
+    <string name="bo_low_credit_cancel">Abbrechen</string>
+    <string name="bo_low_credit_ok">OK</string>
+    <string name="bo_cb_confirm_change">Änderung bestätigen</string>
+    <string name="bo_cb_cancel_booking">Buchung abbrechen</string>
+    <string name="bo_cb_my_credits">Meine Credits</string>
+    <string name="bo_cb_tutor_time">Bitte ändere Zeit oder Tutor</string>
+    <string name="bo_cb_start_time">Beginn</string>
+    <string name="bo_cb_total">Insgesamt</string>
+    <string name="bo_cb_cancelled">Buchung abgebrochen</string>
+    <string name="bo_cb_cancel_success">Deine Unterrichtseinheit wurde erfolgreich abgesagt</string>
+    <string name="bo_cb_another_time">Eine andere Zeit buchen</string>
+    <string name="bo_cb_back_to_schedule">Zurück zum Stundenplan</string>
+    <string name="bo_bp_title">PAKETBUCHUNG</string>
+    <string name="bo_lesson_count_loading">Laden&#8230;</string>
+    <string name="bo_remaining_lesson_error">Fehler</string>
+    <string name="bo_remaining_lesson_ok">OK</string>
+    <string name="bo_sd_same_time_error">Fehler</string>
+    <string name="bo_sd_same_time_msg">Mindestens zwei der von dir gewählten Unterrichtsstunden sind
+        doppelt belegt. Bitte löse den Zeitkonflikt, bevor Du Deine Reservierung bestätigst.
+    </string>
+    <string name="bo_sd_same_time_ok">OK</string>
+    <string name="bo_sd_empty_error">Bemerkung</string>
+    <string name="bo_sd_empty_msg">Bitte lege Zeiten für alle Bereiche fest.</string>
+    <string name="bo_sd_empty_ok">OK</string>
+    <string name="bo_no_lesson_error">Fehler</string>
+    <string name="bo_no_lesson_msg">Es ist keine Unterrichtsstunde mehr übrig zum Buchen.</string>
+    <string name="bo_no_lesson_ok">OK</string>
+    <string name="bo_course_loading">Buchen&#8230;</string>
+    <string name="bo_class_total">Insgesamt</string>
+    <string name="bo_class_succeed">Buchung erfolgreich!</string>
+    <string name="bo_course_error">Fehler</string>
+    <string name="bo_course_ok">OK</string>
+    <string name="bo_auto_repeat_on">ON</string>
+    <string name="bo_auto_repeat_off">OFF</string>
+    <string name="bo_pg_cancel_error">Bemerkung</string>
+    <string name="bo_pg_cancel_msg">Bist Du sicher? Du verlierst Deine Priorität für den
+        ausgewählten Tutor und die ausgewählte Zeit, wenn Du die Stunde absagst oder die Zeit
+        änderst.
+    </string>
+    <string name="bo_pg_negative_btn">Abbrechen</string>
+    <string name="bo_pg_cancel_sure">Sicher</string>
+    <string name="bo_limited_lesson">Fehler</string>
+    <string name="bo_limited_lesson_msg">Du musst mindestens eine Unterrichtseinheit pro Woche
+        buchen.
+    </string>
+    <string name="bo_limited_lesson_ok">OK</string>
+    <string name="bo_pg_start_time">Beginn</string>
+    <string name="bo_pg_select_tutor">Bitte wähle Zeit und Tutor</string>
+    <string name="bo_pg_booking_succeed">Paket-Buchung erfolgreich!</string>
+    <string name="bo_pg_view_my_schedule">Meinen Stundenplan ansehen</string>
+    <string name="bo_back_to_main_menu">Zurück zum Hauptmenü</string>
+    <string name="bo_bp_confirm">Reservierung bestätigen"</string>
+    <string name="bo_autofill">AUTOFILL</string>
+    <string name="bo_off">OFF</string>
+    <string name="bo_monthly_plan">MONATLICHER PLAN</string>
+    <string name="bo_week_1">Woche 1</string>
+    <string name="bo_week_2">Woche 2</string>
+    <string name="bo_week_3">Woche 3</string>
+    <string name="bo_week_4">Woche 4</string>
+    <string name="bo_auto_repeat_message">Die Autofill-Funktion hilft Ihnen, Ihren Paketplan einfach
+        zu organisieren. Wählen Sie einfach den wöchentlichen Tag und die Zeit, wenn Sie Unterricht
+        nehmen möchten und der Tutor. Autofill wird Ihre bevorzugte wöchentliche Klassen automatisch
+        buchen. Z.B. Wähle Montag um 21.00 Uhr und bewerbe mich. Das System bucht alle anstehenden
+        Montag um 21.00 Uhr, solange es notwendig ist.
+    </string>
+
+    <!-- StorePackage (sp) -->
+    <string name="sp_lessons">Unterrichtseinheiten : %1$s</string>
+    <string name="sp_supplements">Zusatzstunden : %1$s</string>
+    <string name="sp_my_order">Verlauf : %1$s</string>
+    <string name="sp_section_title">Bereich %1$s</string>
+    <string name="sp_lesson_name">%1$s %2$s</string>
+    <string name="sp_supplement">Zusatzstunde</string>
+    <string name="sp_lesson">Unterrichtseinheit</string>
+    <string name="sp_lesson_mins">%1$s Mins</string>
+    <string name="sp_purchase_confirm">Kauf bestätigt</string>
+    <string name="sp_start_booking_now">Jetzt buchen</string>
+    <string name="sp_back_to_main_menu">Zurück zum Hauptmenü</string>
+    <string name="sp_course_structure">Kursstruktur</string>
+    <string name="sp_course_structure_explain">Die Kurse sind darauf ausgelegt, Dich Schritt für
+        Schritt auf das nächste HSK-Level vorzubereiten. Die Kurse bestehen aus 25&#8211;30
+        gewählten „Unterrichtseinheiten“ und „Zusatzstunden“. Unterrichtsstunden dauern 50 Minuten
+        und bringen Dir neue Konzepte und Fähigkeiten bei. Die Zusatzstunden sind ebenfalls 50
+        Minuten lang und vertiefen zuvor gelernte Konzepte und Fähigkeiten weiter.
+    </string>
+    <string name="sp_credits">Credits</string>
+    <string name="sp_course_coming_soon">Kurse bald verfügbar</string>
+    <string name="sp_course_coming_soon_msg">Dieser Kurs ist derzeit nicht verfügbar, wird aber bald
+        kommen.
+    </string>
+    <string name="sp_course_coming_soon_ok">OK</string>
+    <string name="sp_buy_package_loading">Laden&#8230;</string>
+    <string name="sp_insufficient_title">Warnung</string>
+    <string name="sp_insufficient_msg">Du hast nicht genug Credits. Bitte gehe in den Store um
+        weitere Credits zu erwerben.
+    </string>
+    <string name="sp_insufficient_cancel">Abbrechen</string>
+    <string name="sp_insufficient_ok">OK</string>
+    <string name="sp_level_lower_title">Nicht verfügbar</string>
+    <string name="sp_level_lower_msg">Dein Chinesisch-Sprachniveau reicht im Moment nicht aus. Bitte
+        kontaktiere Deinen Tutor, wenn Du Deine Sprachniveau erneut einschätzen lassen willst.
+    </string>
+    <string name="sp_level_lower_ok">OK</string>
+    <string name="sp_server_error">Fehler</string>
+    <string name="sp_server_error_ok">OK</string>
+    <string name="sp_package_buy">KAUFEN</string>
+
+    <!-- Credit Store (cs) -->
+    <string name="cs_my_credits">Meine Credits</string>
+    <string name="cs_credits">Credits</string>
+    <string name="cs_purchase">Erwerben</string>
+    <string name="cs_order">Auftrag</string>
+    <string name="cs_order_credit">4 Credits</string>
+    <string name="cs_total">Summe</string>
+    <string name="cs_credit_price">EUR € 40.00</string>
+    <string name="cs_btn_buy">KAUFEN</string>
+    <string name="cs_discount_promotion">Frage Deinen Consultant nach einer Erstkaufermäßigung oder
+        anderen Discounts.
+    </string>
+    <string name="cs_btn_contact_now">Jetzt kontaktieren</string>
+    <string name="cs_whats_price">Preise</string>
+    <string name="cs_total_price">EUR €</string>
+    <string name="cs_title">SHOP</string>
+    <string name="cs_refresh_loading">LADEN&#8230;</string>
+    <string name="cs_minimum_credit_loading">Laden&#8230;</string>
+
+    <!-- Current Plan (cp) -->
+    <string name="cp_title">Gebuchtes Paket</string>
+    <string name="cp_loading">Laden&#8230;</string>
+    <string name="cp_error">Fehler</string>
+    <string name="cp_error_ok">OK</string>
+    <string name="cp_start_time">Startzeit</string>
+    <string name="cp_select_tutor_time">Bitte wähle Zeit und Tutor aus</string>
+
+    <!-- Welcome Tutorial (wt) -->
+    <string name="wt_btn_start_trial">Probestunde jetzt starten</string>
+    <string name="wt_btn_skip">Überspringen</string>
+    <string name="wt_professional_tutor_title">Professionelle Tutoren</string>
+    <string name="wt_professional_tutor">Wir bieten professionelles Face-to-Face Tutoring für
+        Mandarin von zertifizierten chinesischen Sprachlehrern mit über 500 Stunden Lehrerfahrung.
+    </string>
+    <string name="wt_best_in_class_mobile_title">Best-In-Class</string>
+    <string name="wt_best_in_class_mobile">Online-Kurse in einem revolutionären virtuellen
+        Klassenraum, welcher Lehrinhalte und Kursmaterial in einem qualitativ hochwertigen
+        Videogespräch mit einem interaktiven Whiteboard verbindet.
+    </string>
+    <string name="wt_systematic_education_title">effizientes Lernen</string>
+    <string name="wt_systematic_education">Unsere Kurse orientieren sich an den HSK-Standards –
+        lerne Schritt-für-Schritt Chinesisch oder wähle auf jedem Level themenbasierte
+        Unterrichtseinheiten.
+    </string>
+    <string name="wt_personalized_learning_title">Personalisiertes Lernen</string>
+    <string name="wt_personalized_learning">Jeder Nutzer startet mit einer kostenlosen 50-minütigen
+        Probestunde und einer vollständigen Evaluation des Sprachniveaus – im Kurs gibt es nach
+        jeder Stunde Feedback durch Kommentare, Lernstatistiken und -auszeichnungen.
+    </string>
+    <string name="wt_skip">ÜBERSPRINGEN</string>
+    <string name="wt_next">Weiter</string>
+
+    <!-- WebView (wv) -->
+    <string name="wv_loading">Laden&#8230;</string>
+
+    <!-- Splash Screen (ss) -->
+    <string name="ss_error">Konnte nicht mit dem Server verbinden.</string>
+
+    <!-- Auto Repeat (ar) -->
+    <string name="ar_message">Die Autofill-Funktion ermöglicht eine einfache Organisation Deines
+        Stundenplans. Wähle einfach einen wöchentlichen Tag eine wöchentliche Zeit sowie Deinen
+        Tutor. Die Autofill wird die von Dir ausgewählten wöchentlichen Unterrichtsstunden
+        automatisch festlegen. Melde Dich z.B. für Montag 21:00 Uhr an. Das System wid automatisch
+        alle folgenden Montage um 9:00 Uhr auswählen, solange Credits vorhanden sind.
+    </string>
+    <string name="ar_autofill">Autofill</string>
+    <string name="ar_add_new_date">Neue Zeit hinzufügen&#8230;</string>
+    <string name="ar_off">OFF</string>
+    <string name="ar_notice">Hinweis: Die Autofill-Funktion muss die wöchentliche Mindeststundenzahl
+        einhalten.
+    </string>
+    <string name="ar_btn_cancel">Abbrechen</string>
+    <string name="ar_btn_apply">ANMELDEN</string>
+    <string name="ar_download_tutor_loading">Laden&#8230;</string>
+    <string name="ar_unavailable_tutor_title">Nicht verfügbar</string>
+    <string name="ar_unavailable_tutor_msg">Zu der von Dir gewählten Zeit ist leider kein Tutor
+        verfügbar.
+    </string>
+    <string name="ar_unavailable_tutor_ok">OK</string>
+    <string name="ar_server_error">Fehler</string>
+    <string name="ar_server_error_ok">OK</string>
+    <string name="ar_sd_fill_title">Fehler</string>
+    <string name="ar_sd_fill_msg">Bitte für alle Bereiche Zeiten auswählen</string>
+    <string name="ar_sd_fill_ok">OK</string>
+    <string name="ar_select_date">Bitte das Datum aus einer Woche auswählen</string>
+    <string name="ar_book_class_error">Fehler</string>
+    <string name="ar_book_class_msg">Du musst mindestens eine Unterrichtsstunde pro Woche
+        auswählen.
+    </string>
+    <string name="ar_book_class_ok">OK</string>
+    <string name="ar_start_date">Start</string>
+    <string name="ar_edit_repeat_title">AUTOFILL ANPASSEN</string>
+    <string name="ar_edit_repeat_cancel">ABBRECHEN</string>
+    <string name="ar_btn_save">SPEICHERN</string>
+
+    <!-- Class Room (cr) -->
+    <string name="cr_title">KLASSENRAUM</string>
+    <string name="cr_leave">VERLASSEN</string>
+    <string name="cr_join_class_room">Den Klassenraum betreten&#8230;</string>
+    <string name="cr_send">Senden</string>
+    <string name="cr_camera_permission">App benötigt Zugriffsrechte auf Kamera und Mikrofon. Bitte
+        erlaube dies in den App-Einstellungen für volle Funktionsfähigkeit.
+    </string>
+    <string name="cr_leave_room">Klassenraum verlassen?</string>
+    <string name="cr_leave_room_msg">Dies beendet den Anruf und Du verlässt den Klassenraum.
+    </string>
+    <string name="cr_leave_room_leave">Verlassen</string>
+    <string name="cr_leave_room_cancel">Abbrechen</string>
+    <string name="cr_server_error">Fehler</string>
+    <string name="cr_server_error_ok">OK</string>
+    <string name="cr_tutor_soon">Der Tutor wird jeden Moment online sein</string>
+    <string name="cr_join_error">Fehler</string>
+    <string name="cr_join_msg">Konnte dem Klassenraum nicht beitreten.</string>
+    <string name="cr_join_ok">OK</string>
+    <string name="cr_select_date">DATUM AUSWÄHLEN</string>
+    <string name="cr_select_start_time">STARTZEIT AUSWÄHLEN</string>
+    <string name="cr_btn_save">SPEICHERN</string>
+
+    <!-- Share part (sh) -->
+    <string name="sh_downloading">Herunterladen&#8230;</string>
+    <string name="sh_email_not_install">Es sind keine E-Mail-Clients installiert.</string>
+    <string name="sh_sd_card_permission">SD-Karten Lese- und Schreibrechte benötigt. Bitte erlaube
+        der App dies in den Einstellungen für volle Funktionsfähigkeit.
+    </string>
+    <string name="sh_lesson_template">Ich lerne “%s” mit TutorMandarin. Schau\' auch mal hier vorbei
+        link?
+    </string>
+    <string name="sh_flashcard_template">Ich habe “%s” mit TutorMandarin gelernt. Schau\' auch mal
+        hier vorbei link?
+    </string>
+    <string name="sh_tutor_template">Ich habe mit “%s” von TutorMandarin gerlernt. Probier\' es auch
+        aus!
+    </string>
+    <string name="sh_facebook">Facebook</string>
+    <string name="sh_twitter">Twitter</string>
+    <string name="sh_pinterest">Pinterest</string>
+    <string name="sh_mail">E-Mail</string>
+    <string name="sh_title">Teilen</string>
+
+    <!-- Favorite (fv) -->
+    <string name="fv_title">Favoriten</string>
+    <string name="fv_course">Kurse</string>
+    <string name="fv_tutor">Tutor</string>
+    <string name="fv_topic">Thema</string>
+    <string name="fv_whats_on">WhatsOn</string>
+
+    <!-- Notification (nt) -->
+    <string name="nt_title">Benachrichtigungen</string>
+    <string name="nt_notice">Banachrichtigung TutorMandarin</string>
+    <string name="nt_start_class">Unterrichtseinheit starten</string>
+    <string name="nt_no_notification">Keine neuen Benachrichtigungen</string>
+    <string name="nt_today">Heute</string>
+    <string name="nt_yesterday">Gestern</string>
+
+    <!-- Welcome Tutorial (wt) -->
+    <string name="wt_sign_in">Anmeldung</string>
+    <string name="wt_sign_up">Registrierung</string>
+    <string name="wt_welcome_1_txt">
+        <![CDATA[
+            <b>
+               -Free $20 Klasse<br/>
+               -2 Unlocked Kurse<br/>
+               -Full Language Evaluation<br/>
+               -Free Tägliche Artikel und Videos
+            </b>
+        ]]>
+    </string>
+    <string name="wt_welcome_2_title">FREE $20 CLASS</string>
+    <string name="wt_welcome_2_txt">
+        <![CDATA[
+        Alle Schüler bekommen eine 1-on-1 Klasse mit einem professionellen Tutor (ein $ 20 Wert) kostenlos mit Anmeldung.
+Nehmen Sie Klasse entweder auf Ihrem Telefon oder über unsere PC-Plattform. Jede Klasse kommt mit einer PDF-Lektion und voller Sprachauswertung.
+        ]]>
+    </string>
+    <string name="wt_welcome_3_title">2 UNGESCHLOSSENE KURSE</string>
+    <string name="wt_welcome_3_txt">
+        <![CDATA[
+            Nie gelernt Chinesisch? Keine Sorgen.
+<br/><br/>Unsere <b>Pinyin</ b> und <b>Anfänger 1</ b> Kurse sind beide freigeschaltet für alle Benutzer, die sich anmelden. Genießen Sie sie kostenlos! Intermediate und Fortgeschrittene Kurse haben jeweils eine entspannte Lektion.
+        ]]>
+    </string>
+    <string name="wt_welcome_4_title">FREIE tägliche chinesische Artikel und Videos</string>
+    <string name="wt_welcome_4_txt">Wir aktualisieren unsere App fast jeden Tag mit neuen Artikeln
+        und Videos über das Lernen von Chinesisch, nützliche Phrasen, interessante Neuigkeiten,
+        sprachliche Lerntipps und vieles mehr! Alle Inhalte kommen mit einem eigenen Set von
+        Flashcards, um Ihnen zu helfen.
+    </string>
+    <string name="wt_welcome_5_title">“EIN EIN-STOP-SHOP!”</string>
+    <string name="wt_welcome_5_txt">"Diese App hat alles, was ich brauche, um Chinesisch zu lernen!
+        Ich kann Lernkarten auf der U-Bahn studieren und von einem echten Instruktor zu Hause
+        persönlich Unterricht nehmen &#8230; alle mit meinem Smartphone!"
+    </string>
+    <string name="wt_welcome_5_author">~Brian - Ireland</string>
+
+    <!-- Edit Number (et) -->
+    <string name="et_free_trial_class">Kostenlose Testklasse</string>
+    <string name="et_valid_phone_notice">Beachten</string>
+    <string name="et_valid_phone_msg">Bitte geben Sie eine gültige Telefonnummer ein.</string>
+    <string name="et_valid_phone_ok">OK</string>
+    <string name="et_dialog_sending_sms">SMS senden&#8230;</string>
+    <string name="et_verification_code_error">Fehler</string>
+    <string name="et_verification_code_ok">OK</string>
+    <!--<string name="et_confirm_number">Vielen Dank für die Anmeldung für Ihre kostenlose Testversion!
+        Bitte bestätigen Sie Ihre Telefonnummer.
+    </string>-->
+    <string name="et_your_phone_no_hint">Deine Telefonnummer</string>
+    <string name="et_invalid_code_error_title">Fehler</string>
+    <string name="et_invalid_code_error_msg">Dies ist kein gültiger Bestätigungscode.</string>
+
+    <!-- Trail Class (ts) -->
+    <string name="ts_title">Testklasse</string>
+    <string name="ts_notice">Beachten</string>
+    <string name="ts_select_time_msg">Bitte wählen Sie eine Zeit für Ihre Testklasse aus.</string>
+    <string name="ts_select_time_ok">OK</string>
+
+    <!-- Others (ot) -->
+    <string name="ot_capture">Foto machen</string>
+    <string name="pp_loading">Laden&#8230;</string>
+    <string name="youtube_error">Youtube Initialisierungsfehler</string>
+    <string name="free_trail_title">Ablauf zur kostenlosen Probestunde</string>
+    <string name="start_trial_now">KOSTENLOSE PROBESTUNDE JETZT STARTEN</string>
+    <string name="list_dialog_cancel">Stornieren</string>
+
+    <!-- Promo Code Fragment (pc) -->
+    <string name="pc_my_promo_code_lbl">mein Gutscheincode</string>
+    <string name="pc_my_promo_code_hint">GUTSCHEINCODE</string>
+    <string name="pc_refer_a_friend">Einen Freund empfehlen</string>
+    <string name="pc_have_promo_code">Haben Sie einen Gutscheincode?</string>
+    <string name="pc_promo_code_icon_miss">Werbecode-Symbol</string>
+    <string name="pc_promo_code_title">GUTSCHEINCODE</string>
+    <string name="pc_get_promo_code_loading">Wird geladen</string>
+    <string name="pc_promo_code_explanation">Schicke Freunden einen kostenlosen chinesischen Kurs und erhalte bis zu 5 Klassen für sich selbst im Wert von $ 100!&#160;</string>
+    <string name="pc_promo_code_details">Einzelheiten.</string>
+    <string name="pc_share_title">An soziale Medienfreunde weiterleiten</string>
+    <string name="pc_facebook">Facebook</string>
+    <string name="pc_twitter">Twitter</string>
+    <string name="pc_google_plus">Google Plus</string>
+    <string name="pc_email">Email</string>
+    <string name="pc_facebook_icon_miss">Facebook</string>
+    <string name="pc_twitter_icon_miss">Twitter</string>
+    <string name="pc_google_plus_icon_miss">Google Plus</string>
+    <string name="pc_email_icon_miss">Email</string>
+    <string name="pc_promo_code_empty">Sie müssen den Gutscheincode ausfüllen</string>
+    <string name="pc_dialog_confirming">Bestätigen</string>
+    <string name="pc_dialog_succeed">Gelingen</string>
+    <string name="pc_dialog_back">Zurück</string>
+    <string name="pc_dialog_friend_code">Code von Freunden oder Beratern</string>
+    <string name="pc_dialog_credit">Kredit</string>
+    <string name="pc_dialog_increase_credit_note">Der Vorteilskredit wird beim nächsten Kauf hinzugefügt</string>
+    <string name="pc_dialog_invalid_promo_code_err">Ungültiger Promo-Code</string>
+    <string name="pc_dialog_friend_one_time_err">Freund Promo Code nur einmal verwenden.</string>
+    <string name="pc_dialog_use_my_promo_code_err">Sie verwenden Ihren Gutscheincode</string>
+    <string name="pc_share_promo_code">Genießen Sie eine 1-zu-1-Testversion für Chinesisch mit meinem TutorMandarin-Aktionscode: %1$s. Erwachsene + Kinder Mandarin Kurse. Lerne die Sprache wirklich zu SPRECHEN!</string>
+    <string name="pc_no_promotion_history">Es gibt keinen Promotion-Code-Verlauf</string>
+
+    <!-- PromoCode History (ph) -->
+    <string name="ph_i_entered_title">ich betrat</string>
+    <string name="ph_refer_by_me_title">Verweise von mir</string>
+    <string name="ph_list_title">PROMO CODE LISTE</string>
+    <string name="ph_i_entered_code_lbl">Code</string>
+    <string name="ph_i_entered_type_lbl">Art</string>
+    <string name="ph_i_entered_date_lbl">Datum</string>
+    <string name="ph_i_entered_reward_lbl">Belohnung</string>
+    <string name="ph_i_entered_loading">Wird geladen</string>
+    <string name="ph_i_entered_waiting">Warten</string>
+    <string name="ph_refer_name_lbl">Name</string>
+    <string name="ph_refer_date_lbl">Datum</string>
+    <string name="ph_refer_reward_lbl">Belohnung</string>
+    <string name="ph_refer_loading">Wird geladen</string>
+    <string name="ph_refer_waiting">Warten</string>
+
+    <string name="su_i_have_promo_code">Ich habe Gutscheincode</string>
+
+    <!-- Added Language -->
+    <string name="wo_all">Alle</string>
+    <string name="wo_phrases">Sätze</string>
+    <string name="wo_language_learning">Sprachen lernen</string>
+    <string name="wo_conversation">Konversationen</string>
+    <string name="wo_survival_skills">Überlebensfähigkeiten</string>
+    <string name="wo_understanding_china">China verstehen</string>
+    <string name="wo_funny">Komisch</string>
+    <string name="wo_readable_chinese">Lesbarer Chinese</string>
+
+    <string name="vi_all">Alle</string>
+    <string name="vi_understanding_china">China verstehen</string>
+    <string name="vi_language_learning">Sprachen lernen</string>
+    <string name="vi_music">Musik</string>
+    <string name="vi_funny">Komisch</string>
+    <string name="vi_news">Nachrichten</string>
+
+    <string name="to_locale_food">Essen</string>
+    <string name="to_locale_entertainment">Unterhaltung</string>
+    <string name="to_locale_relationships">Beziehungen</string>
+    <string name="to_locale_hobbies">Hobbys</string>
+    <string name="to_locale_travel">Reise</string>
+    <string name="to_locale_culture">Kultur</string>
+    <string name="to_locale_social">Sozial</string>
+    <string name="to_locale_exercise">Übung</string>
+
+    <string name="co_locale_all">Alle</string>
+    <string name="co_locale_pinyin_1">Pinyin</string>
+    <string name="co_locale_beginner_1">Anfänger 1</string>
+    <string name="co_locale_beginner_2">Anfänger 2</string>
+    <string name="co_locale_intermediate_1">Zwischenstufe 1</string>
+    <string name="co_locale_intermediate_2">Zwischenstufe 2</string>
+    <string name="co_locale_advanced_1">Erweitert 1</string>
+    <string name="co_locale_advanced_2">Fortgeschrittene 2</string>
+
+    <string name="co_locale_pinyin_desc">\r\n\u003cp\u003e\r\nDas sprechende Chinesisch beginnt mit Pinyin. Erfahren Sie, wie die korrekten Aussprachegrundlagen von Mandarin sind.\r\n\u003c/p\u003e\r\n(de)</string>
+    <string name="co_locale_beginner_1_desc">\u003cp\u003e\r\nEntwickeln Sie eine starke Grundlage auf Chinesisch mit besonderem Schwerpunkt auf praktischem Sprechen und Zuhören.\r\n\u003c/p\u003e(de)</string>
+    <string name="co_locale_beginner_2_desc">\u003cp\u003e\r\nStärken Sie Ihr grundlegendes gesprochenes Chinesisch mit grundlegender Grammatik, Vokabeln und mehr.\r\n\u003c/p\u003e(de)</string>
+    <string name="co_locale_intermediate_1_desc">\u003cp\u003e\r\nErfahren Sie mehr über spezielle chinesische Grammatikmuster, Phrasen und Vokabeln, die für Ihre Interessen relevant sind.\r\n\u003c/p\u003e(de)</string>
+    <string name="co_locale_intermediate_2_desc">\u003cp\u003e\r\nWerden Sie mit täglichen Gesprächen vertraut und lernen Sie erweiterte Satzstrukturen anhand praktischer Themen kennen.\r\n\u003c/p\u003e(de)</string>
+    <string name="co_locale_advanced_1_desc">Erweitert 1</string>
+    <string name="co_locale_advanced_2_desc">Fortgeschrittene 2</string>
+
+    <string name="to_locale_desc_1">Sprechen Sie über alles, was mit chinesischem Essen zu tun hat - Gerichte, Etikette, Bestellung, Vorbereitung und mehr.</string>
+    <string name="to_locale_desc_2">Besprechen Sie, wie Sie Ihre Freizeit verbringen und was Sie mit modernen, praktischen Chinesen für Unterhaltung tun.</string>
+    <string name="to_locale_desc_3">Lerne, wie du dich in Chinesisch in verschiedenen Arten von Beziehungen verständigen kannst - romantisch, familiär, professionell oder anders.</string>
+    <string name="to_locale_desc_4">Verwenden Sie Chinesisch, um eine Vielzahl von Hobbys zu diskutieren, darunter Fotografie, Musik, Filme, Bücher und vieles mehr.</string>
+    <string name="to_locale_desc_5">Vertiefen Sie Ihr Wissen über die chinesische Kultur durch verwandte Themen, Geschichten und Geschichte.</string>
+    <string name="to_locale_desc_6">Lernen Sie praktisches Chinesisch für Reisen in China mit Kursen zu Tickets, Transport, Sehenswürdigkeiten, Small Talk und vielem mehr.</string>
+    <string name="to_locale_desc_7">Verwenden Sie Chinesisch, um tiefere soziale Themen zu Themen wie Umwelt, Wirtschaft, Politik und mehr zu diskutieren.</string>
+    <string name="to_locale_desc_8">Sprechen Sie über alles, was mit Bewegung zu tun hat, und besprechen Sie sowohl Ihre eigenen Fitnessgewohnheiten als auch die beliebte Sportkultur.</string>
+
+    <string name="su_trial_submit_title">Kostenlose 1-zu-1-Probezeit</string>
+
+    <string name="su_trial_submit_text">
+    <![CDATA[
+            1-gegen-1 chinesische Klasse<br/>
+            Professionelle Mandarin-Tutoren<br/>
+            Vollständige Sprachbewertung<br/>
+            Flexibler Zeitplan
+        ]]>
+    </string>
+    <string name="new_version">Neue Version</string>
+    <string name="critical_update">Kritisches Update</string>
+    <string name="new_version_available">Eine neue Version von TutorMandarin ist jetzt verfügbar.</string>
+    <string name="update_new_version">Bitte aktualisiere TutorMandarin</string>
+    <string name="basic">Grundlegend</string>
+    <string name="kids">Kinder</string>
+    <string name="update">Herunterladen</string>
+    <string name="filter">Filter</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="sory_by_category">Nach Kategorie sortieren</string>
+    <string name="sory_by_level">Sortieren nach Ebene</string>
+    <string name="beginner1">Anfänger 1</string>
+    <string name="beginner2">Anfänger 2</string>
+    <string name="intermediate1">Zwischenstufe 1</string>
+    <string name="intermediate2">Zwischenstufe 2</string>
+    <string name="advanced1">Fortgeschritten 1</string>
+    <string name="advanced2">Fortgeschritten 2</string>
+    <string name="kid0">Kind 0</string>
+    <string name="kid1">Kind 1</string>
+    <string name="kid2">Kind 2</string>
+    <string name="kid3">Kind 3</string>
+    <string name="kid">Kind</string>
+    <string name="adult">Erwachsener</string>
+    <string name="downloading">Herunterladen</string>
+    <string name="select_level">Wählen Sie die Ebene, um Kurse zu filtern</string>
+    <string name="updating_title">Aktualisieren von TutorMandarin</string>
+    <string name="update_desc">TutorMandarin Application Updater</string>
+    <string name="download_complete">Download abgeschlossen</string>
+    <string name="confirm_update">Möchten Sie jetzt aktualisieren?</string>
+    <string name="update_now">Aktualisieren</string>
+    <string name="file_not_found">Datei nicht gefunden</string>
+
+    <!-- New in Version 2.1.3 -->
+    <string name="apply_trial_now">Kostenlose Probestunde</string>
+    <string name="select_time">Wählen Sie Zeit</string>
+    <string name="veryfy_phone">Telefon bestätigen</string>
+    <string name="finish">Fertig</string>
+    <string name="trial_today">Nimm heute Probeunterricht</string>
+    <string name="submit_upcap">einreichen</string>
+    <string name="apply_free_trial">Kostenlose Probestunde</string>
+    <string name="trial_intro">Hallo! Möchten Sie das virtuelle TutorMandarin-Klassenzimmer ausprobieren?</string>
+    <string name="experience_now">Jetzt erleben</string>
+    <string name="later">Spät</string>
+    <string name="free_trial_today">Nimm heute kostenlose Testversion</string>
+    <string name="send_request">Bestätigen</string>
+    <string name="trial_request_welcome">Hallo, dies ist Ihr TutorMandarin-Berater. Möchten Sie heute Ihre kostenlose Testversion nutzen?</string>
+    <string name="trial_request_schedule">Ihre Klasse wurde für %1$s reserviert, bitte bestätigen Sie dies.</string>
+    <string name="et_confirm_number">Danke, dass du dich für TutorMandarin angemeldet hast. Wir senden Ihnen eine einmalige SMS Nachricht.</string>
+    <string name="giving_up_trial">Hallo, es sieht so aus, als ob Sie versuchen, einen Kauf zu machen, bevor Sie Ihre Probestunde nehmen! Erinnerung: Der Probestunde ist kostenlos und wird von einem professionellen Tutor vollständig bewertet. Es wird Ihnen helfen, das richtige Niveau für Ihre Lektion zu wählen.
+        \n\nSie können jedoch jetzt kaufen, ohne den Test zu nehmen. Sie verlieren Ihre Probestunde gegen ein kostenloses Guthaben für Ihren nächsten Einkauf. Die Wahl liegt bei Ihnen. Viel Glück!</string>
+    <string name="giveup">Guthaben kaufen</string>
+    <string name="keep_trial">Nimm die Probe</string>
+    <string name="try_demo">Probieren Sie das Demo-Klassenzimmer aus</string>
+    <string name="student">Schüler</string>
+    <string name="consultant">Berater</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layout_background_light_white"
+              android:orientation="vertical"
+              tools:context=".ui.activity.AccountPhoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginTop="@dimen/toolbar_top_padding"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/ac_phone_title"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imv_account_phone_back"
+                android:layout_width="@dimen/icon_large_size"
+                android:layout_height="@dimen/icon_large_size"
+                android:layout_centerVertical="true"
+                android:padding="13dp"
+                android:src="@drawable/ic_arrow_left"
+                android:textColor="@color/text_color_black"/>
+
+            <TextView
+                android:id="@+id/tv_account_phone_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ac_phone_save"
+                android:textColor="@color/text_color_black"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingTop="@dimen/very_large_margin"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_red_cross" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_black"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <Spinner
+            android:id="@+id/spn_account_ph_codes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:dropDownWidth="250dp"
+            android:spinnerMode="dropdown"/>
+
+        <EditText
+            android:id="@+id/edt_account_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/spn_account_ph_codes"
+            android:gravity="end"
+            android:hint="@string/ac_mobile_phone"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_black">
+
+            <requestFocus/>
+        </EditText>
+    </RelativeLayout>
+</LinearLayout>

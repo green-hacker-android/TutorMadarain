@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fab="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_background_light_white"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_confirm_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="#FBB03B"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon_normal_size"
+            android:layout_height="@dimen/icon_normal_size"
+            android:src="@drawable/ic_correct"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/bo_bp_confirm"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_confirm_reserve"
+        android:layout_below="@id/tool_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_auto_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/bo_autofill"
+                        android:textColor="@color/text_color_black"/>
+
+                    <ImageView
+                        android:id="@+id/imv_auto_repeat_status"
+                        android:layout_width="@dimen/icon_normal_size"
+                        android:layout_height="@dimen/icon_normal_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_arrow_head_right_yellow"/>
+
+                    <TextView
+                        android:id="@+id/tv_auto_repeat_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/imv_auto_repeat_status"
+                        android:padding="5dp"
+                        android:text="@string/bo_off"
+                        android:textColor="@color/text_color_black"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/bo_monthly_plan"
+                    android:textColor="@color/text_color_black"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/shadow_bottom"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_week1_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_week1_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_week1_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/bo_week_1"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/tv_week1_schedule_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bg_tv_border_green"
+                            android:padding="5dp"
+                            android:text="2"
+                            android:textColor="#00aba0"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/ll_week1_header"
+                        android:layout_toStartOf="@id/ll_week1_header"
+                        android:background="@color/gray"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/ll_week1_header"
+                        android:layout_toRightOf="@id/ll_week1_header"
+                        android:background="@color/gray"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_week1_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_week1_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2016/07/08 - 2016/08/09"
+                        android:textColor="@color/text_color_gray"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_week1_schedules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"/>
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fab_week1_add"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_plus_white"
+                        fab:fab_colorNormal="@color/yellow"
+                        fab:fab_colorPressed="#f9a825"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_week2_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_week2_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_week2_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/bo_week_2"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/tv_week2_schedule_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bg_tv_border_green"
+                            android:padding="5dp"
+                            android:text="2"
+                            android:textColor="#00aba0"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/ll_week2_header"
+                        android:layout_toStartOf="@id/ll_week2_header"
+                        android:background="@color/gray"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/ll_week2_header"
+                        android:layout_toRightOf="@id/ll_week2_header"
+                        android:background="@color/gray"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_week2_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_week2_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2016/07/08 - 2016/08/09"
+                        android:textColor="@color/text_color_gray"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_week2_schedules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"/>
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fab_week2_add"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_plus_white"
+                        fab:fab_colorNormal="@color/yellow"
+                        fab:fab_colorPressed="#f9a825"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_week3_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_week3_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_week3_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/bo_week_3"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/tv_week3_schedule_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bg_tv_border_green"
+                            android:padding="5dp"
+                            android:text="2"
+                            android:textColor="#00aba0"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/ll_week3_header"
+                        android:layout_toStartOf="@id/ll_week3_header"
+                        android:background="@color/gray"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/ll_week3_header"
+                        android:layout_toRightOf="@id/ll_week3_header"
+                        android:background="@color/gray"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_week3_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_week3_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2016/07/08 - 2016/08/09"
+                        android:textColor="@color/text_color_gray"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_week3_schedules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"/>
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fab_week3_add"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_plus_white"
+                        fab:fab_colorNormal="@color/yellow"
+                        fab:fab_colorPressed="#f9a825"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_week4_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_week4_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_week4_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/bo_week_4"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/tv_week4_schedule_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bg_tv_border_green"
+                            android:padding="5dp"
+                            android:text="2"
+                            android:textColor="#00aba0"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/ll_week4_header"
+                        android:layout_toStartOf="@id/ll_week4_header"
+                        android:background="@color/gray"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/ll_week4_header"
+                        android:layout_toRightOf="@id/ll_week4_header"
+                        android:background="@color/gray"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_week4_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_week4_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2016/07/08 - 2016/08/09"
+                        android:textColor="@color/text_color_gray"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_week4_schedules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"/>
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fab_week4_add"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_plus_white"
+                        fab:fab_colorNormal="@color/yellow"
+                        fab:fab_colorPressed="#f9a825"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tool_bar"
+        android:background="@drawable/shadow_bottom"/>
+
+</RelativeLayout>

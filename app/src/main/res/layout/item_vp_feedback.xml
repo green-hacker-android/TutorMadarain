@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/very_large_margin"
+        android:text="@string/tu_feedback_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/extremely_large_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_feedback_tutor_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/img_pre_tutor"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundingBorderWidth="2dp"/>
+
+        <RatingBar
+            android:id="@+id/rb_feedback_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/very_large_margin"
+            android:clickable="false"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_bar_bg_yellow"
+            android:stepSize="1"/>
+
+        <ImageView
+            android:id="@+id/imv_other_feedback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="@dimen/very_large_margin"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>

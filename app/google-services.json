@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "118678332637",
+    "firebase_url": "https://lingochat-1097.firebaseio.com",
+    "project_id": "lingochat-1097",
+    "storage_bucket": "lingochat-1097.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118678332637:android:d88972d5b667ac64",
+        "android_client_info": {
+          "package_name": "inc.osbay.android.tutormandarin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118678332637-76mdove0nci8ee2f6hveqgnfplcktdj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inc.osbay.android.tutormandarin",
+            "certificate_hash": "594fe0176aad50cbf3026dbe2def6161231198d8"
+          }
+        },
+        {
+          "client_id": "118678332637-gob7g0shpa9jmnt0560hdfuig69mul1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inc.osbay.android.tutormandarin",
+            "certificate_hash": "2db65b8c9935714c6883a9e9061314cdef26400e"
+          }
+        },
+        {
+          "client_id": "118678332637-im5ni0t1287n8bmarssdnqs376kk9f5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inc.osbay.android.tutormandarin",
+            "certificate_hash": "ffff495d2ae845c4c359418d4ece177c27d21999"
+          }
+        },
+        {
+          "client_id": "118678332637-co9eivq79i9oinh4oh747thjc3ngud7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2cQhHeYS5G94l9GO_1vYDVtuptKVQFXo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118678332637-63kmuc5nuc4l17tv3e0a3j5jn77915a9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "118678332637-sp0ogr2atg0d85ngcb8a5us0mv615tlu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.TutorMandarin.TutorMandarin"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

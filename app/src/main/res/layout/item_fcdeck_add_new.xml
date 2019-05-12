@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/very_large_margin"
+    android:paddingRight="@dimen/very_large_margin"
+    android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/ll_card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_normal_size"
+                android:layout_height="@dimen/icon_normal_size"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_black_plus"/>
+
+            <TextView
+                android:id="@+id/tv_flash_card_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fc_add_new_list"
+                android:textColor="@color/text_color_gray"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    <View
+        android:id="@+id/vw_flash_card"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cv_vp_package"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_package_photo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/img_pre_course"
+            fresco:actualImageScaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/text_color_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_finished_lesson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_finished_lesson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="#48b2ab" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="@color/text_color_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_total_lesson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24"
+                        android:textColor="@color/text_color_gray" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_toLeftOf="@id/ll_finished_lesson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/pk_completed_lesson"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/text_color_gray" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_achievement_lesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/ProgressBarGreen"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_expired_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_color_gray"
+                android:text="Hello"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,61 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ResumeBadgesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/very_large_margin"
+            android:text="@string/re_time_based"
+            android:textColor="@color/text_color_black" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_badges_time_based_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/very_large_margin"
+            android:text="@string/re_course_based"
+            android:textColor="@color/text_color_black" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_badges_course_based_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/very_large_margin"
+            android:text="@string/re_social_based"
+            android:textColor="@color/text_color_black" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_badges_social_based_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/very_large_margin"
+            android:text="@string/re_rating_and_reviews"
+            android:textColor="@color/text_color_black" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_rate_and_reviews_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_black" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

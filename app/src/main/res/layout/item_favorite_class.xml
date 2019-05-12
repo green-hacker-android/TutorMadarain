@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_topic_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/very_large_margin"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/img_pre_lesson"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="@color/white"
+        fresco:roundingBorderWidth="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_15dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_topic_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            fresco:actualImageScaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/imv_topic_favourite_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_favourite_cancel"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/normal_margin"
+        android:layout_toLeftOf="@id/rl_topic_edit"
+        android:layout_toRightOf="@id/sdv_topic_photo"
+        android:maxLines="3"
+        android:textColor="#88bbbbbb" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/narrow_stroke"
+        android:layout_alignParentBottom="true"
+        android:background="#88bbbbbb" />
+
+</RelativeLayout>

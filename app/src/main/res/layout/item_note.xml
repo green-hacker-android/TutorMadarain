@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/note_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/very_large_margin">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_note_photo"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            fresco:placeholderImage="@drawable/img_pre_lesson"/>
+
+        <LinearLayout
+            android:id="@+id/ll_badges_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sdv_note_photo"
+            android:layout_toStartOf="@+id/imgv_resume_down_arrow"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/very_large_margin"
+            android:paddingLeft="@dimen/very_large_margin"
+            android:paddingRight="@dimen/very_large_margin">
+
+            <TextView
+                android:id="@+id/tv_note_lesson_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_note_finish_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_gray"/>
+
+            <TextView
+                android:id="@+id/tv_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgv_resume_down_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/large_margin"
+            android:src="@drawable/ic_arrow_head_down_black"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_note_lesson_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marign_left_30dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/very_large_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/re_note_class_summary"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_note_class_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:textColor="@color/text_color_black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marign_left_30dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/very_large_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/re_note_vocab"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_note_vocab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:textColor="@color/text_color_black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marign_left_30dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/very_large_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/re_note_grammar"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_note_grammar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:textColor="@color/text_color_black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marign_left_30dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/very_large_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/re_note_pronunciation"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_note_pronunciation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:textColor="@color/text_color_black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marign_left_30dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/very_large_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/re_note_speaking"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_note_speaking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:textColor="@color/text_color_black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marign_left_30dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/very_large_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/re_note_listening"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_gray"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_note_listening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/very_large_margin"
+                android:textColor="@color/text_color_black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vw_note_lesson_detail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:visibility="gone"/>
+</LinearLayout>

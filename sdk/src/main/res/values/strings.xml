@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sdk</string>
+    <string name="os_call_support_success">You had called %1$s successfully at %2$s</string>
+    <string name="os_call_support_fail">You had called %1$s failed at %2$s</string>
+</resources>

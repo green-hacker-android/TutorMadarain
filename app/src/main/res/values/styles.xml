@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/bg_radio_button_white</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/layout_background_light_white</item>
+        <item name="android:textColor">@color/text_color_white</item>
+
+        <item name="buttonStyle">@style/MyButton</item>
+
+        <item name="android:alertDialogTheme">@style/DialogStyle</item>
+
+    </style>
+
+    <style name="MyButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <!--<item name="android:colorAccent">@color/primary</item>-->
+        <item name="android:windowTitleStyle">@style/dialogTitleStyle</item>
+        <item name="android:textColor">#8A000000</item>
+        <item name="android:textColorPrimary">#8A000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="dialogTitleStyle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textColor">#DD000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="@android:style/Theme.Holo.Light">
+        <item name="android:paddingTop">?attr/actionBarSize</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SeekBarWhite" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_progress_white</item>
+        <item name="android:indeterminateDrawable">@drawable/seekbar_progress_white</item>
+        <item name="android:thumb">@drawable/seekbar_control_white</item>
+    </style>
+
+    <style name="SeekBarGreen" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_progress_green</item>
+        <item name="android:indeterminateDrawable">@drawable/seekbar_progress_green</item>
+        <item name="android:thumb">@drawable/seekbar_control_green</item>
+    </style>
+
+    <style name="ProgressBarGreen" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_green</item>
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_green</item>-->
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="feedbackRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ic_star_full_yellow</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="feedbackRatingBar50" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ic_star_full_50</item>
+        <item name="android:minHeight">50dip</item>
+        <item name="android:maxHeight">50dip</item>
+    </style>
+
+    <style name="RadioButtonWhite" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/light_white</item>
+        <item name="colorPrimary">@color/light_white</item>
+    </style>
+
+    <style name="RadioButtonGreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#00aba0</item>
+        <item name="colorPrimary">#00aba0</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

@@ -1,0 +1,146 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.WhatsOnListFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+        <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3825A"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:elevation="0dp">
+
+            <RelativeLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingTop="@dimen/toolbar_top_padding">-->
+
+                <RelativeLayout
+                    android:id="@+id/rl_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/very_large_margin"
+                    android:background="@drawable/bg_tab_normal"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/imv_search_icon"
+                        android:layout_width="@dimen/icon_large_size"
+                        android:padding="4dp"
+                        android:layout_height="@dimen/icon_large_size"
+                        android:src="@drawable/ic_search" />
+
+                    <ImageView
+                        android:id="@+id/imv_search_cancel"
+                        android:layout_width="@dimen/icon_large_size"
+                        android:layout_height="@dimen/icon_large_size"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_cross_white" />
+
+                    <EditText
+                        android:id="@+id/edt_search_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/imv_search_icon"
+                        android:layout_toStartOf="@id/imv_search_cancel"
+                        android:background="@android:color/transparent"
+                        android:enabled="false"
+                        android:hint="@string/wo_search"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_white"
+                        android:textColorHint="@color/text_color_white" />
+                </RelativeLayout>
+
+                <!--</RelativeLayout>-->
+
+                <!-- Toolbar is the actual app bar with text and the action items -->
+                <include
+                    android:id="@+id/tool_bar"
+                    layout="@layout/tool_bar" />
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/rl_select_whats_on_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A96848"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_select_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/wo_select_topic"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/tv_select_topic"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_white_dropdown_arrow" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_whats_on_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/rl_select_whats_on_topic"
+                android:background="@color/layout_background_light_white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_topic_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_select_whats_on_topic"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/rl_select_whats_on_topic"
+                android:background="@drawable/shadow_bottom" />
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/right_favorite_drawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />
+
+</android.support.v4.widget.DrawerLayout>

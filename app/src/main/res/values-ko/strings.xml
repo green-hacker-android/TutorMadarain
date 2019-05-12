@@ -1,0 +1,1251 @@
+<resources>
+    <string name="app_name">튜터 만다린</string>
+
+    <!-- Keys -->
+    <string name="server_client_id">118678332637-63kmuc5nuc4l17tv3e0a3j5jn77915a9.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1439689359690020</string>
+    <string name="fabric_api_key">xQdgo3nwPtBLbuYh7gtwBnbW8</string>
+
+    <string name="drawer_open">서랍 열기</string>
+    <string name="drawer_close">서랍 닫기</string>
+
+
+    <!-- LeftDrawerMenu Part (lmd) -->
+    <string name="lmd_sign_up_sign_in">회원가입/로그인</string>
+    <string name="lmd_notifications">공지</string>
+    <string name="lmd_upcoming_lesson">예약된 수업</string>
+    <string name="lmd_my_resume">나의 이력서</string>
+    <string name="lmd_my_level">나의 레벨</string>
+    <string name="lmd_my_badges">내 배지</string>
+    <string name="lmd_my_notes">나의 노트</string>
+    <string name="lmd_walkthrough">설명</string>
+    <string name="lmd_understand_free_trial">무료 체험수업 알아보기</string>
+    <string name="lmd_credit">크레딧</string>
+    <string name="lmd_sign_out">로그아웃</string>
+    <string name="lmd_share_app">튜터만다린 공유하기</string>
+    <string name="lmd_no_upcoming">예약된 수업이 없습니다.</string>
+    <string name="lmd_refer_a_friend">추천 친구</string>
+    <string name="lmd_share_extra_title">&#160;튜터 만다린에서 중국어를 배워보세요</string>
+    <string name="lmd_share_extra_content">
+<![CDATA[중국어를 배우기 위해서 튜터만다린 앱을 사용하겠습니다.<u><a href="https://www.tutormandarin.net/ko/">여기</a></u>확인해보세요!<br/>http://tutormandarin.net]]>
+</string>
+    <string name="lmd_sign_out_msg">정말 로그아웃 하시겠습니까?</string>
+    <string name="lmd_sign_out_cancel">취소</string>
+    <string name="lmd_btn_sign_out">로그아웃</string>
+    <string name="lmd_whats_price">이용료 안내</string>
+
+    <!-- SignIn Part (si) -->
+    <string name="si_email_hint">example@name.com</string>
+    <string name="si_invalid_email">이메일 형식이 잘못되었습니다.</string>
+    <string name="si_mobile_phone">휴대폰 번호</string>
+    <string name="si_rb_mobile_phone">휴대폰 번호</string>
+    <string name="si_invalid_phone">휴대폰 번호 형식이 잘못되었습니다.</string>
+    <string name="si_email">이메일</string>
+    <string name="si_password">비밀번호</string>
+    <string name="si_invalid_password">비밀번호 형식이 잘못되었습니다.</string>
+    <string name="si_forgot_password">비밀번호 찾기</string>
+    <string name="si_btn_sign_in">로그인</string>
+    <string name="si_sign_in">로그인</string>
+    <string name="si_sign_up_link">아직 계정이 없으신가요?회원가입</string>
+    <string name="si_have_account">아직 계정이 없으신가요?</string>
+    <string name="si_sign_up">회원가입</string>
+    <string name="si_dialog_ok">OK</string>
+    <string name="si_signing_in">로그인 완료&#8230;</string>
+    <string name="si_sign_in_error">오류</string>
+    <string name="si_dialog_email_error_lbl"> 죄송합니다, 기입한 이메일이 존재하지 않습니다. 다시 확인해주세요.</string>
+    <string name="si_dialog_forget_pwd_email">이메일</string>
+    <string name="si_dialog_forget_pwd_lbl">이메일에 새 비밀번호를 보내주세요</string>
+    <string name="si_dialog_forget_pwd_ok">네</string>
+    <string name="si_dialog_forget_pwd_cancel">취소</string>
+    <string name="si_dialog_forget_loading">로딩&#8230;</string>
+    <string name="si_dialog_email_error_loading">로딩&#8230;</string>
+    <string name="si_dialog_reset_time_limit">리셋한 비밀번호는 1분 안에 적용되지 않습니다. 잠시 후 시도해주세요</string>
+    <string name="si_dialog_reset_time_limit_ok">네</string>
+    <string name="si_dialog_send_succeed">보내기 성공</string>
+    <string name="si_dialog_send_succeed_txt">몇 분안에 당신에게 메일이 갈 겁니다. 30분안에 비밀번호를 바꾸세요</string>
+    <string name="si_dialog_send_succeed_ok">네</string>
+    <string name="si_google_sign_in_error">로그인 불가</string>
+    <string name="si_google_result_error">에러</string>
+    <string name="si_connection_error">연결 에러</string>
+    <string name="si_sign_in_with">로그인</string>
+
+    <!-- Sign Up Part (su) -->
+    <string name="su_sign_up_trailer">로그인 후 무료수업 수강</string>
+    <string name="su_invalid_name">이름 서식이 잘못되었습니다.</string>
+    <string name="su_email">이메일</string>
+    <string name="su_invalid_email">이메일 형식이 잘못되었습니다.</string>
+    <string name="su_phone">휴대폰 번호</string>
+    <string name="su_invalid_phone">휴대폰 번호 형식이 잘못되었습니다.</string>
+    <string name="su_password">비밀번호</string>
+    <string name="su_invalid_password">비밀번호 형식이 잘못되었습니다..</string>
+    <string name="su_sign_up_create_account">계정만들기</string>
+    <string name="su_first_name">이름</string>
+    <string name="su_last_name">성</string>
+    <string name="su_eg_email">123@example.com</string>
+    <string name="su_mobile_phone">휴대폰 번호</string>
+    <string name="su_password_hint">6–10 자를 입력하십시오</string>
+    <string name="su_dialog_ok">확인</string>
+    <string name="su_congratulation">축하드립니다!</string>
+    <string name="su_congratulation_msg">무료 체험을 신청하셨습니다. 상담가가 빠른 시일 내에 연락하여 수업 스케줄을 확인헤 드리겠습니다.</string>
+    <string name="su_dialog_congratulation_ok">확인</string>
+    <string name="su_sign_up_error">오류</string>
+    <string name="su_signing_up">신청&#8230;</string>
+    <string name="su_term_and_agreement_1">나는 아래 내용에 동의합니다.&#160;</string>
+    <string name="su_term_and_agreement_2">서비스 이용 약관</string>
+    <string name="su_term_and_agreement_3">그리고</string>
+    <string name="su_term_and_agreement_4">개인정보보호정책</string>
+    <string name="su_have_account">이미 계정이 있으신가요?</string>
+    <string name="su_sign_in">로그인</string>
+    <string name="su_step_of_three">단계 3개 중 %d 개</string>
+    <string name="su_google_sign_in_error">로그인 불가</string>
+    <string name="su_google_result_error">에러</string>
+    <string name="su_connection_error">연결 에러</string>
+    <string name="su_tutormandarin_account">튜터만다린 계정</string>
+    <string name="su_chinese_level_title">당신의 중국어 레벨</string>
+    <string name="su_chinese_level_msg">현재 자신의 중국어 레벨에 대해서 얘기해주세요. 적합한 과정과 자료를 추천해드릴 수 있습니다. 걱정하지 마세요. 모든 튜터 만다린 학생은 전문적인 튜터와 함께 중국어 실력을 성장시킬  수 있습니다.</string>
+    <string name="su_chinese_level_ok">네</string>
+    <string name="su_your_goals_title">나의 목표</string>
+    <string name="su_your_goals_msg">목표가 변경되면, 업데이트를 위해 나의 프로필을 방문하세요.</string>
+    <string name="su_your_goals_ok">네</string>
+    <string name="su_your_interests_title">나의 관심</string>
+    <string name="su_your_interests_msg">관심이 있는 주제를 배우면 더 효과적이고 동기부여됩니다. 관심 주제를 고르기 위해 프로필을 방문하세요.</string>
+    <string name="su_your_interests_ok">네</string>
+    <string name="su_choose_request_notice">공지</string>
+    <string name="su_choose_request_msg">옵션을 한 가지 이상 선택해주세요</string>
+    <string name="su_choose_request_ok">네</string>
+    <string name="su_updating">업데이트&#8230;</string>
+    <string name="su_sign_in_with">로그인하기</string>
+    <string-array name="su_goals">
+        <item>여행</item>
+        <item>비즈니스</item>
+        <item>중국어 능률 테스트</item>
+        <item>교육</item>
+        <item>일상 의사소통</item>
+    </string-array>
+    <string-array name="su_interests">
+        <item>문구들</item>
+        <item>언어 배우기</item>
+        <item>서바이벌 기술</item>
+        <item>뉴스</item>
+        <item>중국 이해하기</item>
+        <item>흥미</item>
+        <item>대화</item>
+        <item>음악</item>
+    </string-array>
+    <string name="su_beginner_1">기초1</string>
+    <string name="su_beginner_1_desc">당신은 중국어를 못하거나 또는 조금만 할 줄 압니다.</string>
+    <string name="su_beginner_2">기초2</string>
+    <string name="su_beginner_2_desc">당신은 중국어로 기초적인 회화와  간단한 질문을 할줄 압니다.</string>
+    <string name="su_intermediate_1">중급1</string>
+    <string name="su_intermediate_1_desc">관심있고 익숙한 주제로 자신감있게 의사소통 할 수 있습니다. 대화의 문맥을 이해한 후 대화에 참여할 수 있습니다.</string>
+    <string name="su_intermediate_2">중급2</string>
+    <string name="su_intermediate_2_desc">관심분야에 상관없이 일상 생활 밖의 주제로도 자신감있게 의사소통할 수 있습니다.</string>
+    <string name="su_advanced_1">고급1</string>
+    <string name="su_advanced_1_desc">현지 중국인과 일상적인 상황에서 의사소통할 수 있습니다. 가끔 실수를 하고 이해하지 못할 때가 있습니다.</string>
+    <string name="su_advanced_2">고급2</string>
+    <string name="su_advanced_2_desc">현지 중국인과 아주 다양한 상황에서 의사소통할 수 있고, 정확한 문법과 다양한 단어를 이용해 자신의 생각을 표현할 수 있습니다.</string>
+    <string name="su_continue_step">단계 3개 중 1개</string>
+    <string name="su_continue_back">이전</string>
+    <string name="su_continue_next">다음</string>
+    <string name="su_accomplish_chinese">중국어로 무엇을 성취할려고 합니까?</string>
+    <string name="su_what_interest_in">중국어로 무엇을 성취할려고 합니까?</string>
+    <string name="su_verify_number_desc"><![CDATA[4개의 확인 코드를 보냈습니다.<b>%1$s %2$s</b>확인하세요]]></string>
+    <string name="su_sign_up">회원가입</string>
+
+    <!-- Main Fragment (main) -->
+    <string name="main_trial_not_complete">체험 수업이 완료되지 않았습니다</string>
+    <string name="main_schedule">스케줄</string>
+    <string name="main_explore_now">지금 살펴보기</string>
+    <string name="main_sign_up">회원가입</string>
+    <string name="main_up_to">최대</string>
+    <string name="main_off">할인</string>
+    <string name="main_package">패키지</string>
+    <string name="main_package_explanation">패키지로 배우기</string>
+    <string name="main_course">교육과정</string>
+    <string name="main_course_explanation">강좌 또는 토픽 수업 선택하기</string>
+    <string name="main_tutor">강사진</string>
+    <string name="main_tutor_explanation">강사님 선택하기</string>
+    <string name="main_daily_content">데일리 콘텐츠</string>
+    <string name="main_daily_content_article">중국어 기사, 영상, 플래시 카드</string>
+    <string name="main_online_support">온라인 서포트</string>
+    <string name="main_online_support_explanation">상담 연결</string>
+    <string name="main_unavailable">이용불가</string>
+    <string name="main_unavailable_msg">죄송합니다, 이 컨텐츠는 아직 준비 중 입니다.다른 구매를하려면 평가판을 완료해야합니다.</string>
+    <string name="main_unavailable_ok">나는 주변을 둘러 볼 것이다</string>
+    <string name="main_alert_notice">공지</string>
+    <string name="main_alert_notice_ok">OK</string>
+    <string name="main_awaiting_trial">무료 체험 대기</string>
+    <string name="main_sign_up_trial">무료 체험을 위해 가입하세요</string>
+    <string name="main_submit_information">요청하는 정보 제출</string>
+    <string name="main_pk_loading">로딩중</string>
+
+    <!-- Study Material Part (sm) -->
+    <string name="sm_title">학습자료</string>
+    <string name="sm_whats_on">왓츠온</string>
+    <string name="sm_whats_on_msg">중국어 구문, 뉴스, 게임 등등</string>
+    <string name="sm_videos">영상</string>
+    <string name="sm_videos_msg">중국어 영상</string>
+    <string name="sm_flash_cards">플래시 카드</string>
+    <string name="sm_flash_cards_msg">중국어 플래시 카드</string>
+
+    <!-- Whats On Part (wo) -->
+    <string name="wo_list_all">전체보기</string>
+    <string name="wo_select_topic">주제 선택하기</string>
+    <string name="wo_title">왓츠온</string>
+    <string name="wo_dialog_loading">로딩중</string>
+    <string name="wo_connection_error">연결오류.</string>
+    <string name="wo_search">검색&#8230;</string>
+    <string name="wo_add_to_favourite">즐겨찾기에 추가하기</string>
+    <string name="wo_share">공유하기</string>
+    <string name="wo_already_added">이미 추가했습니다.</string>
+    <string name="wo_article">기사</string>
+    <string name="wo_vocab">어휘</string>
+    <string name="wo_grammar">문법</string>
+    <string name="wo_successfully_added">즐겨찾기에 성공적으로 추가되었습니다.</string>
+    <string name="wo_no_vocab">단어가 없습니다.</string>
+    <string name="wo_no_grammar">문법이 없습니다.</string>
+    <string name="wo_posted">게시됨</string>
+    <string name="wo_fav_feature_unavailable">이용불가</string>
+    <string name="wo_fav_feature_msg">즐겨찾기를 이용하기 위해 로그인하세요</string>
+    <string name="wo_fav_feature_sign_in">로그인</string>
+    <string name="wo_fav_feature_cancel">취소</string>
+
+    <!-- Video Part (vi) -->
+    <string name="vi_title">영상</string>
+    <string name="vi_select_topic">주제 선택하기</string>
+    <string name="vi_list_all">전체보기</string>
+    <string name="vi_dialog_loading">로딩중</string>
+    <string name="vi_connection_error">연결 오류</string>
+    <string name="vi_search">검색&#8230;</string>
+    <string name="vi_description">설명</string>
+    <string name="vi_vocab">어휘</string>
+    <string name="vi_viewed_count">보기 : %1$s</string>
+    <string name="vi_author_name">작가 이름</string>
+
+    <!-- Flashcard part (fc) -->
+    <string name="fc_title">플래시카드</string>
+    <string name="fc_common">일반</string>
+    <string name="fc_custom">개인</string>
+    <string name="fc_rename_pack">팩 이름 변경</string>
+    <string name="fc_btn_rename">이름 변경</string>
+    <string name="fc_btn_rename_cancel">취소</string>
+    <string name="fc_delete_title">확인</string>
+    <string name="fc_delete_msg">이 리스트를 삭제하시겠습니까?</string>
+    <string name="fc_btn_delete">삭제</string>
+    <string name="fc_btn_delete_cancel">취소</string>
+    <string name="fc_notice_title">공지</string>
+    <string name="fc_notice_msg">이 리스트는 비어있습니다.다른 리스트의 플래시카드를 이 곳에 추가할 수 있습니다.</string>
+    <string name="fc_btn_notice_ok">OK</string>
+    <string name="fc_dialog_loading">로딩</string>
+    <string name="fc_error">에러</string>
+    <string name="fc_custom_cards">카드</string>
+    <string name="fc_common_cards">카드</string>
+    <string name="fc_common_title">단어, 문법, 숙어</string>
+    <string name="fc_download_loading">로딩&#8230;</string>
+    <string name="fc_download_error">에러</string>
+    <string name="fc_download_ok">OK</string>
+    <string name="fc_add_to_custom_list">리스트에 추가하기</string>
+    <string name="fc_share">공유</string>
+    <string name="fc_cancel">취소</string>
+    <string name="fc_save">저장</string>
+    <string name="fc_download_image_loading">로딩&#8230;</string>
+    <string name="fc_audio_download_unsuccessful">오디오 파일을 다운로드 할 수 없습니다.</string>
+    <string name="fc_package_title">패키지 제목</string>
+    <string name="fc_extra_share_item">플래시 카드</string>
+    <string name="fc_explain_1">수업을 구매하시면 자동적으로 자신의 레벨에 맞는 플래시카드는 오픈됩니다.</string>
+    <string name="fc_explain_2">모든 플래시카드는 사용자가 만든 리스트에 추가 가능합니다.</string>
+    <string name="fc_explain_3">리스트는 상시 수정되거나 삭제할 수 있습니다.</string>
+    <string name="fc_lessons_complete">%1$s/%2$s 수업 완료</string>
+    <string name="fc_add_new_list">새로운 리스트 추가하기</string>
+    <string name="fc_new_custom_list">새로운 리스트</string>
+    <string name="fc_list_title">리스트 제목</string>
+    <string name="fc_create_error">에러</string>
+    <string name="fc_create_msg">이 이름으로는 플래시 카드를 만들 수 없습니다.</string>
+    <string name="fc_create_ok">OK</string>
+    <string name="fc_dialog_cancel">취소</string>
+
+
+    <!-- Resume part (re) -->
+    <string name="re_title">나의 이력서</string>
+    <string name="re_note_error">오류.</string>
+    <string name="re_badges_error">오류.</string>
+    <string name="re_status_tab_title">현황</string>
+    <string name="re_note_tab_title">공지</string>
+    <string name="re_badges_tab_title">배지</string>
+    <string name="re_resume_learning_goal">학습목표</string>
+    <string name="re_resume_overall">전반적</string>
+    <string name="re_resume_level">레벨</string>
+    <string name="re_resume_progress">진행</string>
+    <string name="re_resume_pronunciation">발음</string>
+    <string name="re_resume_speaking">회화</string>
+    <string name="re_resume_listening">듣기</string>
+    <string name="re_note_empty">튜터 노트가 없습니다.</string>
+    <string name="re_class_finished_date">날짜 완료 %1$s</string>
+    <string name="re_note_class_summary">수업 요약</string>
+    <string name="re_note_vocab">어휘</string>
+    <string name="re_note_grammar">문법</string>
+    <string name="re_note_pronunciation">발음</string>
+    <string name="re_note_speaking">회화</string>
+    <string name="re_note_listening">듣기</string>
+    <string name="re_rating_and_reviews">평가와 리뷰</string>
+    <string name="re_time_based">시간</string>
+    <string name="re_course_based">과정</string>
+    <string name="re_social_based">사교</string>
+    <string name="re_update_date">업데이트 : %1$s</string>
+    <string name="re_credits">크레딧</string>
+    <string name="re_badges_complete">% 완료</string>
+    <string name="re_lessons_complete">%1$s/%2$s 수업 종료</string>
+
+    <!-- Package (pk) -->
+    <string name="pk_booking_rule_title">패키지 예약 규정</string>
+    <string name="pk_course_structure_title">과정 구성</string>
+    <string name="pk_ticket_design_title">티켓 디자인</string>
+    <string name="pk_auto_repeat_title">자동 채우기</string>
+    <string name="pk_auto_repeat">자동채우기는 일주일에 공부하기를 원하는 시간을 선택하면 자동적으로 그 시간대에 가능한 튜터를 배정하는 기능입니다. 예를 들면, 월요일과 화요일 저녁 7시를 선택하면 자동적으로 같은 시간대에 한달 시간표가 완성됩니다.  패키지를 구매하시는 사용자는 일주일에 한번은 반드시 수업을 예약해야 합니다.</string>
+    <string name="pk_booking_rule">패키지 예약 시스템에 오신 것을 환영합니다.  할인된 가격에 모든 과정을 구매하실 수 있습니다. 패키지를 추천해드리는 이유는 첫번째, 가장 편리한 선택이며 두번째, 가장 좋은 결과를 내실 수 있는 과정입니다.</string>
+    <string name="pk_course_structure">과정은 HSK 기준 레벨로 디자인되었습니다. 각각의 과정은 수업과 보충수업으로 구성되어 있습니다.수업은 50분이며, 새로운 본질적인 개념과 기술울 가르칩니다. 보충수업 또한 50분이며, 이전에 배운 개념을 복습하고 심화하는 수업입니다.</string>
+    <string name="pk_ticket_design">모든 수업은 시간과 튜터와 함께 티켓으로 보여집니다. 티켓은 예약한 수업이 시작되기  24시간 이내에 변경하거나 취소할 경우, 크레딧은 양도되지 않습니다.</string>
+    <string name="pk_start_now">지금 시작하기</string>
+    <string name="pk_learn_more">좀 더 배우기</string>
+    <string name="pk_title">패키지</string>
+    <string name="pk_what_title">패키지</string>
+    <string name="pk_lesson_count">패키지 수업 카운트&#160;</string>
+    <string name="pk_supplement_count">패키지 보충 카운트&#160;</string>
+    <string name="pk_completed_lesson">수업 완료</string>
+    <string name="pk_btn_my_booking">예약</string>
+    <string name="pk_my_booking_course_structure_title">코스 과정</string>
+    <string name="pk_my_booking_course_structure_msg">과정은 HSK 기준 레벨로 디자인되었습니다. 각각의 과정은 수업과 보충수업으로 구성되어 있습니다.수업은 50분이며, 새로운 본질적인 개념과 기술울 가르칩니다. 보충수업 또한 50분이며, 이전에 배운 개념을 복습하고 심화하는 수업입니다.</string>
+    <string name="pk_booking_expired_date">만기 날짜 %1$s</string>
+    <string name="pk_section_title">섹션 %1$s</string>
+    <string name="pk_lesson_number">수업 숫자</string>
+    <string name="pk_supplement_number">보충 숫자</string>
+    <string name="pk_lesson_name">%1$s %2$s</string>
+    <string name="pk_my_lst_title">패키지</string>
+    <string name="pk_my_lst_loading">로딩</string>
+    <string name="pk_lst_booking_expired_date">만기 날짜 %1$s</string>
+    <string name="pk_user_unavailable_title">불가능</string>
+    <string name="pk_user_unavailable_msg">죄송합니다, 이 컨텐츠는 아직 준비 중 입니다.다른 구매를하려면 평가판을 완료해야합니다.</string>
+    <string name="pk_user_unavailable_ok">나는 주변을 둘러 볼 것이다</string>
+    <string name="pk_package_title">패키지 제목</string>
+    <string name="pk_lst_completed_lessons">완료된 강의</string>
+    <string name="pk_lst_buy_new_package">새로운 패키지 구매하기</string>
+    <string name="pk_lst_what_is_package">패키지란 무엇인가</string>
+    <string name="pk_lst_what_is_package_lbl">패키지는 무엇입니까</string>
+    <string name="pk_lst_booking_rules">패키지 예약 규정</string>
+    <string name="pk_lst_no_package">패키지가 없습니다</string>
+    <string name="pk_lst_purchase_package">패키지를 구매하시려면 여기를 클릭하세요</string>
+    <string name="pk_lst_btn_purchase">구매</string>
+    <string name="pk_store_title">패키지 스토어</string>
+    <string name="pk_store_dialog_loading">다이얼로그 로딩&#8230;</string>
+    <string name="pk_store_recommended">추천</string>
+    <string name="pk_store_all">모두</string>
+    <string name="pk_download_packages_error">에러</string>
+    <string name="pk_new_package_credit">%1$s 새로운 패키지 크레딧</string>
+    <string name="pk_lesson_mins">%1$s 강의 시간</string>
+    <string name="pk_store_recommended_title">추천</string>
+    <string name="pk_store_all_title">모두</string>
+    <string name="pk_my_credits">나의 크레딧</string>
+    <string name="pk_credits">크레딧</string>
+
+    <!-- Tutor (tu) -->
+    <string name="tu_search">검색&#8230;</string>
+    <string name="tu_lst_title">튜터</string>
+    <string name="tu_lst_loading">로딩&#8230;</string>
+    <string name="tu_lst_refresh_failed">튜터 리스트 새로고침 실패</string>
+    <string name="tu_lst_media_loading">로딩&#8230;</string>
+    <string name="tu_lst_cant_download_video">비디오 파일을 다운로드 할 수 없습니다.</string>
+    <string name="tu_lst_credit_weight">크레딧 무게</string>
+    <string name="tu_lst_teaching_exp">교사 경험</string>
+    <string name="tu_lst_location">위치</string>
+    <string name="tu_select_class_type">강의 타입 고르기</string>
+    <string name="tu_select_course">과정 - 50분 수업</string>
+    <string name="tu_select_topic">주제 - 25분 수업</string>
+    <string name="tu_rate">평가</string>
+    <string name="tu_exp_spec">튜터의 경험과 특징</string>
+    <string name="tu_book_on_schedule">스케줄을 예약하세요</string>
+    <string name="tu_special_topic">특별한 주제 %1$s</string>
+    <string name="tu_exp">강의 경험 %1$s</string>
+    <string name="tu_add_to_favorite">즐겨찾기</string>
+    <string name="tu_share">공유</string>
+    <string name="tu_already_added">튜터를 이미 추가했습니다</string>
+    <string name="tu_successfully_added">성공적으로 즐겨찾기에 추가되었습니다.</string>
+    <string name="tu_extra_share_item">튜터</string>
+    <string name="tu_unavailable_user_title">불가능</string>
+    <string name="tu_unavailable_user_msg">죄송합니다, 이 컨텐츠는 아직 준비 중 입니다.다른 구매를하려면 평가판을 완료해야합니다.</string>
+    <string name="tu_unavailable_user_ok">나는 주변을 둘러 볼 것이다</string>
+    <string name="tu_audio_file_download">로딩&#8230;</string>
+    <string name="tu_video_file_download_error">비디오 파일을 다운로드 할 수 없습니다.</string>
+    <string name="tu_available_tutor">가능한 튜터</string>
+    <string name="tu_not_available">불가능</string>
+    <string name="tu_btn_select_confirm">확인</string>
+    <string name="tu_dialog_download_loading">로딩&#8230;</string>
+    <string name="tu_dialog_download_error">에러</string>
+    <string name="tu_dialog_download_ok">OK</string>
+    <string name="tu_dialog_reload_loading">로딩&#8230;</string>
+    <string name="tu_dialog_no_schedule_error">에러</string>
+    <string name="tu_dialog_no_schedule_ok">OK</string>
+    <string name="tu_dialog_schedule_error">에러</string>
+    <string name="tu_dialog_schedule_ok">OK</string>
+    <string name="tu_dialog_parse_error">에러</string>
+    <string name="tu_dialog_parse_ok">에러</string>
+    <string name="tu_no_tutor_schedule">이 튜너는 가능한 수업이 없습니다.</string>
+    <string name="tu_select_tutor_first">튜터를 먼저 선택하세요</string>
+    <string name="tu_dialog_select_tutor_time_loading">로딩&#8230;</string>
+    <string name="tu_dialog_already_booked">이미 예약됨</string>
+    <string name="tu_dialog_already_booked_msg">이 시간대에 이미 수업이 있습니다.</string>
+    <string name="tu_dialog_already_booked_ok">OK</string>
+    <string name="tu_dialog_booking_check_time_error">에러</string>
+    <string name="tu_dialog_booking_check_time_ok">OK</string>
+    <string name="tu_package_title">패키지 제목</string>
+    <string name="tu_enter_comment_here">코멘트를 여기다 적으세요&#8230;</string>
+    <string name="tu_star_3_5">감사합니다. 제안 사항이 있으신가요?</string>
+    <string name="tu_rating_notice">공지: 더 많은 평가와 코멘트를 주고 싶으시면 오른쪽으로 밀어주세요.</string>
+    <string name="tu_btn_rating_submit">제출</string>
+    <string name="tu_feedback_title">튜터 피드백</string>
+    <string name="tu_tutor_feedback">오늘 튜터가 어땠나요?</string>
+    <string name="tu_rating_drag_and_press">평가하기 위해 누르거나 드래그해주세요</string>
+    <string name="tu_star_1_2">죄송합니다. 더 많은 피드백을 주시겠어요?</string>
+    <string name="tu_call_quality">오늘 전화 품질은 어땠나요?</string>
+    <string name="tu_feedback_content">강의 내용은 어땠나요?</string>
+    <string name="tu_feedback_others">추가적인 코멘트가 있으신가요?</string>
+    <string name="tu_fav_unavailable">이용 불가</string>
+    <string name="tu_fav_msg">즐겨찾기를 이용하기 위해 로그인 하세요</string>
+    <string name="tu_fav_sign_in">로그인</string>
+    <string name="tu_fav_sign_in_cancel">취소</string>
+    <string name="tu_sign_up_free_trail">죄송합니다. 이 내용은 체험 유저는 이용이 불가능합니다. 무료 이용을 위해 가입하세요&#160;</string>
+    <string name="tu_sign_up_now">지금</string>
+    <string name="tu_sign_in_book_unavailable">이용불가</string>
+    <string name="tu_sign_in_book_msg">튜터를 예약하기 위해 로그인 하세요</string>
+    <string name="tu_sign_in_book">로그인</string>
+    <string name="tu_sign_in_book_cancel">취소</string>
+    <string name="tu_rate_text">x %1$s</string>
+    <string name="tu_search_all_lbl">수색\n모든</string>
+    <string name="tu_search_all_loading">로딩</string>
+    <string name="tu_search_all_sun">일요일</string>
+    <string name="tu_search_all_mon">월요일</string>
+    <string name="tu_search_all_tue">화요일</string>
+    <string name="tu_search_all_wed">수요일</string>
+    <string name="tu_search_all_thu">목요일</string>
+    <string name="tu_search_all_fri">금요일</string>
+    <string name="tu_search_all_sat">토요일</string>
+    <string name="tu_search_all_today">오늘</string>
+    <string name="tu_search_all_expired">만료 시간은 선택할 수 없습니다</string>
+    <string name="tu_search_all_expired_ok">OK</string>
+
+    <string-array name="tutor_feedback_type">
+        <item>튜터 피드백</item>
+        <item>전화 품질</item>
+        <item>내용</item>
+        <item>다른 코멘트</item>
+    </string-array>
+
+    <string name="tu_dialog_submit_loading">로딩&#8230;</string>
+
+    <string name="credit_multiply">크레딧</string>
+
+    <!-- Online Support (os) -->
+    <string name="os_dialog_connect_failure_error">에러</string>
+    <string name="os_dialog_connect_failure_msg">강의에 들어갈 수 없습니다.</string>
+    <string name="os_dialog_connect_failure_ok">OK</string>
+    <string name="os_request_permission_msg">카메라와 마이크 허용이 필요합니다. 추가적인 기능을 위해 앱 세팅에서 허용해주세요.</string>
+    <string name="os_online_support_lbl">온라인 서포트</string>
+    <string name="os_calling">전화 &#8230;</string>
+    <string name="os_speaker">스피커</string>
+    <string name="os_mute">음소거</string>
+    <string name="os_hide">숨기기</string>
+    <string name="os_end_call">전화 끝내기</string>
+    <string name="os_send">보내기</string>
+    <string name="os_title">온라인 서포트</string>
+    <string name="os_msg_body">안녕하세요. 튜터만다린 온라인 서포트입니다. 무엇을 도와드릴까요?</string>
+    <string name="os_dialog_msg_loading">대화 메세지 로딩&#8230;</string>
+    <string name="os_call_ready">전화 준비되셨나요?</string>
+    <string name="os_call_ready_msg">곧 전화를 통해 상담을 받게 됩니다. 전화를 하시려면 확인을 눌러주세요.</string>
+    <string name="os_call_ready_confirm">확인</string>
+    <string name="os_call_ready_cancel">취소</string>
+    <string name="os_working_period">죄송합니다. 튜터만다린 온라인 서포트는 중국 시간 9시부터 6시까지만 운영됩니다. 메시지를 다시 보내주시거나 운영시간에 전화해주세요. 감사합니다.</string>
+    <string name="os_no_online_support_title">죄송합니다.</string>
+    <string name="os_no_online_support_msg">튜터만다린 온라인 서포트는 지금 이용하실 수 없습니다.</string>
+    <string name="os_no_online_support_ok">OK</string>
+    <string name="os_server_error">에러</string>
+    <string name="os_server_error_ok">OK</string>
+    <string name="os_twilio_access_error">에러</string>
+    <string name="os_twilio_access_error_ok">OK</string>
+    <string name="os_not_available_title">죄송합니다.</string>
+    <string name="os_not_available_msg">튜터만다린 온라인 서포트는 지금 이용하실 수 없습니다.</string>
+    <string name="os_not_available_ok">OK</string>
+    <string name="os_no_operator_error">에러</string>
+    <string name="os_no_operator_error_ok">OK</string>
+    <string name="os_no_consultants">죄송합니다. 튜터만다린 컨설턴트는 현재 전화를 받을 수 없습니다. 웹사이트를 통해 메시지를 남겨주시면 가능한 빨리 연락드리겠습니다.</string>
+    <string name="os_call_ended">전화가 끝났습니다.</string>
+    <string name="os_call_support_success">You had called %1$s successfully at %2$s</string>
+    <string name="os_call_support_fail">You had called %1$s failed at %2$s</string>
+
+    <!-- Account (ac) -->
+    <string name="ac_setting_title">설정</string>
+    <string name="ac_email_title">이메일</string>
+    <string name="ac_email_save">저장</string>
+    <string name="ac_add_mail">이메일 추가하기</string>
+    <string name="ac_walkthrough">워크트루우</string>
+    <string name="ac_rate">평가</string>
+    <string name="ac_website">웹사이트</string>
+    <string name="ac_faq">FAQ</string>
+    <string name="ac_terms_of_service">서비스 이용약관</string>
+    <string name="ac_privacy_policy">개인정보 보호정책</string>
+    <string name="ac_acknowledgement">승인</string>
+    <string name="ac_about_us">튜터 만다린 소개</string>
+    <string name="ac_company_name">GTA Ltd.</string>
+    <string name="ac_version">버전</string>
+    <string name="ac_interest_title">흥미</string>
+    <string name="ac_learning_purpose_title">학습 목표</string>
+    <string name="ac_setting_save">저장</string>
+    <string name="ac_dialog_location_loading">다이얼로그 장소 로딩&#8230;</string>
+    <string name="ac_location_title">위치</string>
+    <string name="ac_location_save">저장</string>
+    <string name="ac_search_location">검색 위치</string>
+    <string name="ac_choose_location">위치를 선택하세요</string>
+    <string name="ac_no_search_location">검색한 위치가 없습니다.</string>
+    <string name="ac_name_title">이름</string>
+    <string name="ac_name_save">저장</string>
+    <string name="ac_first_name_lbl">이름</string>
+    <string name="ac_first_name_hint">이름 추가하기</string>
+    <string name="ac_last_name_lbl">성</string>
+    <string name="ac_last_name_hint">성 추가하기</string>
+    <string name="ac_name_empty">이름이나 성이 비어있습니다</string>
+    <string name="ac_phone_title">핸드폰</string>
+    <string name="ac_phone_save">저장</string>
+    <string name="ac_mobile_phone">핸드폰</string>
+    <string name="ac_reset_password_title">비밀번호 재설정</string>
+    <string name="ac_current_password_hint">현재 비밀번호</string>
+    <string name="ac_forgot_password">비밀번호를 잊어버렸습니까?</string>
+    <string name="ac_new_password_hint">새로운 비밀번호</string>
+    <string name="ac_confirm_password_hint">새로운 비밀번호 확인</string>
+    <string name="ac_btn_password_submit">제출</string>
+    <string name="ac_old_password_empty">예전 비밀번호를 적어주세요</string>
+    <string name="ac_new_password_empty">예전 비밀번호를 적어주세요</string>
+    <string name="ac_confirm_password_empty">새로운 비밀번호를 확인해주세요</string>
+    <string name="ac_no_match_password">새로운 비밀번호와 확인 비밀번호가 일치하지 않습니다</string>
+    <string name="ac_old_password_error">예전 비밀번호가 일치하지 않습니다.</string>
+    <string name="ac_invalid_password">비밀번호 포맷이 정확하지 않습니다</string>
+    <string name="ac_info_choose">선택</string>
+    <string name="ac_choose_from_photos">카메라 롤</string>
+    <string name="ac_take_photo">사진 찍기</string>
+    <string name="ac_no_photo_url">읽을 수 없는 사진</string>
+    <string name="ac_info_name">이름</string>
+    <string name="ac_info_gender">성별</string>
+    <string name="ac_info_location">위치</string>
+    <string name="ac_speaking_language">말하기 언어</string>
+    <string name="ac_speaking_language_title">말하기 언어</string>
+    <string name="ac_info_reset_password">비밀번호 재설정하기</string>
+    <string name="ac_info_chinese_level">중국어 실력</string>
+    <string name="ac_info_interest_in">흥미</string>
+    <string name="ac_info_interest_in_save">저장</string>
+    <string name="ac_info_email">이메일</string>
+    <string name="ac_info_learning_purpose">배우는 목적</string>
+    <string name="ac_info_learning_purpose_save">저장</string>
+    <string name="ac_dialog_location_title">시간대를 바꾸시겠습니까?</string>
+    <string name="ac_dialog_location_msg">수업시간이 조정된 시간과 맞지 않습니다.</string>
+    <string name="ac_dialog_location_ok">OK</string>
+    <string name="ac_dialog_chinese_level_title">중국어 레벨</string>
+    <string name="ac_dialog_chinese_level_msg">중국어 레벨은 첫번째 무료 체험 수업 평가를 통해 결정됩니다. 평가는 적합한 레벨의 과정과 주제로 시작할 수 있도록 도와줍니다. 중국어 레벨은 과정을 완료완 후 업데이트 됩니다. 더 많은 정보는 PC의 온라인 서포트 상에 상담가에게 여쭤보세요</string>
+    <string name="ac_dialog_chinese_level_ok">OK</string>
+    <string name="ac_invalid_email">이메일 포맷이 정확하지 않습니다.</string>
+    <string-array name="ic_interest_in_list">
+        <item>구매</item>
+        <item>언어 학습</item>
+        <item>서바이벌 스킬</item>
+        <item>뉴스</item>
+        <item>중국 이해하기</item>
+        <item>재미</item>
+        <item>대화</item>
+        <item>음악</item>
+    </string-array>
+    <string-array name="ic_learning_purpose_list">
+        <item>사업</item>
+        <item>교육</item>
+        <item>여행/외국에서 살기</item>
+        <item>일상 대화</item>
+        <item>중국어 유창함 테스트</item>
+    </string-array>
+    <string name="ac_gender_title">성별</string>
+    <string name="ac_gender_save">저장</string>
+    <string name="ac_gender_male">남성</string>
+    <string name="ac_gender_female">여성</string>
+    <string name="ac_speaking_save">저장</string>
+    <string name="ac_speaking_thai">태국</string>
+    <string name="ac_speaking_korea">대한민국</string>
+    <string name="ac_speaking_japan">일본</string>
+    <string name="ac_speaking_english">영어</string>
+    <string name="ac_speaking_german">독일 사람</string>
+    <string name="ac_speaking_french">프랑스</string>
+    <string name="ac_speaking_other">다른</string>
+
+    <!-- Course (co) -->
+    <string name="co_title">과정</string>
+    <string name="co_lst_lesson_count">&#160;강의 +&#160;</string>
+    <string name="co_lst_supplement_count">&#160;보충강의</string>
+    <string name="co_download_error">연결 에러</string>
+    <string name="co_tab_title">과정</string>
+    <string name="co_vocab_lbl">단어</string>
+    <string name="co_grammar_lbl">문법</string>
+    <string name="co_total_time_lbl">총 시간</string>
+    <string name="co_credits">크레딧</string>
+    <string name="co_content">콘텐츠 :&#160;</string>
+    <string name="co_lesson_count">&#160;강의,&#160;</string>
+    <string name="co_supplement_count">&#160;보충</string>
+    <string name="co_dialog_lesson_loading">로딩&#8230;</string>
+    <string name="co_available_soon_title">곧 가능한 과정</string>
+    <string name="co_available_soon_msg">이 과정은 현재 불가능하나, 곧 가능 예정입니다.</string>
+    <string name="co_available_soon_ok">OK</string>
+    <string name="co_tab_all">모두</string>
+    <string name="co_tab_lessons">강의</string>
+    <string name="co_tab_supplements">보충</string>
+    <string name="co_fav_unavailable">불가능</string>
+    <string name="co_fav_msg">즐겨찾기 기능을 사용하시려면 가입하세요</string>
+    <string name="co_fav_sign_in">가입하기</string>
+    <string name="co_fav_cancel">취소</string>
+    <string name="co_dialog_new_package">로딩</string>
+
+    <!-- Topic (to) -->
+    <string name="to_title_all">All(ko)</string>
+    <string name="to_download_error">연결 에러</string>
+    <string name="to_tab_title">주제</string>
+    <string name="to_class_count">%1$s 주제</string>
+    <string name="to_class_counts">%1$s 주제</string>
+    <string name="to_level">레벨</string>
+    <string name="to_class_title">주제 선택</string>
+    <string name="to_class_credits">크레딧</string>
+    <string name="to_class_select_level">레벨 선택</string>
+    <string name="to_cb_class_select_level">레벨 선택</string>
+    <string name="to_select_topic">주제 선택</string>
+    <string name="to_cb_select_topic">주제 선택</string>
+    <string name="to_unavailable_title">사용불가능함</string>
+    <string name="to_unavailable_msg">죄송합니다, 이 컨텐츠는 아직 준비 중 입니다.다른 구매를하려면 평가판을 완료해야합니다.</string>
+    <string name="to_unavailable_ok">나는 주변을 둘러 볼 것이다</string>
+    <string name="to_class_dialog_loading">로딩&#8230;</string>
+    <string name="to_class_dialog_download_error">에러</string>
+    <string name="to_class_dialog_download_ok">OK</string>
+    <string name="to_class_vocab_count">&#160;단어</string>
+    <string name="to_class_high_level">죄송합니다</string>
+    <string name="to_class_high_level_msg">이 수업은 당신의 학습 레벨보다 높습니다. 자신의 레벨에 맞는 주제를 선택해주세요.</string>
+    <string name="to_class_high_level_ok">OK</string>
+    <string name="to_class_loading">로딩&#8230;</string>
+    <string name="to_unavailable_user">사용불가능함</string>
+    <string name="to_unavailable_user_msg">죄송합니다, 이 컨텐츠는 아직 준비 중 입니다.다른 구매를하려면 평가판을 완료해야합니다.</string>
+    <string name="to_unavailable_user_ok">나는 주변을 둘러 볼 것이다</string>
+    <string name="to_class_vocab">&#160;단어</string>
+    <string name="to_above_level">죄송합니다</string>
+    <string name="to_above_level_msg">이 수업은 당신의 학습 레벨보다 높습니다. 자신의 레벨에 맞는 주제를 선택해주세요.</string>
+    <string name="to_above_level_ok">OK</string>
+    <string name="to_btn_sign_in">가입하기</string>
+    <string name="to_btn_sign_in_cancel">취소</string>
+    <string name="to_sign_in_unavailable">사용불가능함</string>
+    <string name="to_sign_in_msg">주제 강의를 보시려면 가입해주세요.</string>
+
+    <!-- Class (cl) -->
+    <string name="cl_add_to_favourite">즐겨찾기에 추가하기</string>
+    <string name="cl_share">공유</string>
+    <string name="cl_already_added">이미 주제를 추가하셨습니다.</string>
+    <string name="cl_successfully_added">즐겨찾기에 성공적으로 추가되었습니다</string>
+    <string name="cl_check_booking">로딩&#8230;</string>
+    <string name="cl_already_booked">이미 예약됨</string>
+    <string name="cl_already_booked_msg">이 수업을 이미 예약하셨습니다. 다른 수업을 선택해주세요.</string>
+    <string name="cl_already_booked_ok">OK</string>
+    <string name="cl_topic_already_booked">이미 예약됨</string>
+    <string name="cl_topic_already_booked_msg">이 수업을 이미 예약하셨습니다. 다른 수업을 선택해주세요.</string>
+    <string name="cl_topic_already_booked_ok">OK</string>
+    <string name="cl_topic_level_high">죄송합니다</string>
+    <string name="cl_topic_level_high_msg">이 수업은 당신의 학습 레벨보다 높습니다. 자신의 레벨에 맞는 주제를 선택해주세요.</string>
+    <string name="cl_topic_level_high_ok">OK</string>
+    <string name="cl_server_error">에러</string>
+    <string name="cl_server_error_ok">OK</string>
+    <string name="cl_btn_book">예약</string>
+
+    <!-- Lesson (ls) -->
+    <string name="ls_credits">크레딧</string>
+    <string name="ls_unavailable_title">불가능</string>
+    <string name="ls_unavailable_msg">죄송합니다, 이 컨텐츠는 아직 준비 중 입니다.다른 구매를하려면 평가판을 완료해야합니다.</string>
+    <string name="ls_unavailable_ok">나는 주변을 둘러 볼 것이다</string>
+    <string name="ls_check_lesson_loading">로딩&#8230;</string>
+    <string name="ls_lesson_no">수업&#160;</string>
+    <string name="ls_vocab_count">&#160;단어</string>
+    <string name="ls_paid_user_title">죄송합니다</string>
+    <string name="ls_paid_user_msg">죄송합니다. 이 강의는 유료 사용자가 접근가능합니다.</string>
+    <string name="ls_paid_user_ok">OK</string>
+    <string name="ls_chinese_level_lower">자신의 언어 레벨에 맞는 주제가 선택할 수 있습니다.학생 이력 섹션에서 자신의 언어 레벨을 확인하거나 온라인 서포트 섹션에서 물어보세요.</string>
+    <string name="ls_btn_book">예약</string>
+    <string name="ls_add_to_favourite">즐겨찾기에 추가하기</string>
+    <string name="ls_share">공유</string>
+    <string name="ls_already_added_msg">이미 수업을 추가했습니다.</string>
+    <string name="ls_successfully_added">즐겨찾기에 성공적으로 추가되었습니다.</string>
+    <string name="ls_extra_share_item">수업</string>
+    <string name="ls_lesson_count">수업&#160;</string>
+    <string name="ls_select_level">레벨 선택</string>
+    <string name="ls_select_course">과정 선택</string>
+    <string name="ls_select_course_title">과정 선택</string>
+    <string name="ls_lst_download_loading">로딩&#8230;</string>
+    <string name="ls_lst_download_error">에러</string>
+    <string name="ls_lst_download_ok">OK</string>
+    <string name="ls_select_supplement_count">보충 수업&#160;</string>
+    <string name="ls_select_vocab_count">&#160;단어,&#160;</string>
+    <string name="ls_select_grammar_count">&#160;문법</string>
+    <string name="ls_select_lesson_count">수업&#160;</string>
+    <string name="ls_booked_in_package_error">에러</string>
+    <string name="ls_booked_in_package_msg">이 수업은 패키지 안에 예정되어 있습니다.패키지 내의 더 많은 수업을 예약하기를 원한다면 패키지 예약으로 이동하세요</string>
+    <string name="ls_booked_in_package_ok">OK</string>
+    <string name="ls_higher_level_error">죄송합니다</string>
+    <string name="ls_higher_level_msg">이 수업은 당신의 학습 레벨보다 높습니다. 자신의 레벨에 맞는 주제를 선택해주세요.</string>
+    <string name="ls_higher_level_ok">OK</string>
+    <string name="ls_already_booked_error">이미 예약됨</string>
+    <string name="ls_already_booked_msg">이 수업은 구매하신 패키지 안에 포함되어 있습니다.</string>
+    <string name="ls_already_booked_ok">OK</string>
+    <string name="ls_chinese_level_lower_error">에러</string>
+    <string name="ls_chinese_level_lower_ok">OK</string>
+    <string name="ls_server_error">에러</string>
+    <string name="ls_server_error_ok">OK</string>
+    <string name="ls_fav_unavailable">불가능</string>
+    <string name="ls_fav_unavailable_msg">소셜 미디어를 이용해 가입하세요</string>
+    <string name="ls_fav_sign_in">가입하기</string>
+    <string name="ls_fav_cancel">취소</string>
+    <string name="ls_book_unavailable">불가능</string>
+    <string name="ls_book_unavailable_msg">강의를 예약하기 위해 가입하세요.</string>
+    <string name="ls_book_sign_in">로그인</string>
+    <string name="ls_book_cancel">취소</string>
+    <string name="ls_lesson">강의</string>
+    <string name="ls_warm_up">1. 몸풀기</string>
+    <string name="ls_conversation">2. 대화하기</string>
+    <string name="ls_discuss">3. 토론하기</string>
+    <string name="ls_vocabulary">4. 단어</string>
+    <string name="ls_exercises">5. 연습</string>
+    <string name="ls_grammar">6. 문법</string>
+    <string name="ls_practice">7. 반복</string>
+    <string name="ls_unlock_content">콘텐츠를 보시려면 수업을 예약하세요</string>
+    <string name="ls_no_file">파일이 없습니다.</string>
+    <string name="ls_file_incorrect">파일이 잘못되었습니다.</string>
+    <string name="ls_no_internet">인터넷에 연결되어 있지 않습니다.</string>
+
+    <!-- Schedule (sd) -->
+    <string name="sd_schedule_title">스케줄</string>
+    <string name="sd_schedule_loading">로딩&#8230;</string>
+    <string name="sd_today">오늘</string>
+    <string name="sd_coming_up">곧 완료</string>
+    <string name="sd_finished">완료</string>
+    <string name="sd_canceled">취소 됨</string>
+    <string name="sd_missed">유실</string>
+    <string name="sd_package_booking">패키지 예약</string>
+    <string name="sd_credit_booking">크레딧 예약</string>
+    <string name="sd_lesson_name">무료 체험</string>
+    <string name="sd_lesson_level">무료 체험</string>
+    <string name="sd_topic_name">주제</string>
+    <string name="sd_supplement_no">보충 수업&#160;</string>
+    <string name="sd_lesson_no">수업</string>
+    <string name="sd_unavailable_title">불가능</string>
+    <string name="sd_unavailable_msg">죄송합니다, 이 컨텐츠는 아직 준비 중 입니다.다른 구매를하려면 평가판을 완료해야합니다.</string>
+    <string name="sd_unavailable_ok">나는 주변을 둘러 볼 것이다</string>
+    <string name="sd_change_booking_cancel">취소</string>
+    <string name="sd_change_booking_sure">네</string>
+    <string name="sd_class_change_cancel_title">확실하세요?</string>
+    <string name="sd_class_change_cancel_msg">수업 시간 전 24시간 이내에 변경하거나 취소하면 환불이 되지 않습니다.</string>
+    <string name="sd_change_time_cancel_title">알림</string>
+    <string name="sd_change_time_cancel_msg">확실하세요? 시간을 취소하거나 변경하시면,선택한 튜터와 시간에 대한 우선권을 잃게 됩니다.</string>
+    <string name="sd_change_booking_time_msg">시간이 안되세요? 시간을 변경하세요<u>여기</u>.</string>
+    <string name="sd_sunday">일요일</string>
+    <string name="sd_monday">월요일</string>
+    <string name="sd_tuesday">화요일</string>
+    <string name="sd_wednesday">수요일</string>
+    <string name="sd_thursday">목요일</string>
+    <string name="sd_friday">금요일</string>
+    <string name="sd_saturday">토요일</string>
+    <string name="sd_no_booking">예약없음</string>
+    <string name="sd_user_level">레벨</string>
+    <string name="sd_btn_start_class">수업 시작하기</string>
+    <string name="sd_start_time">시작 시간</string>
+    <string name="sd_network_notice">공지</string>
+    <string name="sd_network_msg">핸드폰이나 PC의 메모리가 충분한지, 인터넷이 안정적인지 확인해주세요</string>
+    <string name="sd_network_continue">계속하기</string>
+    <string name="sd_network_cancel">취소</string>
+
+    <!-- booking (bo) -->
+    <string name="bo_booking_title">나의 예약</string>
+    <string name="bo_total_cost">전체 %1$s 크레딧</string>
+    <string name="bo_select_lesson_supplement">수업이나 보충수업을 선택하세요</string>
+    <string name="bo_select_topic">주제를 선택하세요</string>
+    <string name="bo_select_tutor">튜터와 시간을 선택하세요</string>
+    <string name="bo_topic_level">레벨 %1$s</string>
+    <string name="bo_supplement">보충 수업</string>
+    <string name="bo_lesson">수업 :</string>
+    <string name="bo_level">레벨</string>
+    <string name="bo_not_booking_title">알림</string>
+    <string name="bo_not_booking_msg">확실하세요? 시간을 취소하거나 변경하시면,선택한 튜터와 시간에 대한 우선권을 잃게 됩니다.</string>
+    <string name="bo_not_booking_cancel">취소</string>
+    <string name="bo_not_booking_sure">네</string>
+    <string name="bo_dialog_booking">예약&#8230;</string>
+    <string name="bo_dialog_lesson_error">에러</string>
+    <string name="bo_dialog_lesson_ok">OK</string>
+    <string name="bo_dialog_class_error">에러</string>
+    <string name="bo_dialog_class_ok">OK</string>
+    <string name="bo_parse_exception">에러</string>
+    <string name="bo_check_cost_error">알림</string>
+    <string name="bo_check_cost_msg">크레딧이 부족합니다. 스토어에 가서 크레딧을 구매하세요.</string>
+    <string name="bo_check_cost_cancel">취소</string>
+    <string name="bo_check_cost_ok">OK</string>
+    <string name="bo_booking_confirmed">예약 완료!</string>
+    <string name="bo_view_my_schedule">내 스케줄 보기</string>
+    <string name="bo_book_another_lesson">다른 수업 예약하기</string>
+    <string name="bo_view_other_tutors">다른 튜터 보기</string>
+    <string name="bo_back_main_menu">메인 메뉴로 돌아가기</string>
+    <string name="bo_btn_confirm_reservation">예약 완료</string>
+    <string name="bo_my_credits">내 크레딧</string>
+    <string name="bo_credit">크레딧</string>
+    <string name="bo_select_a_tutor">튜터를 선택하세요</string>
+    <string name="bo_credit_lbl">크레딧</string>
+    <string name="bo_start_time">시작 시간</string>
+    <string name="bo_total">전체</string>
+    <string name="bo_cg_title">예약 변경하기</string>
+    <string name="bo_total_credit_cost">전체 %1$s 크레딧</string>
+    <string name="bo_canceling">취소하기&#8230;</string>
+    <string name="bo_cancel_error">에러</string>
+    <string name="bo_cancel_ok">OK</string>
+    <string name="bo_cg_loading">변경하기&#8230;</string>
+    <string name="bo_cg_success">수업이 성공적으로 변경되었습니다.</string>
+    <string name="bo_cg_success_msg">수업 티켓을 성공적으로 변경하였습니다.</string>
+    <string name="bo_cg_success_ok">OK</string>
+    <string name="bo_cg_error">에러</string>
+    <string name="bo_cg_ok">OK</string>
+    <string name="bo_utc_parse_error">UTC 날짜시간으로 지정이 되지 않습니다.</string>
+    <string name="bo_cg_select_lesson">수업을 선택해주세요</string>
+    <string name="bo_cg_select_topic">주제를 선택해주세요</string>
+    <string name="bo_cg_select_tutor">튜터와 시간을 선택해주세요</string>
+    <string name="bo_low_credit_error">알림</string>
+    <string name="bo_low_credit_msg">크레딧이 충분하지 않습니다. 스토어에 가서 구매해주세요.</string>
+    <string name="bo_low_credit_cancel">취소</string>
+    <string name="bo_low_credit_ok">OK</string>
+    <string name="bo_cb_confirm_change">변경 확인</string>
+    <string name="bo_cb_cancel_booking">예약 변경</string>
+    <string name="bo_cb_my_credits">내 크레딧</string>
+    <string name="bo_cb_tutor_time">시간이나 튜터를 변경해주세요</string>
+    <string name="bo_cb_start_time">시작 시간</string>
+    <string name="bo_cb_total">전체</string>
+    <string name="bo_cb_cancelled">예약 취소됨</string>
+    <string name="bo_cb_cancel_success">수업이 성공적으로 취소되었습니다.</string>
+    <string name="bo_cb_another_time">다른 시간으로 예약</string>
+    <string name="bo_cb_back_to_schedule">스케줄로 돌아가기</string>
+    <string name="bo_bp_title">패키지 예약하기</string>
+    <string name="bo_lesson_count_loading">로딩&#8230;</string>
+    <string name="bo_remaining_lesson_error">에러</string>
+    <string name="bo_remaining_lesson_ok">OK</string>
+    <string name="bo_sd_same_time_error">에러</string>
+    <string name="bo_sd_same_time_msg">적어도 한번에 두 개의 강의를 예약해야 합니다. 예약을 확정하기 전에 문제를 고쳐주세요</string>
+    <string name="bo_sd_same_time_ok">OK</string>
+    <string name="bo_sd_empty_error">알림</string>
+    <string name="bo_sd_empty_msg">모든 섹션을 예약해주세요</string>
+    <string name="bo_sd_empty_ok">OK</string>
+    <string name="bo_no_lesson_error">에러</string>
+    <string name="bo_no_lesson_msg">예약한 수업이 없습니다.</string>
+    <string name="bo_no_lesson_ok">OK</string>
+    <string name="bo_course_loading">예약&#8230;</string>
+    <string name="bo_class_total">전체</string>
+    <string name="bo_class_succeed">수업 예약 성공!</string>
+    <string name="bo_course_error">에러</string>
+    <string name="bo_course_ok">OK</string>
+    <string name="bo_auto_repeat_on">켜기</string>
+    <string name="bo_auto_repeat_off">끄기</string>
+    <string name="bo_pg_cancel_error">공지</string>
+    <string name="bo_pg_cancel_msg">확실하세요? 시간을 취소하거나 변경하시면,선택한 튜터와 시간에 대한 우선권을 잃게 됩니다.</string>
+    <string name="bo_pg_negative_btn">취소</string>
+    <string name="bo_pg_cancel_sure">네</string>
+    <string name="bo_limited_lesson">에러</string>
+    <string name="bo_limited_lesson_msg">적어도 일주일에 한번의 수업을 예약해야 합니다.</string>
+    <string name="bo_limited_lesson_ok">OK</string>
+    <string name="bo_pg_start_time">시작 시간</string>
+    <string name="bo_pg_select_tutor">튜터와 시간을 선택해주세요</string>
+    <string name="bo_pg_booking_succeed">패키지 예약 성공!</string>
+    <string name="bo_pg_view_my_schedule">내 스케줄 보기</string>
+    <string name="bo_back_to_main_menu">메인 메뉴로 돌아가기</string>
+    <string name="bo_bp_confirm">예약 확인하기</string>
+    <string name="bo_autofill">자동채우기</string>
+    <string name="bo_off">끄기</string>
+    <string name="bo_monthly_plan">한 달 계획</string>
+    <string name="bo_week_1">첫번째 주</string>
+    <string name="bo_week_2">두번째 주</string>
+    <string name="bo_week_3">세번째 주</string>
+    <string name="bo_week_4">네번째 주</string>
+    <string name="bo_auto_repeat_message">자동채우기 기능은 패키지 스케줄을 쉽게 잡도록 도와줍니다. 수업을 듣고 싶은 날짜와 시간을 골라주세요. 자동채우기 기능이 자동적으로 선호되는 시간표를 예약합니다. 예를 들면, 월요일 저녁 9시를 고르면, 나머지 주에도 자동적으로 월요일 저녁 9시가 예약됩니다.</string>
+
+    <!-- StorePackage (sp) -->
+    <string name="sp_lessons">수업 : %1$s</string>
+    <string name="sp_supplements">보충 수업 : %1$s</string>
+    <string name="sp_my_order">내 주문 : %1$s</string>
+    <string name="sp_section_title">섹션 %1$s</string>
+    <string name="sp_lesson_name">%1$s %2$s</string>
+    <string name="sp_supplement">보충 수업</string>
+    <string name="sp_lesson">수업</string>
+    <string name="sp_lesson_mins">%1$s 분</string>
+    <string name="sp_purchase_confirm">구매 확인됨</string>
+    <string name="sp_start_booking_now">지금 예약 시작하기</string>
+    <string name="sp_back_to_main_menu">메인 메뉴로 돌아가기</string>
+    <string name="sp_course_structure">과정 구성</string>
+    <string name="sp_course_structure_explain">과정은 HSK 기준 레벨로 디자인되었습니다. 각각의 과정은 수업과 보충수업으로 구성되어 있습니다.수업은 50분이며, 새로운 본질적인 개념과 기술울 가르칩니다. 보충수업 또한 50분이며, 이전에 배운 개념을 복습하고 심화하는 수업입니다.</string>
+    <string name="sp_credits">크레딧</string>
+    <string name="sp_course_coming_soon">과정이 곧 이용가능하게 됩니다.</string>
+    <string name="sp_course_coming_soon_msg">이 과정은 현재 이용불가능하나, 곧 오픈됩니다.</string>
+    <string name="sp_course_coming_soon_ok">OK</string>
+    <string name="sp_buy_package_loading">로딩&#8230;</string>
+    <string name="sp_insufficient_title">알림</string>
+    <string name="sp_insufficient_msg">크레딧이 부족합니다. 스토어에 가서 크레딧을 구매하세요.</string>
+    <string name="sp_insufficient_cancel">취소</string>
+    <string name="sp_insufficient_ok">OK</string>
+    <string name="sp_level_lower_title">불가능</string>
+    <string name="sp_level_lower_msg">현재 중국어 레벨이 충분히 높지 않습니다. 새로운 인터뷰를 잡고 싶으면 튜터와 연락해주세요.</string>
+    <string name="sp_level_lower_ok">OK</string>
+    <string name="sp_server_error">에러</string>
+    <string name="sp_server_error_ok">OK</string>
+    <string name="sp_package_buy">구매</string>
+
+    <!-- Credit Store (cs) -->
+    <string name="cs_my_credits">나의 크레딧</string>
+    <string name="cs_credits">크레딧</string>
+    <string name="cs_purchase">구매</string>
+    <string name="cs_order">주문</string>
+    <string name="cs_order_credit">크레딧 4</string>
+    <string name="cs_total">전체</string>
+    <string name="cs_credit_price">USD $ 40.00</string>
+    <string name="cs_btn_buy">구매</string>
+    <string name="cs_discount_promotion">상담가에게 첫 구매 세일과 다른 할인에 대해서 물어보세요.</string>
+    <string name="cs_btn_contact_now">지금 연락하기</string>
+    <string name="cs_whats_price">통화</string>
+    <string name="cs_total_price">USD $</string>
+    <string name="cs_title">스토어</string>
+    <string name="cs_refresh_loading">로딩&#8230;</string>
+    <string name="cs_minimum_credit_loading">로딩&#8230;</string>
+
+    <!-- Current Plan (cp) -->
+    <string name="cp_title">최근 계획</string>
+    <string name="cp_loading">로딩&#8230;</string>
+    <string name="cp_error">에러</string>
+    <string name="cp_error_ok">OK</string>
+    <string name="cp_start_time">시작 시간</string>
+    <string name="cp_select_tutor_time">튜터와 시간을 선택해주세요</string>
+
+    <!-- Welcome Tutorial (wt) -->
+    <string name="wt_btn_start_trial">무료 체험 시작하기</string>
+    <string name="wt_btn_skip">스킵</string>
+    <string name="wt_professional_tutor_title">전문적인 강사진</string>
+    <string name="wt_professional_tutor">튜터만다린의 모든 강사진은 중국어 교육 기관으로부터 교사 검증을 받았으며, 500시간 이상의 1:1 수업 경력을 가진 전문적인 강사진입니다.</string>
+    <string name="wt_best_in_class_mobile_title">최고의 모바일 강의</string>
+    <string name="wt_best_in_class_mobile">혁신적인 e 러닝 소프트웨어 플랫폼의 교육환경으로 PC 과 모바일 버전으로 중국어 수업이 가능합니다. 또한 가상 교실, 인앱 레슨 및 일일 콘텐츠등으로 더 완벽한 중국어 실력을 얻어보세요</string>
+    <string name="wt_systematic_education_title">시스템화된 교육</string>
+    <string name="wt_systematic_education">HSK를 바탕으로 설계된 교재로 단계별 수업 또는 개별 토픽수업이 진행됩니다.</string>
+    <string name="wt_personalized_learning_title">개별화된 학습</string>
+    <string name="wt_personalized_learning">무료 수업과 레벨테스트를 시작으로 수업 노트, 진행 통계 및 교육 배지도 이용할 수 있습니다</string>
+    <string name="wt_skip">스킵</string>
+    <string name="wt_next">다음</string>
+
+    <!-- WebView (wv) -->
+    <string name="wv_loading">로딩&#8230;</string>
+
+    <!-- Splash Screen (ss) -->
+    <string name="ss_error">서버에 연결할 수 없습니다.</string>
+
+    <!-- Auto Repeat (ar) -->
+    <string name="ar_message">자동채우기 기능은 패키지 스케줄을 쉽게 잡도록 도와줍니다. 수업을 듣고 싶은 날짜와 시간을 골라주세요. 자동채우기 기능이 자동적으로 선호되는 시간표를 예약합니다. 예를 들면, 월요일 저녁 9시를 고르면, 나머지 주에도 자동적으로 월요일 저녁 9시가 예약됩니다.</string>
+    <string name="ar_autofill">자동채우기</string>
+    <string name="ar_add_new_date">새로운 날짜 추가하기&#8230;</string>
+    <string name="ar_off">OFF</string>
+    <string name="ar_notice">공지: 자동채우기는 최소한 한 주를 예약해야 이용가능합니다.</string>
+    <string name="ar_btn_cancel">취소</string>
+    <string name="ar_btn_apply">신청</string>
+    <string name="ar_download_tutor_loading">로딩&#8230;</string>
+    <string name="ar_unavailable_tutor_title">불가능</string>
+    <string name="ar_unavailable_tutor_msg">선택한 시간에 가능한 튜터가 없습니다.</string>
+    <string name="ar_unavailable_tutor_ok">OK</string>
+    <string name="ar_server_error">에러</string>
+    <string name="ar_server_error_ok">OK</string>
+    <string name="ar_sd_fill_title">에러</string>
+    <string name="ar_sd_fill_msg">모든 섹션을 스케줄 잡아주세요</string>
+    <string name="ar_sd_fill_ok">OK</string>
+    <string name="ar_select_date">날짜를 선택해주세요</string>
+    <string name="ar_book_class_error">에러</string>
+    <string name="ar_book_class_msg">적어도 일주일에 한번에 수업을 예약해야 합니다.</string>
+    <string name="ar_book_class_ok">OK</string>
+    <string name="ar_start_date">시작</string>
+    <string name="ar_edit_repeat_title">다시 설정하기</string>
+    <string name="ar_edit_repeat_cancel">취소</string>
+    <string name="ar_btn_save">저장</string>
+
+    <!-- Class Room (cr) -->
+    <string name="cr_title">강의실</string>
+    <string name="cr_leave">나가기</string>
+    <string name="cr_join_class_room">강의실 입장하기&#8230;</string>
+    <string name="cr_send">보내기</string>
+    <string name="cr_camera_permission">카메라와 마이크 허용이 필요합니다. 추가적인 기능을 위해 앱 세팅에서 허용해주세요</string>
+    <string name="cr_leave_room">강의실을 나가겠습니까?</string>
+    <string name="cr_leave_room_msg">움직임이 멈추면 전화를 끊고 강의실을 나가주세요.</string>
+    <string name="cr_leave_room_leave">머무르기</string>
+    <string name="cr_leave_room_cancel">취소</string>
+    <string name="cr_server_error">에러</string>
+    <string name="cr_server_error_ok">OK</string>
+    <string name="cr_tutor_soon">튜터가 곧 입장합니다.</string>
+    <string name="cr_join_error">에러</string>
+    <string name="cr_join_msg">수업에 들어가지 못했습니다.</string>
+    <string name="cr_join_ok">OK</string>
+    <string name="cr_select_date">날짜 선택</string>
+    <string name="cr_select_start_time">시작 시간 선택</string>
+    <string name="cr_btn_save">저장하기</string>
+
+    <!-- Share part (sh) -->
+    <string name="sh_downloading">다운로드&#8230;</string>
+    <string name="sh_email_not_install">설치된 이메일 고객이 없습니다.</string>
+    <string name="sh_sd_card_permission">SD카드를 읽고 쓸수 있는 허락이 필요합니다. 추가적인 기능을 위해 앱 설정에서 허용해주세요.</string>
+    <string name="sh_lesson_template">튜터 만다린과 함께 공부하고 있습니다.링크에서 저를 추가해주시겠어요?</string>
+    <string name="sh_flashcard_template">튜터 만다린과 함께 공부하고 있습니다.링크에서 저를 추가해주시겠어요?</string>
+    <string name="sh_tutor_template">튜터 만다린과 함께 공부하고 있습니다. 함께 공부해봐요!</string>
+    <string name="sh_facebook">페이스북</string>
+    <string name="sh_twitter">트위터</string>
+    <string name="sh_pinterest">핀터레스트</string>
+    <string name="sh_mail">메일</string>
+    <string name="sh_title">공유하기</string>
+
+    <!-- Favorite (fv) -->
+    <string name="fv_title">즐겨찾기</string>
+    <string name="fv_course">과정</string>
+    <string name="fv_tutor">강사진</string>
+    <string name="fv_topic">토픽</string>
+    <string name="fv_whats_on">왓츠온</string>
+
+    <!-- Notification (nt) -->
+    <string name="nt_title">알림</string>
+    <string name="nt_notice">튜터 만다린 공지 </string>
+    <string name="nt_start_class">수업 시작하기</string>
+    <string name="nt_no_notification">새로운 알림이 없습니다</string>
+    <string name="nt_today">오늘</string>
+    <string name="nt_yesterday">어제</string>
+
+    <!-- Welcome Tutorial (wt) -->
+    <string name="wt_sign_in">로그인</string>
+    <string name="wt_sign_up">가입하기</string>
+    <string name="wt_welcome_1_txt">
+        <![CDATA[
+            <b>
+                -무료 20달러 강의<br/>
+                -두개의 강의 무료 오픈<br/>
+                -중국어 실력 평가<br/>
+                -매일 기사와 비디오를 무료 제공
+            </b>
+        ]]>
+</string>"
+    <string name="wt_welcome_2_title">20달러 클래스가 무료</string>
+    <string name="wt_welcome_2_txt">
+        <![CDATA[
+        모든 학생들은 일대일 수업을 전문적인 튜터에게 받습니다.(20달러의 가치) 가입하면 무료<br/><br/>
+핸드폰이나 PC 모두에서 수업을 들을 수 있습니다. 모든 수업은 PDF 강의와 언어 평가가 포함됩니다.
+        ]]>
+</string>"
+    <string name="wt_welcome_3_title">두 개의 수업 무료 오픈</string>
+    <string name="wt_welcome_3_txt">
+        <![CDATA[
+            중국어를 배워본 적이 없으세요? 걱정마세요.
+            <br/><br/>
+            저희의<b>병음수업</b>그리고<b>초급자 1</b>코스는 가입하신 모든 유저들에게 오픈되어있습니다. 무료로 체험해보세요! 중급자와 고급자 코스는 각각 하나의 수업이 오픈되어 있습니다.
+        ]]>
+</string>"
+    <string name="wt_welcome_4_title">무료! 중국어 기사와 비디오</string>
+    <string name="wt_welcome_4_txt">우리는 매일 새로운 기사와 비디오를 업데이트합니다. 중국어 학습, 실용적인 문장, 흥미로운 뉴스, 언어 학습 팁들!  모든 콘텐츠는 도움을 줄 특별한 플래시카드와 함께 합니다.</string>
+    <string name="wt_welcome_5_title">“필요한 모든 것을 한번에!”</string>
+    <string name="wt_welcome_5_txt">"이 앱은 중국어 학습에 필요한 모든 것이다. 스마트폰만 있으면, 지하철에서 플래시카드로 공부할 수 있고 집에서 진짜 강사와 얼굴을 맞대고 수업을 들을 수도 있다"</string>
+    <string name="wt_welcome_5_author">브라이언 - 아일랜드</string>
+
+    <!-- Edit Number (et) -->
+    <string name="et_free_trial_class">무료 체험 수업</string>
+    <string name="et_valid_phone_notice">공지</string>
+    <string name="et_valid_phone_msg">사용 가능한 핸드폰 번호를 입력하세요</string>
+    <string name="et_valid_phone_ok">OK</string>
+    <string name="et_dialog_sending_sms">SMS 보내기&#8230;</string>
+    <string name="et_verification_code_error">에러</string>
+    <string name="et_verification_code_ok">OK</string>
+    <!--<string name="et_confirm_number">무료 체험 수업을 신청해주셔서 감사합니다! 핸드폰 번호를 확인해주세요.</string>-->
+    <string name="et_your_phone_no_hint">핸드폰 번호</string>
+    <string name="et_invalid_code_error_title">에러</string>
+    <string name="et_invalid_code_error_msg">올바른 확인코드가 아닙니다.</string>
+
+    <!-- Trail Class (ts) -->
+    <string name="ts_title">체험 강의</string>
+    <string name="ts_notice">공지</string>
+    <string name="ts_select_time_msg">체험 강의를 위한 시간을 선택해주세요</string>
+    <string name="ts_select_time_ok">OK</string>
+
+    <!-- Others (ot) -->
+    <string name="ot_capture">캡쳐</string>
+    <string name="pp_loading">로딩&#8230;</string>
+    <string name="youtube_error">유튜브 초기화 에러</string>
+    <string name="free_trail_title">무료 체험 과정</string>
+    <string name="start_trial_now">체험 지금 시작하기</string>
+    <string name="list_dialog_cancel">취소</string>
+
+    <!-- Promo Code Fragment (pc) -->
+    <string name="pc_my_promo_code_lbl">내 프로모션 코드</string>
+    <string name="pc_my_promo_code_hint">프로모션 코드</string>
+    <string name="pc_refer_a_friend">친구 초대하기</string>
+    <string name="pc_have_promo_code">프로모션 코드가 있으세요?</string>
+    <string name="pc_promo_code_icon_miss">프로모션 코드 아이콘</string>
+    <string name="pc_promo_code_title">프로모션 코드</string>
+    <string name="pc_get_promo_code_loading">로딩</string>
+    <string name="pc_promo_code_explanation">친구에게 무료체험수업 기회를 보내고 중국어 수업 5강의 받기, 100$의 가치!</string>
+    <string name="pc_promo_code_details">추가설명</string>
+    <string name="pc_share_title">SNS에서 친구들과 공유하기</string>
+    <string name="pc_facebook">페이스북</string>
+    <string name="pc_twitter">트위터</string>
+    <string name="pc_google_plus">구글 플러스</string>
+    <string name="pc_email">이메일</string>
+    <string name="pc_facebook_icon_miss">페이스북</string>
+    <string name="pc_twitter_icon_miss">트위터</string>
+    <string name="pc_google_plus_icon_miss">구글 플러스</string>
+    <string name="pc_email_icon_miss">이메일</string>
+    <string name="pc_promo_code_empty">프로모션 코드를 입력해주세요</string>
+    <string name="pc_dialog_confirming">확인중</string>
+    <string name="pc_dialog_succeed">성공</string>
+    <string name="pc_dialog_back">뒤로</string>
+    <string name="pc_dialog_friend_code">친구나 컨설턴트에게 받은 코드</string>
+    <string name="pc_dialog_credit">크레딧</string>
+    <string name="pc_dialog_increase_credit_note">다음 구매 때 크레딧 혜택을 얻을 수 있습니다.</string>
+    <string name="pc_dialog_invalid_promo_code_err">효력이 없는 프로모션 코드</string>
+    <string name="pc_dialog_friend_one_time_err">친구 프로모션 코드는 오직 한번만 사용가능합니다.</string>
+    <string name="pc_dialog_use_my_promo_code_err">프로모션 코드를 사용합니다</string>
+    <string name="pc_share_promo_code">TutorMandarin 프로모션 코드 (%1$s) 를 사용하여 일대일 중국어 시험 수업을 즐기십시오. 어른 + 키즈 만다린 코스. 언어를 실제로 배우는 법을 배우십시오!</string>
+    <string name="pc_no_promotion_history">프로모션 코드 기록이 없습니다</string>
+
+    <!-- PromoCode History (ph) -->
+    <string name="ph_i_entered_title">입력</string>
+    <string name="ph_refer_by_me_title">나에게 보내기</string>
+    <string name="ph_list_title">프로모션 코드 리스트</string>
+    <string name="ph_i_entered_code_lbl">코드</string>
+    <string name="ph_i_entered_type_lbl">타입</string>
+    <string name="ph_i_entered_date_lbl">날짜</string>
+    <string name="ph_i_entered_reward_lbl">보상</string>
+    <string name="ph_i_entered_loading">로딩</string>
+    <string name="ph_i_entered_waiting">대기 중</string>
+    <string name="ph_refer_name_lbl">이름</string>
+    <string name="ph_refer_date_lbl">데이터</string>
+    <string name="ph_refer_reward_lbl">보상</string>
+    <string name="ph_refer_loading">로딩</string>
+    <string name="ph_refer_waiting">대기 중 </string>
+
+    <string name="su_i_have_promo_code">프로모션 코드가 있습니다.</string>
+
+    <!-- Added Server Text -->
+    <string name="wo_all">모든 카테고리</string>
+    <string name="wo_phrases">문구들</string>
+    <string name="wo_language_learning">언어 배우기</string>
+    <string name="wo_conversation">대화</string>
+    <string name="wo_survival_skills">생존기술</string>
+    <string name="wo_understanding_china">중국 이해하기</string>
+    <string name="wo_funny">유머</string>
+    <string name="wo_readable_chinese">재미있는 중국어</string>
+
+    <string name="vi_all">모든 카테고리</string>
+    <string name="vi_understanding_china">중국 이해하기</string>
+    <string name="vi_language_learning">언어 배우기</string>
+    <string name="vi_music">음악</string>
+    <string name="vi_funny">유머</string>
+    <string name="vi_news">뉴스</string>
+
+    <string name="to_locale_food">음식</string>
+    <string name="to_locale_entertainment">엔터테인먼트</string>
+    <string name="to_locale_relationships">관계</string>
+    <string name="to_locale_hobbies">취미</string>
+    <string name="to_locale_travel">여행</string>
+    <string name="to_locale_culture">문화</string>
+    <string name="to_locale_social">사회</string>
+    <string name="to_locale_exercise">운동</string>
+
+    <string name="co_locale_all">모든 카테고리</string>
+    <string name="co_locale_pinyin_1">병음</string>
+    <string name="co_locale_beginner_1">기초 1</string>
+    <string name="co_locale_beginner_2">기초 2</string>
+    <string name="co_locale_intermediate_1">중급 1</string>
+    <string name="co_locale_intermediate_2">중급 2</string>
+    <string name="co_locale_advanced_1">고급 1</string>
+    <string name="co_locale_advanced_2">고급 2</string>
+
+    <string name="co_locale_pinyin_desc">병음과 함께 중국어 말하기를 시작하세요. 중국어를 어떻게 정확하게 발음하는지 배우세요</string>
+    <string name="co_locale_beginner_1_desc">말하기와 듣기에 집중해서 중국어 기초를 쌓으세요</string>
+    <string name="co_locale_beginner_2_desc">기초적인 문법, 단어와 함께 기본 중국어 말하기를 튼튼하게 만드세요</string>
+    <string name="co_locale_intermediate_1_desc">좀 더 전문적인 문법 패턴, 문구, 자신의 흥미와 관련된 단어들을 배우세요</string>
+    <string name="co_locale_intermediate_2_desc">일상 대화를 자신감 있게 말하고, 고급 문장 구조를 이용해서 실용적인 주제를 연습합니다</string>
+    <string name="co_locale_advanced_1_desc">고급 1</string>
+    <string name="co_locale_advanced_2_desc">고급 2</string>
+
+    <string name="to_locale_desc_1">중국어로 음식에 대해서 말하기 - 요리, 에티켓, 주문하기 등</string>
+    <string name="to_locale_desc_2">한가할 때 무엇을 하며 시간을 보내는지 이야기해보기 - 무엇을 재미있어 하는지 현대적이고 실용적인 중국어로 말하기</string>
+    <string name="to_locale_desc_3">다양한 유형의 관계에서 소통하는 법 배우기 - 로맨틱, 친숙한, 전문적인 관계 등등</string>
+    <string name="to_locale_desc_4">사진, 음악, 영화, 책 등 다양한 취미에 대해서 중국어로 말하기</string>
+    <string name="to_locale_desc_5">중국 역사, 소설 등 중국 문화에 대해서 더 깊이 이야기하기</string>
+    <string name="to_locale_desc_6">여행할때 필요한 중국어 - 티켓, 교통수단, 관광명소, 스몰토크 등 </string>
+    <string name="to_locale_desc_7">환경, 경제, 정치 등 사회적 이슈에 대해서 중국어로 이야기하기</string>
+    <string name="to_locale_desc_8">유명한 스포츠 문화나 운동 취미 등, 운동에 관해서 중국어로 이야기하기</string>
+
+    <string name="su_trial_submit_title">1 대 1 무료 시험 서비스 클래스</string>
+
+    <string name="su_trial_submit_text">
+    <![CDATA[
+            1 : 1 중국어 수업<br/>
+            전문 북경어 교사<br/>
+            전체 언어 평가<br/>
+            탄력적 인 일정
+        ]]>
+    </string>
+    <string name="new_version">새 버전</string>
+    <string name="critical_update">중요 업데이트</string>
+    <string name="new_version_available">TutorMandarin의 새 버전을 지금 사용할 수 있습니다.</string>
+    <string name="update_new_version">TutorMandarin을 업데이트하십시오.</string>
+    <string name="basic">기본</string>
+    <string name="kids">키즈</string>
+    <string name="update">다운로드</string>
+    <string name="filter">필터</string>
+    <string name="reset">재설정</string>
+    <string name="sory_by_category">범주별로 정렬</string>
+    <string name="sory_by_level">레벨별로 정렬</string>
+    <string name="beginner1">초급 1</string>
+    <string name="beginner2">초급 2</string>
+    <string name="intermediate1">중급 1</string>
+    <string name="intermediate2">중급 2</string>
+    <string name="advanced1">고급 1</string>
+    <string name="advanced2">고급 2</string>
+    <string name="kid0">아이 0</string>
+    <string name="kid1">아이 1</string>
+    <string name="kid2">아이 2</string>
+    <string name="kid3">아이 3</string>
+    <string name="kid">아이</string>
+    <string name="adult">어른</string>
+    <string name="downloading">다운로드 중</string>
+    <string name="select_level">수업을 필터링하기위한 레벨 선택</string>
+    <string name="updating_title">TutorMandarin 업데이트 중</string>
+    <string name="update_desc">TutorMandarin Application Updater</string>
+    <string name="download_complete">다운로드 완료</string>
+    <string name="confirm_update">지금 업데이트 하시겠습니까?</string>
+    <string name="update_now">업데이트</string>
+    <string name="file_not_found">파일을 찾을 수 없음</string>
+
+    <!-- New in Version 2.1.3 -->
+    <string name="apply_trial_now">무료 평가판을 지금 신청하십시오.</string>
+    <string name="select_time">시간 선택</string>
+    <string name="veryfy_phone">전화 확인</string>
+    <string name="finish">끝</string>
+    <string name="trial_today">시범 수업을 오늘 시작하십시오.</string>
+    <string name="submit_upcap">제출</string>
+    <string name="apply_free_trial">무료 평가판 신청</string>
+    <string name="trial_intro">여보세요! TutorMandarin 가상 교실을 사용해 보시겠습니까?</string>
+    <string name="experience_now">체험하기</string>
+    <string name="later">늦은</string>
+    <string name="free_trial_today">무료 평가판을 오늘 받으십시오.</string>
+    <string name="send_request">확인</string>
+    <string name="trial_request_welcome">안녕하세요, 귀하의 TutorMandarin 컨설턴트입니다. 오늘 무료 평가판을 드시겠습니까?</string>
+    <string name="trial_request_schedule">수업이 %1$s 에서 예약되었습니다. 확인을 위해 확인하십시오.</string>
+    <string name="et_confirm_number">TutorMandarin에 가입 해 주셔서 감사합니다. 우리는 귀하에게 일회성 SMS 메시지를 보내드립니다.</string>
+    <string name="giving_up_trial">안녕하세요, 평가판 수업을 시작하기 전에 구매를하려는 것 같습니다. 알림 : 평가판 수업은 무료이며 전문 교사의 전체 언어 평가가 제공됩니다. 그것은 당신이 당신의 공과에 맞는 수준을 선택할 수 있도록 도와 줄 것입니다.
+        \n\n그러나 재판을받지 않고도 지금 구매할 수 있습니다. 귀하는 다음 번 구매시 사용할 무료 크레딧 1 개를 받으면서 평가판 등급을 상실합니다. 선택은 당신의 책임입니다. 행운을 빕니다!</string>
+    <string name="giveup">크레딧 구매</string>
+    <string name="keep_trial">시험 사용</string>
+    <string name="try_demo">데모 강의실 사용해보기</string>
+    <string name="student">학생</string>
+    <string name="consultant">컨설턴트</string>
+</resources>

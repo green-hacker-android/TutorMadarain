@@ -1,0 +1,331 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#454343">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_top_padding"
+        android:background="#00ABA0"/>
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="#00ABA0"
+        android:paddingTop="@dimen/toolbar_top_padding">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/cr_title"
+            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/cr_leave"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <ImageView
+            android:id="@+id/assistant_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_online_support"/>
+    </RelativeLayout>
+
+    <!-- SimpleDraweeView -->
+    <RelativeLayout
+        android:id="@+id/rl_class_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:background="#454343"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_tutor_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundingBorderWidth="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_class_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdv_tutor_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/cr_join_class_room"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <!-- ClassRoom  -->
+    <RelativeLayout
+        android:id="@+id/classroom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:visibility="visible">
+
+        <com.twilio.video.VideoView
+            android:id="@+id/vv_local_video"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="visible"/>
+
+        <com.twilio.video.VideoView
+            android:id="@+id/twilio_vv_remote_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+        <VideoView
+            android:id="@+id/vv_remote_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/imv_local_video_hide"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_video_cam_off"/>
+        </RelativeLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_white_board"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_white_board"
+            app:backgroundTint="#008A80"
+            app:borderWidth="0dp"/>
+
+        <!-- TODO need to change the background -->
+        <RelativeLayout
+            android:id="@+id/message_rl"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="#aa333333"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/vw_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_above="@+id/ll_send_message"
+                android:background="#555555"/>
+
+            <RelativeLayout
+                android:id="@+id/ll_send_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv_send_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/cr_send"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/edt_input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/tv_send_button"
+                    android:background="@drawable/bg_rounded_white"
+                    android:minHeight="40dp"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_chat_messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/vw_send_message"
+                android:padding="10dp"
+                app:stackFromEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- WhiteBoard -->
+    <RelativeLayout
+        android:id="@+id/rl_white_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:background="@color/layout_background_light_white"
+        android:visibility="gone"/>
+
+    <com.twilio.video.VideoView
+        android:id="@+id/twilio_remote_video"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/remote_video"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/rl_assistant_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_triangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/triangle"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_rectangle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/rl_triangle"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rectangle"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_assistant_online_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ic_tutor_dark_grey"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_assistant_online_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/os_online_support_lbl"
+                    android:textColor="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_assistant_faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ll_assistant_online_support"
+                android:layout_alignStart="@+id/ll_assistant_online_support"
+                android:layout_below="@id/ll_assistant_online_support"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ic_online_support_dark_grey"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_faq_lbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/ac_faq"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_alignEnd="@id/ll_assistant_online_support"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/light_gray"
+                        tools:ignore="NotSibling"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

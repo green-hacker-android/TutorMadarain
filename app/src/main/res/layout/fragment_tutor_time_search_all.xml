@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="inc.osbay.android.tutormandarin.ui.fragment.TutorTimeSearchAllFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#f6b512"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imv_tutor_search_all_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_tutor_search_all_arrow_left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imv_tutor_search_all_back"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_tutor_search_all_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_tutor_search_all_day_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JAN 01"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_tutor_search_all_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="2018"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        /><!--android:textColor="@color/text_color_gray"
+                        -->
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_arrow_drop_down_white_24dp"
+                        /><!--android:src="@drawable/ic_expand_arrow_black"
+                        -->
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_all_tutors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bg_search_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_transparent"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_search_all_calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_calender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imv_calendar_left_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_calendar_left_arrow"
+                />
+
+            <TextView
+                android:id="@+id/tv_calendar_selected_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="dec"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imv_calendar_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_calendar_right_arrow"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_calender">
+
+            <LinearLayout
+                android:id="@+id/ll_week_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tu_search_all_sun"
+                    android:textColor="@color/text_color_gray"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tu_search_all_mon"
+                    android:textColor="@color/text_color_gray"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tu_search_all_tue"
+                    android:textColor="@color/text_color_gray"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tu_search_all_wed"
+                    android:textColor="@color/text_color_gray"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tu_search_all_thu"
+                    android:textColor="@color/text_color_gray"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tu_search_all_fri"
+                    android:textColor="@color/text_color_gray"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tu_search_all_sat"
+                    android:textColor="@color/text_color_gray"
+                    />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_date_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_week_days"
+                android:paddingBottom="5dp"
+                android:scrollbars="none"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rv_date_title"
+                android:background="@drawable/shadow_bottom"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

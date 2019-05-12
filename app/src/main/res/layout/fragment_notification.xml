@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.NotificationFragment">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_tutor_mandrain_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/very_large_margin"
+        android:paddingStart="@dimen/very_large_margin"
+        android:paddingTop="@dimen/very_large_margin">
+
+        <ImageView
+            android:id="@+id/imv_noti_detail"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_margin="@dimen/very_large_margin"
+            android:src="@drawable/ic_noti_alert" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/very_large_margin"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/very_large_margin"
+                android:text="@string/nt_notice"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/text_color_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tutor_mandrain_title"
+        android:layout_margin="@dimen/very_large_margin">
+
+        <TextView
+            android:id="@+id/tv_noti_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016/05/20 15:00"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_noti_detail_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_noti_detail_date"
+            android:paddingBottom="@dimen/very_large_margin"
+            android:paddingTop="@dimen/very_large_margin"
+            android:text="good"
+            android:textColor="@color/text_color_black" />
+
+        <Button
+            android:id="@+id/btn_noti_detail_start_class"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_noti_detail_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/very_large_margin"
+            android:background="@drawable/btn_bg_rect_green"
+            android:paddingLeft="@dimen/extremely_large_margin"
+            android:paddingRight="@dimen/extremely_large_margin"
+            android:text="Start class"
+            android:textAllCaps="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
